@@ -466,3 +466,22 @@ body { background: var(--bwc-ivory); color: var(--bwc-ink); }
 @media(max-width:390px){
   .topbar .brand-logo{width:104px!important;height:52px!important;max-width:104px!important;max-height:52px!important}
 }
+
+
+/* Official logo image visibility and sizing — all pages, desktop and mobile */
+img.brand-logo{
+  display:block!important;
+  height:auto!important;
+  max-width:100%!important;
+  object-fit:contain!important;
+  visibility:visible!important;
+  opacity:1!important;
+  flex:0 0 auto!important;
+}
+.topbar img.brand-logo{width:148px!important;max-height:74px!important}
+.header img.brand-logo{width:148px!important;max-height:74px!important}
+.footer img.brand-logo{width:126px!important;max-height:63px!important}
+@media(max-width:760px){
+  .topbar img.brand-logo,.header img.brand-logo{width:112px!important;max-height:56px!important}
+  .footer img.brand-logo{width:108px!important;max-height:54px!important}
+}
