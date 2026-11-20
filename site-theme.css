@@ -364,3 +364,22 @@ body { background: var(--bwc-ivory); color: var(--bwc-ink); }
  .home-header .brand-name{font-size:20px}
  .home-hero .hero-location{top:104px;left:7%}
 }
+
+/* Official supplied logo lockup — use the complete hornbill + Borneo + Wild Capture artwork */
+.brand-logo{
+  display:block!important;
+  width:148px!important;
+  height:auto!important;
+  max-height:74px!important;
+  object-fit:contain!important;
+  border:0!important;
+  border-radius:0!important;
+  flex:0 0 auto!important;
+}
+.header .brand-logo,.topbar .brand-logo{width:148px!important;max-height:74px!important}
+.footer .brand-logo{width:126px!important;max-height:63px!important}
+.home-header .brand-logo{width:150px!important;max-height:75px!important}
+@media(max-width:800px){
+  .brand-logo,.header .brand-logo,.topbar .brand-logo,.home-header .brand-logo{width:112px!important;max-height:56px!important}
+  .footer .brand-logo{width:108px!important;max-height:54px!important}
+}
