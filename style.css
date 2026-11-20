@@ -357,3 +357,71 @@ body:has(.home-hero) .header{display:none}
     letter-spacing:.12em!important;
   }
 }
+
+/* BWC CTA — compact dark translucent chat-style button */
+.home-hero > .button-light{
+  position:absolute!important;
+  left:50%!important;
+  right:auto!important;
+  bottom:4.5%!important;
+  width:max-content!important;
+  max-width:calc(100% - 40px)!important;
+  height:40px!important;
+  min-height:40px!important;
+  box-sizing:border-box!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:0 22px!important;
+  margin:0!important;
+  gap:0!important;
+  transform:translateX(-50%)!important;
+  border:1px solid rgba(232,239,231,.32)!important;
+  border-radius:12px!important;
+  background:rgba(7,22,16,.68)!important;
+  color:rgba(255,255,255,.84)!important;
+  box-shadow:0 5px 18px rgba(0,0,0,.16)!important;
+  backdrop-filter:blur(7px)!important;
+  -webkit-backdrop-filter:blur(7px)!important;
+  text-align:center!important;
+  font-size:10px!important;
+  font-weight:500!important;
+  letter-spacing:.14em!important;
+  line-height:1!important;
+}
+.home-hero > .button-light .button-label{
+  position:static!important;
+  inset:auto!important;
+  display:block!important;
+  width:auto!important;
+  max-width:100%!important;
+  margin:0!important;
+  padding:0!important;
+  transform:none!important;
+  text-align:center!important;
+  text-indent:0!important;
+  white-space:nowrap!important;
+  color:rgba(255,255,255,.84)!important;
+  font-size:10px!important;
+  font-weight:500!important;
+  letter-spacing:.14em!important;
+  line-height:1!important;
+}
+.home-hero > .button-light:hover{
+  transform:translateX(-50%) translateY(-2px)!important;
+  background:rgba(7,22,16,.78)!important;
+  border-color:rgba(232,239,231,.46)!important;
+}
+@media(max-width:380px){
+  .home-hero > .button-light{
+    height:38px!important;
+    min-height:38px!important;
+    padding:0 17px!important;
+    font-size:9px!important;
+    letter-spacing:.12em!important;
+  }
+  .home-hero > .button-light .button-label{
+    font-size:9px!important;
+    letter-spacing:.12em!important;
+  }
+}
