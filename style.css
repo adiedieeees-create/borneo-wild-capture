@@ -174,3 +174,45 @@ body:has(.home-hero) .header{display:none}
   .home-hero .hero-text{width:82%;font-size:12px}
   .home-hero > .button-light{bottom:4%;letter-spacing:.24em}
 }
+
+/* Homepage final alignment + subtle editorial transparency */
+.home-hero .hero-location{
+  top:3.1%!important;
+  left:3%!important;
+  width:94%!important;
+  transform:none!important;
+  color:rgba(255,255,255,.78)!important;
+}
+.home-hero .hero-location:before,
+.home-hero .hero-location:after{
+  background:rgba(255,255,255,.56)!important;
+}
+.home-hero .hero-content{
+  top:29.5%!important;
+}
+.home-hero h1{
+  color:rgba(255,255,255,.88)!important;
+}
+.home-hero h1 em{
+  color:rgba(255,255,255,.88)!important;
+}
+.home-hero .hero-text{
+  color:rgba(255,255,255,.78)!important;
+}
+.home-hero > .button-light{
+  color:rgba(255,255,255,.78)!important;
+  border-color:rgba(255,255,255,.62)!important;
+}
+.home-hero > .button-light span{
+  color:rgba(255,255,255,.72)!important;
+}
+@media(max-width:800px){
+  .home-hero .hero-location{
+    top:3.1%!important;
+    left:3%!important;
+    width:94%!important;
+  }
+  .home-hero .hero-content{
+    top:29.5%!important;
+  }
+}
