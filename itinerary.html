@@ -29,6 +29,45 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style>
 <link rel="stylesheet" href="site-theme.css">
+<style id="itinerary-package-refinement">
+/* Page 03 — transparent expedition package selectors and individual itineraries */
+.itinerary-overview{padding:clamp(64px,8vw,94px) 0;background:var(--bwc-slate-900)}
+.overview-head{margin-bottom:38px}
+.trip-grid{align-items:stretch;gap:16px}
+.trip-card{display:flex;flex-direction:column;align-items:flex-start;min-height:286px;padding:clamp(22px,2.8vw,32px);color:var(--bwc-ivory);text-decoration:none;background:rgba(245,241,232,.035);border:1px solid rgba(229,214,184,.34);transition:border-color .25s ease,background .25s ease,transform .25s ease}
+.trip-card:hover,.trip-card:focus-visible{background:rgba(245,241,232,.075);border-color:rgba(229,214,184,.82);transform:translateY(-3px)}
+.trip-card:focus-visible,.trip-card-action:focus-visible,.back-to-packages:focus-visible{outline:2px solid var(--bwc-champagne-light);outline-offset:4px}
+.trip-card-meta{width:100%;gap:8px;font-size:9px;letter-spacing:.13em}
+.trip-card h3{margin:24px 0 12px;font-size:clamp(26px,2.8vw,34px)}
+.trip-card p{font-size:13px;line-height:1.85}
+.trip-card-action{display:inline-flex;align-items:center;gap:12px;margin-top:auto;padding-top:25px;color:var(--bwc-champagne-light);font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.trip-card-action span{font-size:15px;transition:transform .2s ease}
+.trip-card:hover .trip-card-action span{transform:translate(3px,3px)}
+.overview-note{max-width:850px;margin-top:27px}
+.package-itinerary{padding:clamp(58px,7.5vw,88px) 0;background:var(--bwc-ivory);color:var(--bwc-ink);scroll-margin-top:24px}
+.package-itinerary+.package-itinerary{border-top:1px solid rgba(20,39,46,.12)}
+.package-inner{width:min(1180px,90%);margin-inline:auto}
+.package-heading{max-width:780px;margin-bottom:32px}
+.package-heading .eyebrow{color:#92764a}
+.package-heading h2{margin:12px 0;color:var(--bwc-slate);font:clamp(36px,5vw,58px)/1.06 Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.025em}
+.package-heading p{max-width:680px;margin:0;color:#627176;font-size:14px;line-height:1.85}
+.package-day-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.package-day{min-height:190px;padding:24px;background:var(--bwc-paper);border:1px solid #ded7c9}
+.package-day-index{color:#9a8358;font-size:9px;font-weight:700;letter-spacing:.17em;text-transform:uppercase}
+.package-day h3{margin:12px 0 9px;color:var(--bwc-slate);font:25px/1.16 Georgia,'Times New Roman',serif;font-weight:400}
+.package-day p{margin:0;color:#617176;font-size:12px;line-height:1.85}
+.package-note{max-width:900px;margin:21px 0 0;color:#788486;font-size:11px;line-height:1.75}
+.what-to-bring{margin-top:34px;padding:25px 0 0;border-top:1px solid rgba(20,39,46,.16)}
+.what-to-bring h3{margin:0 0 17px;color:var(--bwc-slate);font:27px/1.15 Georgia,'Times New Roman',serif;font-weight:400}
+.what-to-bring h3 span{display:inline-block;margin-right:9px;color:#a58d61;font-size:17px}
+.bring-list{display:flex;flex-wrap:wrap;column-gap:25px;row-gap:13px}
+.bring-item{display:inline-flex;align-items:center;gap:9px;color:#58696d;font-size:11px;line-height:1.5}
+.bring-symbol{display:inline-grid;place-items:center;flex:0 0 20px;width:20px;height:20px;color:#a58d61;border:1px solid rgba(165,141,97,.32);border-radius:50%;font:12px/1 Georgia,'Times New Roman',serif}
+.back-to-packages{display:inline-flex;align-items:center;gap:9px;margin-top:29px;padding-bottom:4px;color:#92764a;border-bottom:1px solid rgba(146,118,74,.45);font-size:9px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+.back-to-packages:hover{color:var(--bwc-slate);border-color:var(--bwc-slate)}
+@media(max-width:800px){.trip-grid{grid-template-columns:1fr;gap:13px}.trip-card{min-height:auto;padding:25px}.trip-card h3{margin-top:17px}.trip-card-action{padding-top:20px}.package-day-grid{grid-template-columns:1fr;gap:11px}.package-day{min-height:auto;padding:22px}.package-itinerary{padding:58px 0 62px}.package-heading h2{font-size:clamp(35px,9vw,48px)}.bring-list{column-gap:16px;row-gap:12px}}
+@media(prefers-reduced-motion:reduce){.trip-card,.trip-card-action span{transition:none!important}}
+</style>
 </head>
 <body>
 <header class="topbar"><div class="wrap nav">
@@ -46,66 +85,72 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle><span></span><span></span><span></span></button>
 </div></header>
 <main>
-<section class="itinerary-hero" aria-labelledby="page-title">
-    <div class="wrap">
-      <div class="eyebrow">03&nbsp; / &nbsp;Itinerary</div>
-      <h1 id="page-title">Your time in Borneo,<br><em>your kind of adventure.</em></h1>
-      <p class="intro">From a first taste of the rainforest to a slower, deeper expedition, find the journey that fits your plans.</p>
-      <div class="hero-bottom"><span class="line"></span><span>Tanjung Puting · Central Kalimantan · Indonesia</span></div>
-    </div>
-  </section>
-  <section class="itinerary-overview" aria-labelledby="overview-title">
-    <div class="wrap">
-      <div class="overview-head">
-        <div class="eyebrow">Expedition guide</div>
-        <h2 id="overview-title">Choose your journey.</h2>
-        <p>Three ways to experience the river, rainforest and wildlife of Tanjung Puting.</p>
-      </div>
-      <div class="trip-grid">
-        <article class="trip-card">
-          <div class="trip-card-meta"><span>Section 01</span><span>3 days · 2 nights</span></div>
-          <h3>Essential Escape</h3>
-          <p>Arrival and river journey, orangutan habitat and forest, then a quiet morning on the river before departure.</p>
-        </article>
-        <article class="trip-card">
-          <div class="trip-card-meta"><span>Section 02</span><span>4 days · 3 nights</span></div>
-          <h3>Wildlife Experience</h3>
-          <p>More time immersed in the rainforest, slower wildlife observation and deeper exploration.</p>
-        </article>
-        <article class="trip-card">
-          <div class="trip-card-meta"><span>Section 03</span><span>5 days · 4 nights</span></div>
-          <h3>Wildlife Moments</h3>
-          <p>Unhurried days along the river, patient wildlife watching and small moments in the forest.</p>
-        </article>
-      </div>
-      <p class="overview-note">Routes, stops and wildlife sightings depend on park regulations, weather, river conditions and wildlife welfare. Final details are confirmed with your trip plan.</p>
-    </div>
-  </section>
-<section class="index-section" aria-labelledby="section-two"><div class="section-heading"><span class="section-chip">Section 02</span><span class="section-duration">4 days · 3 nights</span></div><h2 id="section-two">Wildlife Experience</h2><div class="index-row"><span>More time immersed in the rainforest</span><span>04</span></div><div class="index-row"><span>Slower wildlife observation</span><span>05</span></div><div class="index-row"><span>Deeper exploration</span><span>06</span></div></section>
-<section class="index-section" aria-labelledby="section-three"><div class="section-heading"><span class="section-chip">Section 03</span><span class="section-duration">5 days · 4 nights</span></div><h2 id="section-three">Wildlife Moments</h2><div class="index-row"><span>Unhurried days along the river</span><span>07</span></div><div class="index-row"><span>Patient wildlife watching</span><span>08</span></div><div class="index-row"><span>Small moments in the forest</span><span>09</span></div></section>
-<p class="index-note">Routes, stops and wildlife sightings depend on park regulations, weather, river conditions and wildlife welfare. Final details are confirmed with your trip plan.</p>
-</div></div></section>
-<section class="details" id="essential-escape"><div class="wrap">
-<div class="details-head"><div class="eyebrow">Essential Escape · 3 days · 2 nights</div><h2>A taste of the journey.</h2><p>A sample outline for the classic 3D2N journey. Your final itinerary will be confirmed with your trip details and current park conditions.</p></div>
-<div class="day-grid">
-<article class="day-card"><div class="day-no">Day 01 · Arrival</div><h3>Arrival &amp; river journey</h3><p>Meet your local team, transfer to the harbour, board your klotok and begin cruising into the rainforest. Settle in and enjoy the river scenery.</p></article>
-<article class="day-card"><div class="day-no">Day 02 · Rainforest</div><h3>Orangutan habitat &amp; forest</h3><p>Visit designated orangutan observation areas, with time to learn about the forest and its wildlife. Return to the boat for an evening surrounded by nature.</p></article>
-<article class="day-card"><div class="day-no">Day 03 · Departure</div><h3>Morning on the river</h3><p>Enjoy the quiet atmosphere of the river before returning to the harbour for your onward transfer.</p></article>
-</div><p class="note">Wildlife sightings are never guaranteed. All visits follow park regulations and guidance from local guides and park staff.</p>
+<section class="itinerary-hero" aria-labelledby="page-title"><div class="wrap">
+<div class="eyebrow">03&nbsp; / &nbsp;Itinerary</div>
+<h1 id="page-title">Your time in Borneo,<br><em>your kind of adventure.</em></h1>
+<p class="intro">From a first taste of the rainforest to a slower, deeper expedition, find the journey that fits your plans.</p>
+<div class="hero-bottom"><span class="line"></span><span>Tanjung Puting · Central Kalimantan · Indonesia</span></div>
 </div></section>
-<section class="final-cta next-page-cta">
-    <div class="wrap cta-inner">
-      <div>
-        <div class="eyebrow">NEXT · FIELD NOTES</div>
-        <h2>The journey continues.</h2>
-        <p>See the wildlife, river and rainforest through our lens.</p>
-      </div>
-      <div class="next-page-actions">
-        <a class="cta-button" href="gallery.html">Discover the Gallery <span aria-hidden="true">↗</span></a>
-        <a class="cta-secondary" href="https://wa.me/6285190836669?text=Hello%20Borneo%20Wild%20Capture%2C%20I%27d%20like%20to%20plan%20a%20Tanjung%20Puting%20expedition." target="_blank" rel="noopener noreferrer">Plan your trip on WhatsApp ↗</a>
-      </div>
-    </div>
-  </section>
+
+<section class="itinerary-overview" id="packages" aria-labelledby="overview-title"><div class="wrap">
+<div class="overview-head"><div class="eyebrow">Expedition guide</div><h2 id="overview-title">Choose your journey.</h2><p>Three ways to experience the river, rainforest and wildlife of Tanjung Puting.</p></div>
+<div class="trip-grid">
+<article class="trip-card"><div class="trip-card-meta"><span>Section 01</span><span>3 days · 2 nights</span></div><h3>Essential Escape</h3><p>Arrival and river journey, orangutan habitat and forest, then a quiet morning on the river before departure.</p><a class="trip-card-action" href="#itinerary-3d2n" aria-label="Read the Essential Escape 3 days 2 nights itinerary">Read this itinerary <span aria-hidden="true">↘</span></a></article>
+<article class="trip-card"><div class="trip-card-meta"><span>Section 02</span><span>4 days · 3 nights</span></div><h3>Wildlife Experience</h3><p>More time immersed in the rainforest, slower wildlife observation and deeper exploration.</p><a class="trip-card-action" href="#itinerary-4d3n" aria-label="Read the Wildlife Experience 4 days 3 nights itinerary">Read this itinerary <span aria-hidden="true">↘</span></a></article>
+<article class="trip-card"><div class="trip-card-meta"><span>Section 03</span><span>5 days · 4 nights</span></div><h3>Wildlife Moments</h3><p>Unhurried days along the river, patient wildlife watching and small moments in the forest.</p><a class="trip-card-action" href="#itinerary-5d4n" aria-label="Read the Wildlife Moments 5 days 4 nights itinerary">Read this itinerary <span aria-hidden="true">↘</span></a></article>
+</div>
+<p class="overview-note">Choose a package to read its sample day-by-day itinerary and packing notes. Routes, stops and wildlife sightings depend on park regulations, weather, river conditions and wildlife welfare.</p>
+</div></section>
+
+<section class="package-itinerary" id="itinerary-3d2n" aria-labelledby="title-3d2n"><div class="package-inner">
+<header class="package-heading"><div class="eyebrow">Section 01 · 3 days · 2 nights</div><h2 id="title-3d2n">Essential Escape</h2><p>A first journey into the river and rainforest: a gentle introduction to orangutan habitat, forest life and a quiet final morning on the water.</p></header>
+<div class="package-day-grid">
+<article class="package-day"><div class="package-day-index">Day 01 · Arrival</div><h3>Arrival &amp; river journey</h3><p>Meet your local team, transfer to the harbour, board your klotok and begin cruising into the rainforest. Settle in and enjoy the river scenery.</p></article>
+<article class="package-day"><div class="package-day-index">Day 02 · Rainforest</div><h3>Orangutan habitat &amp; forest</h3><p>Visit designated orangutan observation areas, with time to learn about the forest and its wildlife. Return to the boat for an evening surrounded by nature.</p></article>
+<article class="package-day"><div class="package-day-index">Day 03 · Departure</div><h3>Morning on the river</h3><p>Enjoy the quiet atmosphere of the river before returning to the harbour for your onward transfer.</p></article>
+</div>
+<p class="package-note">Wildlife sightings are never guaranteed. Visits follow park regulations and the guidance of local guides and park staff. This is a sample outline; final details are confirmed with your trip plan.</p>
+<div class="what-to-bring"><h3><span aria-hidden="true">✧</span>What to Bring</h3><div class="bring-list">
+<span class="bring-item"><span class="bring-symbol" aria-hidden="true">✧</span>Light, breathable clothing</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">◇</span>Comfortable shoes or sandals with grip</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">⌁</span>Light rain jacket</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">☼</span>Hat and sun protection</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">❧</span>Insect repellent</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">◌</span>Personal medication</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">◎</span>Camera or binoculars (optional)</span>
+</div></div>
+<a class="back-to-packages" href="#packages">↑ Back to packages</a>
+</div></section>
+
+<section class="package-itinerary" id="itinerary-4d3n" aria-labelledby="title-4d3n"><div class="package-inner">
+<header class="package-heading"><div class="eyebrow">Section 02 · 4 days · 3 nights</div><h2 id="title-4d3n">Wildlife Experience</h2><p>More time to slow down in the rainforest, observe wildlife patiently and explore further at a pace shaped by the river and park conditions.</p></header>
+<div class="package-day-grid">
+<article class="package-day"><div class="package-day-index">Day 01 · Arrival</div><h3>Arrival &amp; river journey</h3><p>Meet the local team, transfer to the harbour and board your klotok. Begin the river journey and settle into the rainforest surroundings.</p></article>
+<article class="package-day"><div class="package-day-index">Day 02 · Rainforest</div><h3>Orangutan habitat &amp; forest</h3><p>Visit designated orangutan observation areas and spend time learning about the forest and the wildlife that lives within it.</p></article>
+<article class="package-day"><div class="package-day-index">Day 03 · Deeper exploration</div><h3>Slow wildlife observation</h3><p>Allow more time for patient wildlife watching and deeper exploration of the rainforest, following the route and activities available during your visit.</p></article>
+<article class="package-day"><div class="package-day-index">Day 04 · Departure</div><h3>Morning on the river</h3><p>Enjoy a final quiet stretch on the river before returning to the harbour for your onward transfer.</p></article>
+</div>
+<p class="package-note">This is a sample 4D3N outline, not a fixed daily route. Stops and activities are adjusted to park regulations, weather, river conditions and guidance from the local team. Wildlife sightings are never guaranteed.</p>
+<div class="what-to-bring"><h3><span aria-hidden="true">✧</span>What to Bring</h3><div class="bring-list">
+<span class="bring-item"><span class="bring-symbol" aria-hidden="true">✧</span>Light, quick-drying clothing for the trip</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">◇</span>Comfortable shoes or sandals with grip</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">⌁</span>Light rain jacket</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">☼</span>Hat and sun protection</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">❧</span>Insect repellent</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">▱</span>Refillable water bottle and small day bag</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">◌</span>Personal medication and toiletries</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">◎</span>Camera, spare battery or binoculars (optional)</span>
+</div></div>
+<a class="back-to-packages" href="#packages">↑ Back to packages</a>
+</div></section>
+
+<section class="package-itinerary" id="itinerary-5d4n" aria-labelledby="title-5d4n"><div class="package-inner">
+<header class="package-heading"><div class="eyebrow">Section 03 · 5 days · 4 nights</div><h2 id="title-5d4n">Wildlife Moments</h2><p>An unhurried journey with more time along the river, patient wildlife watching and space to appreciate the smaller moments in the forest.</p></header>
+<div class="package-day-grid">
+<article class="package-day"><div class="package-day-index">Day 01 · Arrival</div><h3>Arrival &amp; river journey</h3><p>Meet your local team, transfer to the harbour and board your klotok. Begin cruising into the rainforest and settle in for the journey.</p></article>
+<article class="package-day"><div class="package-day-index">Day 02 · Rainforest</div><h3>Orangutan habitat &amp; forest</h3><p>Visit designated orangutan observation areas and learn about the rainforest and its wildlife with your local guide.</p></article>
+<article class="package-day"><div class="package-day-index">Day 03 · Wildlife moments</div><h3>Patient wildlife watching</h3><p>Set aside time for slower observation along the river and in suitable forest areas, allowing the natural pace of the rainforest to guide the day.</p></article>
+<article class="package-day"><div class="package-day-index">Day 04 · Deeper exploration</div><h3>Small moments in the forest</h3><p>Continue exploring at an unhurried pace, with more time to appreciate the river, rainforest landscapes and wildlife encountered along the way.</p></article>
+<article class="package-day"><div class="package-day-index">Day 05 · Departure</div><h3>Morning on the river</h3><p>Enjoy the quiet atmosphere of the river before returning to the harbour for your onward transfer.</p></article>
+</div>
+<p class="package-note">This is a sample 5D4N outline. The order of activities, stops and time in each area will be confirmed with your trip plan and may change with park regulations, weather and river conditions. Wildlife sightings are never guaranteed.</p>
+<div class="what-to-bring"><h3><span aria-hidden="true">✧</span>What to Bring</h3><div class="bring-list">
+<span class="bring-item"><span class="bring-symbol" aria-hidden="true">✧</span>Light clothing and extra changes for 4 nights</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">◇</span>Comfortable shoes or sandals with grip</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">⌁</span>Light rain jacket and a small dry bag</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">☼</span>Hat and sun protection</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">❧</span>Insect repellent</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">▱</span>Refillable bottle and compact day bag</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">◌</span>Personal medication and toiletries</span><span class="bring-item"><span class="bring-symbol" aria-hidden="true">◎</span>Camera, spare memory card or binoculars (optional)</span>
+</div></div>
+<a class="back-to-packages" href="#packages">↑ Back to packages</a>
+</div></section>
+
+<section class="final-cta next-page-cta"><div class="wrap cta-inner">
+<div><div class="eyebrow">NEXT · FIELD NOTES</div><h2>The journey continues.</h2><p>See the wildlife, river and rainforest through our lens.</p></div>
+<div class="next-page-actions"><a class="cta-button" href="gallery.html">Discover the Gallery <span aria-hidden="true">↗</span></a><a class="cta-secondary" href="https://wa.me/6285190836669?text=Hello%20Borneo%20Wild%20Capture%2C%20I%27d%20like%20to%20plan%20a%20Tanjung%20Puting%20expedition." target="_blank" rel="noopener noreferrer">Plan your trip on WhatsApp ↗</a></div>
+</div></section>
 </main>
 <footer class="footer"><div class="wrap footer-row"><a class="footer-brand" href="index.html">BORNEO WILD CAPTURE</a><div class="footer-links"><a href="index.html">Home</a><a href="how-to-get-here.html">How to Get Here</a><a href="gallery.html">Gallery</a><a href="https://instagram.com/borneowildcapture" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="mailto:orangutantrip6@gmail.com">Email</a></div><span>© 2026 Borneo Wild Capture · Tanjung Puting National Park</span></div></footer>
 <script src="assets/site.js" defer></script>
