@@ -11,3 +11,11 @@
 .button-light{background:linear-gradient(135deg,#e0e8e2,#c6d3ca);border-color:#d5e0d8}
 .button-light:hover{background:#edf2ee}
 .button-dark:hover{border-color:#b7c5bb}
+
+/* Final neutral-sage pass: eliminate leftover gold/yellow accents */
+.nav-cta{border-color:#82968a}
+.nav-cta:hover{background:#294737}
+.eyebrow{color:#c4d4c9}
+.button-dark{border-color:#879b8d}
+.button-dark:hover{border-color:#b7c5bb}
+.hero-bg{filter:saturate(.78) hue-rotate(9deg)}
