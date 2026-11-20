@@ -1,0 +1,176 @@
+:root{--forest:#10251e;--forest2:#1b382c;--cream:#f3f0e8;--sand:#c7b18a;--ink:#17231d;--muted:#737a70}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}.header{height:86px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:var(--cream);position:relative;z-index:5}.brand{display:flex;align-items:center;gap:12px;font-size:11px;font-weight:700;letter-spacing:1.8px}.monogram{width:43px;height:43px;border:1px solid #9a9e8e;border-radius:50%;display:grid;place-items:center;font:15px "Playfair Display",serif;letter-spacing:-2px}.monogram span{color:#9a8057}.brand small{display:block;font-size:8px;font-weight:500;letter-spacing:1.4px;color:#7b8176;margin-top:5px}.nav{display:flex;align-items:center;gap:30px;font-size:12px;font-weight:600}.nav a:not(.nav-cta):hover,.footer a:hover{color:#a08352}.nav-cta{background:var(--forest);color:#f5efdf;padding:14px 21px;border:1px solid #9b8155;border-radius:2px;font-size:10px;letter-spacing:1.1px;text-transform:uppercase;transition:.25s}.nav-cta:hover{background:#294737;color:#fff;transform:translateY(-2px)}.menu{display:none;border:0;background:none;font-size:24px;color:var(--forest)}.hero{height:min(730px,82vh);min-height:590px;position:relative;color:white;display:flex;align-items:center;overflow:hidden;background:#263c2e}.hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,22,16,.84),rgba(7,22,16,.38) 58%,rgba(7,22,16,.12)),url("images/orangutan-portrait.webp") center 48%/cover}.hero-content{position:relative;z-index:1;margin-left:11%;max-width:660px;padding:50px 24px}.eyebrow{font-size:10px;letter-spacing:2.5px;font-weight:700;color:#c7b18a}.eyebrow.dark{color:#927a51}.hero h1,.closing h2{font:500 clamp(55px,7vw,91px)/1.06 "Playfair Display",serif;letter-spacing:-2px;margin:28px 0}.hero h1 em,.section h2 em,.closing h2 em{color:var(--sand);font-weight:500}.hero-text{max-width:440px;color:#e1e2d9;font-size:14px;line-height:1.9;margin-bottom:30px}.button{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:52px;padding:0 25px;border:1px solid transparent;border-radius:3px;font-size:10px;font-weight:700;letter-spacing:1.35px;text-transform:uppercase;transition:background .25s ease,color .25s ease,border-color .25s ease,transform .25s ease,box-shadow .25s ease;box-shadow:0 7px 20px rgba(8,24,16,.12)}.button span{font-size:15px;transition:transform .25s ease}.button:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(8,24,16,.2)}.button:hover span{transform:translate(3px,-2px)}.button-light{background:linear-gradient(135deg,#e7d8b8,#c9b184);color:#14291f;border-color:#e8d9b8}.button-light:hover{background:#f3ead7}.button-dark{background:linear-gradient(135deg,#203e30,#10251e);color:#f6f0e4;border-color:#9b8155}.button-dark:hover{background:#2b4a39;border-color:#c7b18a}.hero-meta{position:absolute;bottom:25px;left:7%;right:7%;display:flex;justify-content:space-between;font-size:9px;letter-spacing:1.8px;color:#d5d7ce}.section{padding:110px 11%}.intro{padding-top:105px;padding-bottom:115px}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:start;margin-top:35px}.section h2{font:500 clamp(38px,4.5vw,59px)/1.16 "Playfair Display",serif;letter-spacing:-1px;margin:20px 0}.intro-grid p,.journey-copy p{font-size:14px;line-height:1.9}.lead{font-size:16px!important;line-height:1.85!important;color:#39483d}.muted{color:var(--muted)}.experience{background:#e9e6dc}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:42px}.section-heading>p{max-width:290px;color:var(--muted);font-size:13px;line-height:1.8}.cards{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:16px}.card{height:370px;position:relative;overflow:hidden;background:#9da58e}.card-large{height:420px}.card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s}.card:hover img{transform:scale(1.05)}.card>div{position:absolute;inset:0;padding:25px;display:flex;flex-direction:column;justify-content:end;color:white;background:linear-gradient(transparent,rgba(0,0,0,.65))}.card small{font-size:9px;letter-spacing:2px}.card h3{font:500 27px/1.2 "Playfair Display",serif;margin:12px 0 0}.journey{display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:center;background:#f7f5ef}.journey-image{height:570px;background:url("images/orangutan-in-rainforest.webp") center/cover}.journey-copy h2{margin:22px 0}.journey-copy>p{color:#5f695f}.journey-copy ul{list-style:none;padding:0;margin:28px 0}.journey-copy li{padding:14px 0;border-bottom:1px solid #d8d8ce;font-size:12px;font-weight:600}.journey-copy li:before{content:"✳";color:#9a8057;margin-right:18px}.gallery{background:var(--forest);color:#f3f0e8}.gallery .section-heading>p,.gallery-note{color:#b8c0b4}.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;height:auto}.gallery-grid img{width:100%;height:240px;object-fit:cover;display:block}.gallery-note{font-size:10px;margin-top:18px}.closing{min-height:470px;display:grid;place-items:center;text-align:center;color:white;padding:75px 20px;background:linear-gradient(#10251edb,#10251edb),url("images/orangutan-in-rainforest.webp") center/cover}.closing h2{font-size:clamp(46px,6vw,72px);margin:25px 0}.closing>div>p:not(.eyebrow){font-size:13px;color:#e0e4dc;margin:0 0 25px}.footer{padding:40px 7%;display:flex;align-items:center;justify-content:space-between;gap:25px;flex-wrap:wrap;background:#0b1b15;color:#e9e9df}.footer-brand{color:white}.footer-brand small{color:#aab2a7}.footer-links{display:flex;gap:24px;font-size:11px}.footer>p{width:100%;margin:12px 0 0;padding-top:19px;border-top:1px solid #34443a;color:#aab2a7;font-size:10px}@media(max-width:800px){.header{height:74px;padding:0 6%}.menu{display:block}.nav{display:none;position:absolute;top:74px;left:0;right:0;padding:25px 7%;background:var(--cream);flex-direction:column;align-items:stretch;gap:22px;box-shadow:0 12px 18px #0001}.nav.open{display:flex}.nav-cta{text-align:center}.hero{min-height:610px;height:78vh}.hero-content{margin-left:3%;padding:30px 22px}.hero h1{font-size:60px}.section{padding:78px 7%}.intro-grid,.journey{grid-template-columns:1fr;gap:25px}.section-heading{display:block}.section-heading>p{margin-top:20px}.cards{grid-template-columns:1fr 1fr}.card,.card-large{height:310px}.card:first-child{grid-column:span 2;height:350px}.journey-image{height:360px;order:2}.journey-copy{order:1}.gallery-grid{height:220px;gap:8px}.footer{padding:35px 7%}.footer-links{width:100%;flex-wrap:wrap}}@media(max-width:480px){.brand{font-size:9px;letter-spacing:1.3px}.brand small{font-size:7px}.monogram{width:38px;height:38px}.hero h1{font-size:52px}.hero-text{font-size:13px}.hero-meta{font-size:7px}.cards{grid-template-columns:1fr}.card:first-child{grid-column:auto}.card,.card-large{height:320px}.gallery-grid{grid-template-columns:1fr 1fr;height:auto}.gallery-grid img{height:180px}.gallery-grid img:last-child{display:block}.footer-links{gap:17px;font-size:10px}}
+/* Cooler, more natural tone for the homepage hero image */
+.hero-bg{filter:saturate(.82) hue-rotate(7deg);}
+
+/* Remove remaining yellow/gold cast across the interface */
+:root{--cream:#eef1ed;--sand:#b7c5bb}
+.monogram span,.nav a:not(.nav-cta):hover,.footer a:hover,.eyebrow.dark,.journey-copy li:before{color:#91a99a}
+.eyebrow{color:#c4d4c9}
+.monogram{border-color:#9aa99e}
+.nav-cta,.button-dark{border-color:#879b8d}
+.button-light{background:linear-gradient(135deg,#e0e8e2,#c6d3ca);border-color:#d5e0d8}
+.button-light:hover{background:#edf2ee}
+.button-dark:hover{border-color:#b7c5bb}
+
+/* Final neutral-sage pass: eliminate leftover gold/yellow accents */
+.nav-cta{border-color:#82968a}
+.nav-cta:hover{background:#294737}
+.eyebrow{color:#c4d4c9}
+.button-dark{border-color:#879b8d}
+.button-dark:hover{border-color:#b7c5bb}
+.hero-bg{filter:saturate(.78) hue-rotate(9deg)}
+
+/* Multi-page layout and home inquiry form */
+.nav a[aria-current="page"]{color:#9a8057}
+.home-hero{height:min(780px,88vh);min-height:640px}
+.home-hero .hero-bg{background-image:linear-gradient(90deg,rgba(7,22,16,.72),rgba(7,22,16,.24) 62%,rgba(7,22,16,.08)),url("images/DSCF7031.jpg");background-position:center 42%;filter:none}
+.home-hero h1{font-size:clamp(54px,8vw,104px);letter-spacing:1px}
+.home-intro{background:#f7f5ef}
+.inquiry{display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:start;background:#e9e6dc}
+.inquiry-form{display:grid;gap:18px}
+.inquiry-form label{display:grid;gap:8px;font-size:11px;font-weight:700;letter-spacing:.5px}
+.inquiry-form input,.inquiry-form textarea{width:100%;border:1px solid #c9cec5;background:#f8f8f3;padding:14px 15px;border-radius:2px;font:13px "DM Sans",sans-serif;color:#17231d;resize:vertical}
+.inquiry-form input:focus,.inquiry-form textarea:focus{outline:2px solid #91a99a;outline-offset:1px}
+.form-note{font-size:10px;color:#737a70;line-height:1.6;margin:0}
+.page-hero{min-height:390px;padding:100px 11%;display:flex;flex-direction:column;justify-content:center;color:#fff;background:linear-gradient(90deg,rgba(7,22,16,.85),rgba(7,22,16,.45)),url("images/orangutan-in-rainforest.webp") center/cover}
+.page-hero h1{font:500 clamp(48px,7vw,82px)/1.08 "Playfair Display",serif;margin:20px 0;letter-spacing:-1px}
+.page-hero h1 em{color:var(--sand);font-weight:500}
+.page-hero>p:last-child{max-width:540px;font-size:14px;line-height:1.8;color:#e1e5df}
+.page-content{background:#f7f5ef}
+.feature-strip{background:#e9e6dc}
+.feature-strip h2{font:500 38px "Playfair Display",serif;margin:0 0 35px}
+.full-gallery{grid-template-columns:repeat(3,1fr);gap:14px}
+.full-gallery img{height:300px}
+.wildlife-cards{grid-template-columns:repeat(3,1fr)}
+.wildlife-cards .card{height:340px}
+.contact-actions{display:flex;flex-direction:column;align-items:flex-start;gap:18px}
+.contact-actions>a:last-child{font-size:12px;color:#526458}
+@media(max-width:800px){.inquiry{grid-template-columns:1fr;gap:32px}.page-hero{padding:80px 7%;min-height:340px}.full-gallery{grid-template-columns:repeat(2,1fr)}.full-gallery img{height:210px}.wildlife-cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.home-hero{min-height:620px}.home-hero h1{font-size:52px}.full-gallery img{height:175px}.wildlife-cards{grid-template-columns:1fr}.wildlife-cards .card{height:300px}}
+
+/* BWC refinement: compact monogram and consistent cool-sage palette */
+.monogram{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:0;
+  width:46px;
+  height:46px;
+  flex:0 0 46px;
+  font:600 13px/1 "Playfair Display",serif;
+  letter-spacing:-1.1px;
+  white-space:nowrap;
+  color:#e8eee9;
+  border:1px solid #91a99a;
+  border-radius:50%;
+}
+.monogram span{color:#b7c5bb}
+.nav a[aria-current="page"]{color:#91a99a}
+.nav a:not(.nav-cta):hover,.footer a:hover{color:#91a99a}
+.home-intro{background:#eef1ed}
+.inquiry{background:#e3e9e4}
+.inquiry-form input,.inquiry-form textarea{background:#f7f9f7;border-color:#c7d1c9}
+.inquiry-form input:focus,.inquiry-form textarea:focus{outline-color:#91a99a}
+.form-note{color:#68766d}
+.page-hero h1 em{color:#b7c5bb}
+
+
+
+/* HOMEPAGE HERO — layout matched to the supplied orangutan reference */
+body:has(.home-hero) .header{display:none}
+.home-hero{
+  position:relative;display:block;width:100%;height:100svh;
+  min-height:680px;max-height:none;padding:0;overflow:hidden;
+  isolation:isolate;background:#160b07;color:#fff;
+}
+.home-hero .hero-bg{
+  position:absolute;inset:0;z-index:0;
+  background-image:
+    linear-gradient(90deg,rgba(13,5,3,.42) 0%,rgba(13,5,3,.18) 68%,rgba(13,5,3,.08) 100%),
+    linear-gradient(0deg,rgba(13,5,3,.46) 0%,transparent 38%,rgba(13,5,3,.14) 100%),
+    url("images/DSCF7031.jpg");
+  background-size:cover;
+  background-position:center 58%;
+  filter:none;
+}
+.home-hero .hero-location{
+  position:absolute;top:4.7%;left:3%;transform:none;
+  z-index:2;width:94%;max-width:none;margin:0;
+  display:flex;align-items:center;justify-content:center;gap:16px;
+  color:rgba(255,255,255,.96);text-align:center;white-space:nowrap;
+  font-size:clamp(9px,2.1vw,12px);font-weight:500;
+  letter-spacing:.32em;line-height:1.3;
+}
+.home-hero .hero-location:before,
+.home-hero .hero-location:after{
+  content:"";display:block;position:static;flex:1 1 auto;
+  width:auto;max-width:clamp(32px,13vw,100px);min-width:16px;
+  height:1px;background:rgba(255,255,255,.78);
+}
+.home-hero .hero-content{
+  position:absolute;z-index:2;top:31.5%;left:8.5%;
+  width:83%;max-width:620px;margin:0;padding:0;
+  display:flex;flex-direction:column;align-items:flex-start;
+}
+.home-hero h1{
+  margin:0 0 27px;color:#fff;
+  font:500 clamp(28px,6.2vw,54px)/1.34 "Playfair Display",serif;
+  letter-spacing:0;text-wrap:initial;
+}
+.home-hero h1 em{font-style:italic;color:#fff;font-weight:500}
+.home-hero .hero-text{
+  width:73%;max-width:440px;margin:0;
+  color:rgba(255,255,255,.95);
+  font-size:clamp(13px,2.9vw,17px);line-height:1.62;font-weight:400;
+}
+.home-hero > .button-light{
+  position:absolute;z-index:3;left:3%;bottom:4.5%;
+  width:94%;max-width:none;min-height:36px;margin:0;
+  padding:0 42px 0 12px;display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(255,255,255,.9);border-radius:2px;
+  background:rgba(12,7,5,.12);color:#fff;box-shadow:none;
+  font-size:clamp(9px,2vw,11px);font-weight:500;letter-spacing:.34em;
+}
+.home-hero > .button-light span{
+  position:absolute;right:16px;font-size:19px;line-height:1;
+}
+.home-hero > .button-light:hover{
+  background:rgba(255,255,255,.12);box-shadow:none;
+}
+.home-hero .hero-meta{display:none}
+@media(max-width:800px){
+  body:has(.home-hero) .header{display:none}
+  .home-hero{height:100svh;min-height:680px}
+  .home-hero .hero-bg{
+    background-size:auto 112%;
+    background-position:center 100%;
+  }
+  .home-hero .hero-location{
+    top:4.7%;gap:12px;font-size:clamp(8px,2.2vw,10px);
+    letter-spacing:.29em;
+  }
+  .home-hero .hero-location:before,
+  .home-hero .hero-location:after{max-width:clamp(28px,13vw,70px)}
+  .home-hero .hero-content{
+    top:31.5%;left:8.5%;width:83%;
+  }
+  .home-hero h1{
+    margin-bottom:25px;
+    font-size:clamp(28px,6.2vw,34px);line-height:1.34;
+  }
+  .home-hero .hero-text{
+    width:76%;font-size:clamp(12px,2.9vw,14px);
+    line-height:1.62;
+  }
+  .home-hero > .button-light{
+    left:3%;bottom:4.5%;width:94%;min-height:36px;
+    font-size:clamp(8px,2vw,10px);letter-spacing:.31em;
+  }
+}
+@media(max-width:380px){
+  .home-hero .hero-location{gap:8px;letter-spacing:.22em}
+  .home-hero .hero-content{top:30.5%;left:8%;width:84%}
+  .home-hero h1{font-size:27px;line-height:1.32;margin-bottom:22px}
+  .home-hero .hero-text{width:82%;font-size:12px}
+  .home-hero > .button-light{bottom:4%;letter-spacing:.24em}
+}

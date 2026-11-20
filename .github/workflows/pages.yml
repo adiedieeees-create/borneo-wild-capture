@@ -25,9 +25,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Prepare site files
         run: |
-          mkdir -p site/assets
-          cp index.html itinerary.html how-to-get-here.html site/
-          cp -R assets/. site/assets/
+          mkdir -p site
+          rsync -a --exclude=".git" --exclude=".github" --exclude="site" --exclude="*.zip" --exclude="README.txt" --exclude="QA_REPORT.txt" ./ site/
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site

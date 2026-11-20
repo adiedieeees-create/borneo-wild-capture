@@ -1,139 +1,93 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Explore Tanjung Puting National Park with Borneo Wild Capture. Orangutan encounters, rainforest journeys and klotok river expeditions in Indonesian Borneo." name="description"/>
-<meta content="#172a22" name="theme-color"/><title>Borneo Wild Capture | Tanjung Puting Expeditions</title>
-<style>
-:root{--forest:#172a22;--deep:#0e1d18;--moss:#526b4c;--cream:#f4f0e6;--sand:#dfd2b8;--ink:#202820;--muted:#687267}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,90%);margin:auto}.topbar{position:absolute;z-index:3;top:0;left:0;right:0;color:white;border-bottom:1px solid #ffffff35}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0}.brand{font-family:Georgia,serif;font-size:20px;letter-spacing:.08em;font-weight:bold}.navlinks{display:flex;gap:24px;font-size:13px}.navlinks a{position:relative;padding:7px 0;letter-spacing:.04em}.navlinks a:after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--sand);transition:width .2s ease}.navlinks a:hover{color:var(--sand)}.navlinks a:hover:after{width:100%}.menu{display:none}.hero{min-height:700px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,#07150fe8 0%,#10231bb8 48%,#10231b25 100%),url('assets/orangutan-cover.webp') center 42%/cover}.hero-content{padding:150px 0 95px;max-width:720px}.eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:#b7c5a9;font-weight:bold}.hero h1{font:clamp(48px,8vw,88px)/.98 Georgia,serif;margin:20px 0}.hero p{font-size:18px;max-width:590px;color:#e5e8df}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 23px;min-height:48px;border:1px solid #c9b58f;border-radius:999px;background:linear-gradient(135deg,#e5d7bd,#cdb991);color:#172a22;font-weight:600;font-size:11px;letter-spacing:.13em;text-transform:uppercase;box-shadow:0 5px 16px #101b1420;transition:transform .22s ease,box-shadow .22s ease,background .22s ease,border-color .22s ease}.btn:hover{transform:translateY(-2px);box-shadow:0 9px 22px #101b1430;background:linear-gradient(135deg,#f0e5d1,#d9c7a5);border-color:#e7d8b9}.btn:focus-visible{outline:2px solid #d9c7a5;outline-offset:4px}.btn.outline{border:1px solid #ffffff80;background:#ffffff0b;color:white;box-shadow:none;backdrop-filter:blur(5px)}.btn.outline:hover{background:#ffffff1b;border-color:#e6d6b5;box-shadow:0 8px 20px #0002}.section{padding:88px 0}.section.dark{background:var(--forest);color:white}.section h2{font:clamp(34px,5vw,52px)/1.08 Georgia,serif;margin:10px 0 18px}.lead{max-width:700px;color:var(--muted);font-size:17px}.dark .lead{color:#d1d9d0}.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}.intro-photo{min-height:420px;background:url('assets/bird-nest.webp') center/cover}.packages{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}.package{background:#fff;display:flex;flex-direction:column}.package .pic{height:210px;background-size:cover;background-position:center}.package:nth-child(1) .pic{background-image:url('assets/orangutan-cover.webp')}.package:nth-child(2) .pic{background-image:url('assets/water-monitor.webp')}.package:nth-child(3) .pic{background-image:url('assets/young-orangutan.webp')}.package-body{padding:25px;display:flex;flex-direction:column;flex:1}.tag{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--moss);font-weight:bold}.package h3{font:27px/1.1 Georgia,serif;margin:10px 0}.package p{font-size:14px;color:#5f695f}.package .btn{margin-top:auto;align-self:flex-start}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:55px}.day{padding:18px 0;border-bottom:1px solid #ffffff30}.day b{color:#d9c7a5;display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase}.day p{margin:5px 0 0;color:#e0e5dc}.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:32px}.gallery img{width:100%;height:220px;object-fit:cover;display:block}.gallery .wide{grid-column:span 2}.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:35px}.info-card{background:#fff;padding:30px}.info-card h3{font:28px Georgia,serif;margin:0 0 12px}.info-card ul{padding-left:20px;color:#586358}.note{font-size:12px;color:#8a9388;margin-top:18px}.cta{background:#d9c7a5;color:var(--forest);padding:65px 0}.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{font:clamp(32px,4vw,48px) Georgia,serif;margin:0}.cta .btn{background:var(--forest);color:white}.contact{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.contact .btn{background:#d9c7a5}.contact .btn.alt{background:transparent;border:1px solid #ffffff75;color:white}.footer{background:var(--deep);color:#cbd3c9;padding:30px 0;font-size:12px}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:760px){.navlinks{display:none}.menu{display:block;font-size:12px}.hero{min-height:650px;background-position:58% center}.intro-grid,.two-col,.info-grid{grid-template-columns:1fr;gap:28px}.intro-photo{min-height:280px}.packages{grid-template-columns:1fr}.package .pic{height:230px}.section{padding:65px 0}.cta-inner{display:block}.cta .btn{margin-top:20px}.hero-content{padding-top:145px}.gallery{grid-template-columns:repeat(2,1fr)}.gallery img{height:170px}}
-
-.mobile-page-link{display:none}
-@media(max-width:760px){.mobile-page-link{display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;margin-left:auto;border:1px solid #d9c7a5;color:#f4ead6;font-size:10px;font-weight:700;letter-spacing:.08em;white-space:nowrap}.nav{gap:10px;flex-wrap:wrap}.menu{display:block;font-size:10px;white-space:nowrap}}
-
-/* Borneo Wild Capture — cover identity and responsive navigation refinements */
-:root{--forest:#14272e;--deep:#0c1d23;--moss:#5d7679;--cream:#f4f0e8;--sand:#d8c49d;--ink:#1b2b31;--muted:#647579;--cover-ink:#160d09;--cover-rust:#8a4427;--cover-copper:#c27b50;--cover-ivory:#f4eadc;--cover-muted:#d7c5b4}
-.topbar{z-index:20}
-.nav{position:relative;min-height:84px;gap:24px}
-.brand{display:inline-flex;align-items:center;gap:11px;flex-shrink:0;font-family:Georgia,serif;font-size:23px;line-height:1.03;letter-spacing:.015em;font-weight:400;color:#fff}
-.brand-mark{width:37px;height:37px;display:block;fill:currentColor;flex:0 0 auto}
-.brand-name{display:flex;flex-direction:column;gap:4px}
-.brand-name span{font-family:Arial,Helvetica,sans-serif;font-size:8px;letter-spacing:.29em;font-weight:700}
-.navlinks{align-items:center;gap:clamp(12px,1.55vw,24px);font-size:11px;text-transform:uppercase;letter-spacing:.10em}
-.navlinks a{white-space:nowrap}
-.header-cta{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border:1px solid rgba(244,234,220,.82);color:#fff;font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}
-.header-cta:hover{background:#f4eadc;color:#1a0f0a;border-color:#f4eadc}
-.menu-toggle{display:none;appearance:none;background:transparent;border:0;padding:10px;width:44px;height:44px;cursor:pointer;color:#fff}
-.menu-toggle span{display:block;height:2px;width:23px;background:currentColor;margin:5px auto;transition:transform .2s,opacity .2s}
-.nav-book{display:none}
-.hero{position:relative;min-height:clamp(700px,100svh,980px);min-height:clamp(700px,100vh,980px);align-items:center;background-color:#160d09;background-image:linear-gradient(90deg,rgba(17,8,5,.82) 0%,rgba(24,11,6,.51) 42%,rgba(24,11,6,.12) 100%),linear-gradient(0deg,rgba(17,8,5,.36),transparent 55%),url('assets/orangutan-cover.webp');background-position:center,center,58% 42%;background-size:cover;background-repeat:no-repeat}
-.hero-content{width:min(1120px,90%);max-width:760px;padding:165px 0 110px}
-.hero .eyebrow{color:#f2d9c5;letter-spacing:.30em;font-size:10px}
-.hero h1{display:flex;flex-direction:column;align-items:flex-start;gap:0;margin:30px 0 24px;color:#fff;font:clamp(58px,7vw,100px)/.91 Georgia,'Times New Roman',serif;letter-spacing:-.035em;text-transform:uppercase;text-shadow:0 5px 30px rgba(0,0,0,.2)}
-.hero h1 span,.hero h1 em{display:block}
-.hero h1 em{font-weight:400;font-style:italic;letter-spacing:-.045em}
-.hero p{max-width:525px;color:#f0e7dd;font-size:16px;line-height:1.8}
-.hero .actions{margin-top:30px;gap:13px}
-.hero .btn{min-height:54px;border-radius:2px;padding:15px 24px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.84);box-shadow:none;font-size:10px;letter-spacing:.25em;font-weight:600}
-.hero .btn:hover{transform:translateY(-2px);background:#f4eadc;color:#1a0f0a;border-color:#f4eadc;box-shadow:0 8px 24px rgba(0,0,0,.22)}
-.hero .btn.outline{background:rgba(20,10,6,.14);color:#fff;border-color:rgba(255,255,255,.55)}
-.hero .btn.outline:hover{background:#f4eadc;color:#1a0f0a;border-color:#f4eadc}
-.btn:focus-visible,.header-cta:focus-visible,.navlinks a:focus-visible,.menu-toggle:focus-visible{outline:2px solid #f2d9a9;outline-offset:4px}
-.section h2,.section h3{font-family:Georgia,'Times New Roman',serif}
-.section:not(.dark) .eyebrow{color:#7b887f}.section.dark .eyebrow{color:#e5d6b8}
-.gallery img{display:block;width:100%;object-fit:cover}
-@media(max-width:980px){.nav{gap:14px}.navlinks{gap:11px;font-size:9px}.header-cta{padding:10px 12px;font-size:9px}}
-@media(max-width:760px){
- .topbar{background:linear-gradient(180deg,rgba(17,8,5,.62),rgba(17,8,5,0));border-bottom:0}
- .nav{min-height:76px;padding:15px 0;align-items:center;flex-direction:row;flex-wrap:nowrap;gap:12px}
- .brand{font-size:19px;gap:8px}.brand-mark{width:34px;height:34px}.brand-name span{font-size:7px;letter-spacing:.25em}
- .menu-toggle{display:block;margin-left:auto;flex-shrink:0}
- .header-cta{display:none}
- .navlinks{display:none;position:absolute;top:calc(100% - 1px);left:0;right:0;width:100%;padding:18px 20px 20px;background:rgba(22,13,9,.97);border:1px solid rgba(228,195,166,.28);box-shadow:0 18px 35px rgba(0,0,0,.24);flex-direction:column;align-items:stretch;gap:0;font-size:11px;letter-spacing:.14em;z-index:30}
- .navlinks.is-open{display:flex;max-height:calc(100svh - 92px);overflow-y:auto}
- .navlinks a{padding:13px 3px;border-bottom:1px solid rgba(255,255,255,.1)}
- .navlinks a:last-child{border-bottom:0}
- .nav-book{display:block;color:#f0cfaa;font-weight:700}
- .menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
- .menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
- .menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
- .hero{min-height:100svh;min-height:100vh;background-image:linear-gradient(90deg,rgba(15,7,4,.68),rgba(19,9,5,.25) 68%,rgba(19,9,5,.14)),linear-gradient(0deg,rgba(15,7,4,.45),transparent 62%),url('assets/orangutan-cover.webp');background-position:center,center,57% center}
- .hero-content{padding:165px 0 74px;max-width:620px;display:flex;flex-direction:column;justify-content:center;min-height:100svh;min-height:100vh}
- .hero .eyebrow{text-align:center;align-self:center;font-size:9px;letter-spacing:.26em;margin-bottom:clamp(95px,17vh,155px);white-space:nowrap}
- .hero h1{font-size:clamp(47px,12.2vw,70px);line-height:.91;margin:0 0 23px;gap:1px;max-width:100%;letter-spacing:-.045em}
- .hero h1 em{font-size:1.04em}
- .hero p{max-width:390px;font-size:14px;line-height:1.7;margin:0}
- .hero .actions{margin-top:27px;display:flex;flex-direction:column;align-items:stretch;max-width:100%}
- .hero .btn{width:100%;justify-content:space-between;min-height:54px;padding:15px 18px;font-size:10px;letter-spacing:.22em}
- .hero .btn.outline{display:none}
- .section{scroll-margin-top:18px}
-}
-@media(max-width:380px){.brand{font-size:17px}.hero .eyebrow{font-size:8px;letter-spacing:.2em}.hero h1{font-size:46px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
-
-
-/* Accessible full-size wildlife gallery */
-.gallery-open{position:relative;display:block;width:100%;height:220px;padding:0;overflow:hidden;border:0;border-radius:1px;background:#14272e;cursor:zoom-in;text-align:left}
-.gallery-open.wide{grid-column:span 2}
-.gallery-open img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .45s ease,opacity .25s ease}
-.gallery-open:hover img{transform:scale(1.045);opacity:.92}
-.gallery-open:focus-visible{outline:2px solid var(--sand);outline-offset:3px;z-index:1}
-.gallery-open::after{content:'VIEW PHOTO  ↗';position:absolute;right:12px;bottom:12px;padding:7px 9px;background:#10242bd9;color:#f4eadc;font:700 9px Arial,Helvetica,sans-serif;letter-spacing:.16em;opacity:0;transform:translateY(4px);transition:opacity .2s ease,transform .2s ease}
-.gallery-open:hover::after,.gallery-open:focus-visible::after{opacity:1;transform:translateY(0)}
-.photo-lightbox{width:min(94vw,1100px);max-width:94vw;max-height:92vh;padding:0;border:1px solid #d8c49d;background:#0c1d23;color:#f4eadc;box-shadow:0 25px 90px #0009}
-.photo-lightbox::backdrop{background:#061116e8;backdrop-filter:blur(5px)}
-.photo-lightbox[open]{display:grid;grid-template-rows:auto minmax(0,1fr) auto}
-.lightbox-top{display:flex;justify-content:flex-end;padding:10px 12px}
-.lightbox-close{width:40px;height:40px;border:1px solid #d8c49d;background:transparent;color:#f4eadc;font-size:23px;line-height:1;cursor:pointer}
-.lightbox-close:hover{background:#d8c49d;color:#14272e}
-.lightbox-image-wrap{display:grid;place-items:center;min-height:0;padding:0 16px}
-.lightbox-image{display:block;max-width:100%;max-height:76vh;width:auto;height:auto;object-fit:contain}
-.lightbox-caption{padding:14px 18px 18px;color:#e1d5bd;font:italic 17px Georgia,'Times New Roman',serif;text-align:center}
-@media(max-width:760px){.gallery-open{height:170px}.gallery-open::after{opacity:1;transform:none;font-size:8px;right:8px;bottom:8px}.photo-lightbox{width:96vw;max-width:96vw}.lightbox-image{max-height:72vh}.lightbox-caption{font-size:15px}}
-@media(prefers-reduced-motion:reduce){.gallery-open img,.gallery-open::after{transition:none}}
-
-</style></head><body>
-<header class="topbar">
-<div class="wrap nav">
-<a aria-label="Borneo Wild Capture home" class="brand" href="index.html#home"><svg aria-hidden="true" class="brand-mark" focusable="false" viewbox="0 0 42 42"><path d="M8 34c1.1-3.5 1.6-7.4 2.7-11.2.9-3 3.2-5.2 6.4-5.5-.4-4.8 2.3-8.4 6.4-8.4 2.9 0 5.5 1.9 6.1 4.7 3.5-.1 6.3 2.1 6.3 5.4 0 2.1-1.1 3.9-2.9 5.2l3.4 9.8h-7.1l-2.4-6.2-4.4 6.2h-6.2l-2.1-6.1-2.3 6.1H8Z"></path><circle cx="26" cy="15" fill="#17100d" r="1.1"></circle></svg><span class="brand-name">Borneo<span>WILD CAPTURE</span></span></a>
-<nav aria-label="Main navigation" class="navlinks" data-mobile-menu="" id="primary-navigation">
-<a class="active" aria-current="page" href="index.html#home">Home</a>
-<a href="#expeditions">Expeditions</a>
-<a href="itinerary.html">Itinerary</a>
-<a href="how-to-get-here.html">How to Get Here</a>
-<a href="#orangutans">Orangutans</a>
-<a href="#gallery">Gallery</a>
-<a href="#prepare">What to Bring</a>
-<a href="#contact">Contact</a>
-<a class="nav-book" href="#contact">Plan Your Journey ↗</a>
-</nav>
-<a class="header-cta" href="#contact">Plan Your Journey <span aria-hidden="true">↗</span></a>
-<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu" class="menu-toggle" data-menu-toggle="" type="button">
-<span></span><span></span><span></span>
-</button>
-</div>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10251e">
+<meta name="description" content="Explore Tanjung Puting National Park with Borneo Wild Capture. Private river journeys, rainforest wildlife and responsible orangutan encounters in Central Borneo, Indonesia.">
+<title>Borneo Wild Capture — Into the Wild Heart of Borneo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<a class="brand" href="index.html"><span class="monogram">B<span>W</span>C</span><span>BORNEO WILD CAPTURE<small>WILDLIFE · RIVER · RAINFOREST</small></span></a>
+<button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav class="nav"><a href="index.html">Home</a><a href="packages.html">Expedition</a><a href="how-to-get-here.html">How to Get Here</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a class="nav-cta" href="https://wa.me/6285190836669" target="_blank" rel="noopener">Book a Trip ↗</a></nav>
 </header>
 <main>
-<section class="hero" id="home"><div class="wrap hero-content"><div class="eyebrow">Tanjung Puting National Park · Indonesian Borneo</div><h1><span>Into the</span>
-<em>Wild</em>
-<em>Heart</em>
-<span>of Borneo.</span></h1><p>Journey along rainforest rivers, encounter the remarkable orangutans of Borneo, and discover the quiet beauty of one of Indonesia’s most extraordinary wilderness landscapes.</p><div class="actions"><a class="btn" href="#expeditions">EXPLORE EXPEDITIONS</a><a class="btn outline" href="https://wa.me/6285190836669?text=Hello%20Borneo%20Wild%20Capture%2C%20I%27m%20interested%20in%20a%20Tanjung%20Puting%20trip." rel="noopener" target="_blank">PLAN YOUR TRIP ↗</a></div></div></section>
-<section class="section"><div class="wrap intro-grid"><div><div class="eyebrow">A journey shaped by nature</div><h2>More than a destination. A deeper connection.</h2><p class="lead">Travel by traditional klotok boat through the waterways of Tanjung Puting, where dense tropical forest meets the river. Take time to observe wildlife, learn about the rainforest, and experience Borneo with respect and curiosity.</p><p>Every expedition is an invitation to slow down: listen to the forest, look closely, and leave the smallest footprint possible.</p></div><div aria-label="A bird tending its nest in the rainforest" class="intro-photo" role="img"></div></div></section>
-<section class="section" id="expeditions" style="background:#e9e3d6"><div class="wrap"><div class="eyebrow">Choose your journey</div><h2>Three ways to explore Borneo.</h2><p class="lead">From a classic introduction to a longer wildlife-focused expedition, find the journey that matches your pace and curiosity.</p><div class="packages">
-<article class="package"><div class="pic"></div><div class="package-body"><div class="tag">3 Days · 2 Nights / Regular</div><h3>The Classic Tanjung Puting Journey</h3><p>A welcoming introduction to Tanjung Puting. Cruise the Sekonyer River aboard a traditional klotok, visit orangutan viewing areas according to park conditions, and enjoy the peaceful rhythm of the rainforest.</p><a class="btn" href="https://wa.me/6285190836669?text=Hello%2C%20please%20send%20me%20details%20for%20the%203D2N%20Classic%20Tanjung%20Puting%20Journey." rel="noopener" target="_blank">ASK ABOUT 3D2N ↗</a></div></article>
-<article class="package"><div class="pic"></div><div class="package-body"><div class="tag">4 Days · 3 Nights</div><h3>Wildlife Experience</h3><p>Spend more time immersed in the rainforest. This extended journey offers a slower pace for wildlife observation, deeper exploration, and a richer appreciation of Borneo’s diverse habitats.</p><a class="btn" href="https://wa.me/6285190836669?text=Hello%2C%20please%20send%20me%20details%20for%20the%204D3N%20Wildlife%20Experience." rel="noopener" target="_blank">ASK ABOUT 4D3N ↗</a></div></article>
-<article class="package"><div class="pic"></div><div class="package-body"><div class="tag">5 Days · 4 Nights</div><h3>Wildlife Moments</h3><p>For travellers who want more time in the field. Enjoy unhurried days on the river, patient wildlife watching, and opportunities to notice the small, extraordinary moments of the forest.</p><a class="btn" href="https://wa.me/6285190836669?text=Hello%2C%20please%20send%20me%20details%20for%20the%205D4N%20Wildlife%20Moments." rel="noopener" target="_blank">ASK ABOUT 5D4N ↗</a></div></article>
-</div><p class="note">All wildlife sightings are naturally unpredictable. Routes, stops and activities depend on park regulations, weather, river conditions and wildlife welfare. Package inclusions and availability are confirmed personally before booking.</p></div></section>
-<section class="section dark" id="itinerary"><div class="wrap two-col"><div><div class="eyebrow">A taste of the journey</div><h2>Along the Sekonyer River.</h2><p class="lead">A sample outline for the classic 3D2N journey. Your final itinerary will be confirmed with your trip details and current park conditions.</p></div><div><div class="day"><b>Day 1 · Arrival &amp; river journey</b><p>Meet your local team, transfer to the harbour, board your klotok and begin cruising into the rainforest. Settle in and enjoy the river scenery.</p></div><div class="day"><b>Day 2 · Orangutan habitat &amp; forest</b><p>Visit designated orangutan observation areas, with time to learn about the forest and its wildlife. Return to the boat for an evening surrounded by nature.</p></div><div class="day"><b>Day 3 · Morning on the river &amp; departure</b><p>Enjoy the quiet atmosphere of the river before returning to the harbour for your onward transfer.</p></div></div></div></section>
-<section class="section" id="orangutans"><div class="wrap intro-grid"><div><div class="eyebrow">Meet Borneo’s orangutans</div><h2>How to see orangutans in Borneo.</h2><p class="lead">Tanjung Puting is one of the best-known places to learn about orangutans in their natural rainforest environment.</p><p>Travel by klotok along the Sekonyer River with a knowledgeable local guide. Visits to permitted observation areas may offer opportunities to see orangutans and other wildlife. Sightings are never guaranteed: these are wild animals, living on their own terms.</p><p>Keep a respectful distance, stay quiet, never feed or touch wildlife, and follow your guide and park staff at all times. Responsible observation helps protect the animals and their habitat.</p></div><div aria-label="Orangutan in rainforest" class="intro-photo" role="img" style="background-image:url('assets/orangutan-cover.webp')"></div></div></section>
-<section class="section" id="gallery" style="background:var(--forest);color:white"><div class="wrap"><div class="eyebrow">Seen in the wild</div><h2>Moments from the rainforest.</h2><p class="lead">A selection of wildlife photographs from the Borneo Wild Capture collection.</p><div class="gallery">
-<img alt="A crocodile gliding through a dark river in Tanjung Puting" class="wide" decoding="async" loading="lazy" src="assets/crocodile-river.webp"/><img alt="Young orangutan in the forest" decoding="async" loading="lazy" src="assets/young-orangutan.webp"/><img alt="Orangutan among rainforest foliage" decoding="async" loading="lazy" src="assets/orangutan-cover.webp"/><img alt="Green snake among leaves" decoding="async" loading="lazy" src="assets/green-snake.webp"/><img alt="Water monitor at the river edge" decoding="async" loading="lazy" src="assets/water-monitor.webp"/><img alt="Macaques in forest" decoding="async" loading="lazy" src="assets/macaques.webp"/><img alt="A Bornean orangutan sitting among rainforest foliage" decoding="async" loading="lazy" src="assets/orangutan-in-rainforest.webp"/><img alt="Bird tending its nest" decoding="async" loading="lazy" src="assets/bird-nest.webp"/><img alt="Two birds at a tree cavity" decoding="async" loading="lazy" src="assets/birds-tree-cavity.webp"/>
-</div><p class="note" style="color:#bdc8bc">Wildlife photography: Borneo Wild Capture. Species and sightings vary by location and season.</p></div></section>
-<section class="section" id="prepare" style="background:#e9e3d6"><div class="wrap"><div class="eyebrow">Prepare for the rainforest</div><h2>What to bring.</h2><div class="info-grid"><div class="info-card"><h3>Essentials</h3><ul><li>Lightweight, breathable clothing</li><li>Comfortable walking shoes or sandals with grip</li><li>Rain jacket or poncho</li><li>Sun hat, sunglasses and sunscreen</li><li>Insect repellent</li><li>Personal medication and basic toiletries</li><li>Reusable water bottle</li><li>Small daypack and waterproof bag</li></ul></div><div class="info-card"><h3>For wildlife lovers &amp; photographers</h3><ul><li>Camera, lenses and spare batteries</li><li>Memory cards and charging equipment</li><li>Binoculars</li><li>Dry bags or rain protection for camera gear</li><li>Headlamp or small flashlight</li><li>Neutral-coloured clothing</li><li>Extra battery power bank</li><li>Patience, curiosity and respect for wildlife</li></ul></div></div></div></section>
-<section class="cta" id="contact"><div class="wrap cta-inner"><div><div class="eyebrow">Your Borneo story starts here</div><h2>Let’s plan your journey.</h2><p>Tell us your preferred dates, group size and expedition length. We’ll help you plan the next step.</p></div><a class="btn" href="https://wa.me/6285190836669?text=Hello%20Borneo%20Wild%20Capture%2C%20I%27d%20like%20to%20plan%20a%20Tanjung%20Puting%20expedition." rel="noopener" target="_blank">CHAT ON WHATSAPP ↗</a></div></section>
-<section class="section dark"><div class="wrap"><div class="eyebrow">Get in touch</div><h2>Connect with Borneo Wild Capture.</h2><p class="lead">For enquiries, availability and customised trip details, contact us directly.</p><div class="contact"><a class="btn" href="https://wa.me/6285190836669" rel="noopener" target="_blank">WhatsApp · +62 851-9083-6669</a><a class="btn alt" href="https://instagram.com/borneowildcapture" rel="noopener" target="_blank">Instagram · @borneowildcapture ↗</a><a class="btn alt" href="mailto:orangutantrip6@gmail.com">Email · orangutantrip6@gmail.com</a></div></div></section>
-</main><footer class="footer"><div class="wrap footer-row"><span>© 2026 Borneo Wild Capture</span><span>Tanjung Puting National Park · Central Kalimantan · Indonesia</span></div></footer>
-<script defer="" src="assets/site.js"></script>
-</body></html>
+<section class="hero home-hero">
+<div class="hero-bg"></div>
+<p class="eyebrow hero-location">CENTRAL BORNEO · INDONESIA</p>
+<div class="hero-content">
+<h1>INTO THE<br><em>WILD</em><br><em>HEART</em><br>OF BORNEO</h1>
+<p class="hero-text">Follow the river into the ancient rainforest of Borneo. Meet extraordinary wildlife, discover quiet waterways and experience Borneo at its most alive.</p>
+</div>
+<a class="button button-light" href="packages.html">EXPLORE EXPEDITIONS <span>↗</span></a>
+<div class="hero-meta"><span>TANJUNG PUTING NATIONAL PARK</span><span>TRAVEL WITH CARE · LEAVE NO TRACE</span></div>
+</section>
+
+<section class="section home-intro" id="home-intro">
+<p class="eyebrow dark">A JOURNEY INTO THE RAINFOREST</p>
+<div class="intro-grid">
+<h2>Some places stay<br><em>wild at heart.</em></h2>
+<div><p class="lead">In the heart of Central Borneo, the river is your pathway into a world of towering trees, rare wildlife and unforgettable encounters.</p><p class="muted">Borneo Wild Capture creates thoughtful journeys through Tanjung Puting National Park — shaped around nature, local knowledge and the simple wonder of being out in the wild.</p><a class="button button-dark" href="about.html">OUR STORY ↗</a></div>
+</div>
+</section>
+
+<section class="section experience">
+<div class="section-heading"><div><p class="eyebrow dark">THE BORNEO EXPERIENCE</p><h2>Discover a world<br><em>beyond the ordinary.</em></h2></div><p>Every bend in the river brings a new scene. Take your time and let the rainforest reveal itself.</p></div>
+<div class="cards">
+<a class="card card-large" href="wildlife.html"><img src="images/orangutan-portrait.webp" alt="Orangutan in the rainforest"><div><small>THE ICON OF BORNEO</small><h3>Orangutan Encounters</h3></div></a>
+<a class="card" href="wildlife.html"><img src="images/green-pit-viper.webp" alt="Green pit viper in the rainforest"><div><small>RAINFOREST LIFE</small><h3>Wildlife Wonders</h3></div></a>
+<a class="card" href="gallery.html"><img src="images/riverbank-reeds.webp" alt="Quiet riverbank in Borneo"><div><small>FOLLOW THE RIVER</small><h3>River & Rainforest</h3></div></a>
+</div>
+</section>
+
+<section class="section journey">
+<div class="journey-image" role="img" aria-label="Orangutan in the Borneo rainforest"></div>
+<div class="journey-copy"><p class="eyebrow dark">MEET THE WILD</p><h2>A rainforest alive<br><em>with stories.</em></h2><p>Tanjung Puting is a remarkable landscape of peat-swamp forest, winding rivers and rich biodiversity. Orangutans are among its best-known residents, but there is so much more to discover.</p><ul><li>Orangutans and other primates</li><li>Birdlife, reptiles and rainforest creatures</li><li>Blackwater rivers and lush forest landscapes</li><li>Responsible wildlife observation</li></ul><a class="button button-dark" href="wildlife.html">EXPLORE BORNEO WILDLIFE ↗</a></div>
+</section>
+
+<section class="section gallery">
+<div class="section-heading"><div><p class="eyebrow">THROUGH OUR LENS</p><h2>Wild moments.<br><em>Real encounters.</em></h2></div><p>A collection of the wildlife, landscapes and small moments that make every journey unique.</p></div>
+<div class="gallery-grid">
+<img src="images/young-orangutan.webp" alt="Young orangutan"><img src="images/long-tailed-macaques.webp" alt="Long-tailed macaques"><img src="images/nesting-bird.webp" alt="Bird in its natural habitat">
+</div>
+<p class="gallery-note">Wildlife sightings are never guaranteed. We observe animals respectfully and keep a safe distance.</p>
+<a class="button button-light" href="gallery.html">VIEW THE GALLERY ↗</a>
+</section>
+
+<section class="section experience">
+<div class="section-heading"><div><p class="eyebrow dark">CHOOSE YOUR JOURNEY</p><h2>Your time in Borneo,<br><em>your kind of adventure.</em></h2></div><p>From a first taste of the rainforest to a slower, deeper expedition, find the journey that fits your plans.</p></div>
+<div class="cards">
+<a class="card" href="packages.html"><img src="images/orangutan-in-rainforest.webp" alt="Orangutan in rainforest"><div><small>3 DAYS · 2 NIGHTS</small><h3>Essential Escape</h3></div></a>
+<a class="card card-large" href="packages.html"><img src="images/riverbank-reeds.webp" alt="Borneo river landscape"><div><small>4 DAYS · 3 NIGHTS</small><h3>Into the Wild</h3></div></a>
+<a class="card" href="packages.html"><img src="images/nesting-parrots.webp" alt="Parrots in Borneo"><div><small>5 DAYS · 4 NIGHTS</small><h3>Deep Exploration</h3></div></a>
+</div>
+<p style="text-align:center;margin-top:35px"><a class="button button-dark" href="packages.html">VIEW TRIP PACKAGES ↗</a></p>
+</section>
+
+<section class="closing"><div><p class="eyebrow">THE RAINFOREST IS CALLING</p><h2>Make room for<br><em>the extraordinary.</em></h2><p>Tell us when you would like to explore Tanjung Puting.</p><a class="button button-light" href="https://wa.me/6285190836669" target="_blank" rel="noopener">PLAN YOUR TRIP ↗</a></div></section>
+
+<section class="inquiry section" id="inquiry">
+<div><p class="eyebrow dark">START PLANNING</p><h2>Your Borneo story<br><em>starts here.</em></h2><p class="muted">Share your travel dates and ideas. We’ll help you plan a journey through Tanjung Puting.</p><p class="muted">Prefer a quick conversation? <a href="https://wa.me/6285190836669" target="_blank" rel="noopener"><strong>Chat with us on WhatsApp ↗</strong></a></p></div>
+<form class="inquiry-form" action="https://formsubmit.co/orangutantrip6@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New tour inquiry — Borneo Wild Capture"><input type="hidden" name="_template" value="table">
+<label>Your name<input name="name" autocomplete="name" required placeholder="Full name"></label>
+<label>Email address<input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label>
+<label>Tell us about your trip<textarea name="message" rows="4" required placeholder="Travel dates, number of guests, interests..."></textarea></label>
+<button class="button button-dark" type="submit">SEND TOUR INQUIRY ↗</button><p class="form-note">Your message will be sent to the Borneo Wild Capture team.</p>
+</form>
+</section>
+</main>
+<footer class="footer">
+<a class="brand footer-brand" href="index.html"><span class="monogram">B<span>W</span>C</span><span>BORNEO WILD CAPTURE<small>WILDLIFE · RIVER · RAINFOREST</small></span></a>
+<div class="footer-links"><a href="https://www.instagram.com/borneowildcapture/" target="_blank" rel="noopener">Instagram ↗</a><a href="mailto:orangutantrip6@gmail.com">Email ↗</a><a href="https://wa.me/6285190836669" target="_blank" rel="noopener">WhatsApp ↗</a></div>
+<p>© 2026 Borneo Wild Capture. Explore responsibly.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
