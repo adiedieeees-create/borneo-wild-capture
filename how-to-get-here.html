@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#142f35">
+<meta name="description" content="Plan your journey to Tanjung Puting National Park. Flight routes to Pangkalan Bun, hotel options, transfers to Kumai and the river journey to Camp Leakey.">
+<title>How to Get Here — Borneo Wild Capture</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+:root{--journey-bg:#142f35;--journey-bg2:#1c4148;--journey-gold:#d5b477;--journey-ivory:#f1e8d8;--journey-muted:#c7d0c9}
+html{scroll-behavior:smooth}
+body.journey-page{background:var(--journey-bg);color:var(--journey-ivory);font-family:"DM Sans",sans-serif}
+.journey-page *{box-sizing:border-box}
+.journey-header{position:absolute;z-index:10;top:0;left:0;width:100%;height:76px;padding:0 5.2%;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(180deg,rgba(8,22,26,.45),transparent);color:#fff}
+.journey-brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;min-width:210px}
+.journey-brand svg{width:43px;height:37px;fill:var(--journey-ivory);flex:none}
+.journey-brand span{font:500 15px/1.05 "Playfair Display",serif;letter-spacing:.4px}
+.journey-brand small{display:block;font:500 7px/1.5 "DM Sans",sans-serif;letter-spacing:1.7px;margin-top:4px;color:#e6dccb}
+.journey-nav{display:flex;align-items:center;gap:clamp(15px,2.5vw,34px)}
+.journey-nav a{color:#f6f1e8;text-decoration:none;font-size:12px;white-space:nowrap;opacity:.94}
+.journey-nav a.active{color:var(--journey-gold);border-bottom:1px solid var(--journey-gold);padding-bottom:8px}
+.journey-nav a:hover{color:var(--journey-gold)}
+.journey-nav .book-link{background:linear-gradient(135deg,#e8c88e,#c99f5e);color:#2c2921;border-radius:28px;padding:12px 22px;font-weight:700}
+.journey-menu{display:none;border:1px solid #e1d2b4;background:#16343a;color:#fff;border-radius:50%;width:40px;height:40px;font-size:20px}
+.journey-hero{height:460px;min-height:460px;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#253c3e}
+.journey-hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(9,28,33,.82) 0%,rgba(9,28,33,.43) 38%,rgba(9,28,33,.05) 75%),linear-gradient(0deg,rgba(9,28,33,.32),transparent 46%),url("images/DSCF7031.jpg");background-size:cover;background-position:center 54%;transform:scale(1.005)}
+.journey-hero-inner{position:relative;z-index:1;width:min(1120px,89%);margin:0 auto;padding:0 0 82px}
+.journey-kicker{display:flex;align-items:center;gap:15px;color:var(--journey-gold);font-size:11px;letter-spacing:2.2px;font-weight:700;text-transform:uppercase}
+.journey-kicker:after{content:"";height:1px;width:64px;background:var(--journey-gold)}
+.journey-hero h1{font:500 clamp(54px,7vw,83px)/.98 "Playfair Display",serif;letter-spacing:-1.7px;margin:22px 0 14px;color:var(--journey-ivory);max-width:520px}
+.journey-hero p{font:italic 18px/1.45 "Playfair Display",serif;color:#f1e8dc;margin:0;max-width:410px}
+.journey-intro{background:linear-gradient(105deg,rgba(20,47,53,.98),rgba(33,64,68,.97)),url("images/riverbank-reeds.webp") center/cover;border-bottom:1px solid rgba(214,185,133,.34);padding:20px max(5.2%,calc((100% - 1120px)/2));display:grid;grid-template-columns:36% 1fr;gap:5.5%;align-items:center}
+.journey-intro h2{font:italic 27px/1.16 "Playfair Display",serif;color:#f2e8d9;margin:0;padding-right:26px;border-right:2px solid var(--journey-gold)}
+.journey-intro p{font:14px/1.65 "DM Sans",sans-serif;color:#e0e4dc;margin:0;max-width:720px}
+.journey-main{background:linear-gradient(180deg,#17343a,#122b31);padding:32px max(5.2%,calc((100% - 1120px)/2)) 34px;border-bottom:1px solid rgba(214,185,133,.45)}
+.journey-columns{display:grid;grid-template-columns:1fr 1.12fr;gap:36px}
+.journey-section-title{display:flex;align-items:center;gap:16px;margin:0 0 8px}
+.journey-icon{width:54px;height:54px;display:grid;place-items:center;flex:none;border-radius:13px;background:linear-gradient(135deg,#e8c98e,#c89f61);color:#172d31;box-shadow:0 5px 16px #06191c55}
+.journey-icon svg{width:28px;height:28px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.journey-section-title h2{font:500 27px/1.1 "Playfair Display",serif;color:var(--journey-ivory);margin:0}
+.journey-subtitle{font-size:12px;line-height:1.55;color:#d0d8d2;margin:0 0 15px 70px}
+.flight-list{border:1px solid rgba(211,196,165,.3);border-radius:17px;padding:0 17px;background:rgba(7,24,29,.16)}
+.flight-row{display:grid;grid-template-columns:115px 1fr;gap:20px;align-items:center;min-height:67px;padding:10px 0;border-bottom:1px solid rgba(222,220,204,.16)}
+.flight-row:last-child{border-bottom:0}
+.airline{font:600 14px/1.15 "DM Sans",sans-serif;color:#f0e7d8;letter-spacing:.1px}
+.airline small{display:block;color:#abbdb6;font-size:9px;font-weight:500;letter-spacing:1.3px;margin-top:5px}
+.flight-route{border-left:1px solid rgba(219,207,178,.35);padding-left:18px}
+.flight-route strong{font-size:13px;font-weight:600;color:#f5eee3}
+.flight-route p{font-size:11px;color:#c8d1ca;margin:4px 0 0}
+.flight-note{font-size:10px;line-height:1.5;color:#aebeb7;margin:12px 0 0}
+.hotel-list{display:grid;gap:7px}
+.hotel-card{display:grid;grid-template-columns:145px 1fr 24px;gap:14px;align-items:center;min-height:74px;padding:4px 9px 4px 4px;border:1px solid rgba(211,196,165,.27);border-radius:16px;background:rgba(7,24,29,.19);color:inherit;text-decoration:none;transition:.2s}
+.hotel-card:hover{border-color:var(--journey-gold);background:rgba(7,24,29,.36);transform:translateY(-1px)}
+.hotel-card img{width:145px;height:66px;object-fit:cover;border-radius:12px;border:1px solid rgba(218,185,128,.55)}
+.hotel-copy strong{font-size:13px;line-height:1.25;font-weight:600;color:#f5eee3;display:block}
+.hotel-copy span{font-size:10px;line-height:1.35;color:#c4d0c8;display:block;margin-top:4px}
+.hotel-arrow{height:24px;width:24px;border:1px solid var(--journey-gold);border-radius:50%;display:grid;place-items:center;color:var(--journey-gold);font-size:16px}
+.hotel-disclaimer{font-size:10px;line-height:1.45;color:#aebeb7;margin:10px 0 0}
+.location-section{padding:28px max(5.2%,calc((100% - 1120px)/2)) 38px;background:linear-gradient(180deg,#17343a,#112930);display:grid;grid-template-columns:1.12fr .96fr .78fr;gap:30px;align-items:center}
+.route-map{position:relative;min-height:250px;border:1px solid rgba(213,180,119,.85);border-radius:18px;overflow:hidden;background:radial-gradient(ellipse at 30% 35%,#527164 0%,#2c574e 28%,#173b3d 60%,#102d34 100%)}
+.route-map:before,.route-map:after{content:"";position:absolute;border:1px solid rgba(200,216,192,.13);border-radius:50%;width:140%;height:90%;left:-20%;top:8%;transform:rotate(-18deg)}
+.route-map:after{width:125%;height:72%;left:-14%;top:35%;transform:rotate(20deg)}
+.route-map svg{position:absolute;inset:0;width:100%;height:100%}
+.route-map-label{position:absolute;z-index:2;color:#f4eee3;font-size:12px;font-weight:600;text-shadow:0 2px 5px #07191f}
+.map-pkn{left:12%;bottom:27%}.map-kumai{left:31%;bottom:12%}.map-park{right:8%;top:19%;text-align:right;max-width:110px}
+.map-caption{position:absolute;right:12px;bottom:9px;z-index:2;color:#cdd7cc;font-size:8px;letter-spacing:.7px}
+.location-copy .journey-section-title{margin-bottom:10px}
+.location-copy .journey-subtitle{margin:0 0 16px 70px}
+.location-intro{font-size:11px;line-height:1.55;color:#cad4ce;margin:0 0 15px 70px}
+.location-fact{display:grid;grid-template-columns:28px 1fr;gap:12px;margin:12px 0 0 4px;align-items:start}
+.location-fact svg{width:25px;height:25px;stroke:#e3e8df;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.location-fact strong{display:block;font-size:12px;font-weight:600;color:#f3ecdf}
+.location-fact span{display:block;font-size:10px;line-height:1.45;color:#c0ccc4;margin-top:3px}
+.location-photo{width:100%;height:250px;object-fit:cover;border:1px solid var(--journey-gold);border-radius:17px}
+.route-note{margin:0;padding:0 5.2% 22px;background:#112930;color:#aab9b2;font-size:9px;line-height:1.5;text-align:center}
+.journey-footer{background:#0d2228;color:#c8d0c8;padding:24px 5.2%;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(214,185,133,.3)}
+.journey-footer strong{font:500 17px "Playfair Display",serif;color:#f1e8d8}
+.journey-footer small{font-size:9px;color:#aab9b2}
+.journey-footer a{color:var(--journey-gold);font-size:11px;text-decoration:none}
+@media(max-width:900px){
+ .journey-header{padding:0 4%;height:70px}.journey-brand{min-width:0}.journey-brand span{font-size:13px}
+ .journey-nav{gap:13px}.journey-nav a{font-size:10px}.journey-nav .book-link{padding:10px 14px}
+ .journey-columns{gap:22px}.hotel-card{grid-template-columns:112px 1fr 22px}.hotel-card img{width:112px}
+ .location-section{grid-template-columns:1fr 1fr}.location-photo{display:none}
+}
+@media(max-width:700px){
+ .journey-header{height:68px}.journey-menu{display:block}
+ .journey-nav{display:none;position:absolute;left:0;right:0;top:68px;padding:20px 6%;background:#102a30;flex-direction:column;align-items:stretch;gap:18px;border-bottom:1px solid #c7a96c}
+ .journey-nav.open{display:flex}.journey-nav a{font-size:13px}.journey-nav .book-link{text-align:center}
+ .journey-hero{height:520px;min-height:520px}
+ .journey-hero:before{background-image:linear-gradient(90deg,rgba(9,28,33,.68),rgba(9,28,33,.12)),linear-gradient(0deg,rgba(9,28,33,.48),transparent 55%),url("images/DSCF7031.jpg");background-position:58% center}
+ .journey-hero-inner{width:88%;padding-bottom:56px}
+ .journey-hero h1{font-size:58px}
+ .journey-hero p{font-size:16px}
+ .journey-intro{grid-template-columns:1fr;gap:13px;padding:20px 6%}
+ .journey-intro h2{font-size:25px;border-right:0;border-bottom:1px solid var(--journey-gold);padding:0 0 12px}
+ .journey-intro p{font-size:12px}
+ .journey-main{padding:25px 6%}
+ .journey-columns{grid-template-columns:1fr;gap:30px}
+ .journey-section-title h2{font-size:25px}
+ .journey-icon{width:48px;height:48px}
+ .journey-subtitle{margin-left:64px}
+ .flight-row{grid-template-columns:94px 1fr;gap:12px}.flight-route{padding-left:13px}
+ .flight-route strong{font-size:11px}.airline{font-size:12px}
+ .hotel-card{grid-template-columns:112px 1fr 22px;min-height:72px}
+ .hotel-card img{height:62px}
+ .location-section{grid-template-columns:1fr;padding:24px 6% 18px;gap:23px}
+ .route-map{min-height:225px}.location-photo{display:block;height:220px}
+ .location-copy .journey-subtitle,.location-intro{margin-left:64px}
+ .route-note{padding:0 6% 18px}
+ .journey-footer{padding:22px 6%}
+}
+@media(max-width:380px){
+ .journey-brand svg{width:36px}.journey-brand span{font-size:12px}
+ .journey-hero h1{font-size:51px}
+ .flight-list{padding:0 11px}
+ .flight-row{grid-template-columns:82px 1fr;gap:8px}
+ .flight-route strong{font-size:10px}
+ .hotel-card{grid-template-columns:94px 1fr 20px;gap:9px}
+ .hotel-card img{width:94px;height:60px}
+ .hotel-copy strong{font-size:11px}.hotel-copy span{font-size:9px}
+}
+</style>
+</head>
+<body class="journey-page">
+<header class="journey-header">
+<a class="journey-brand" href="index.html" aria-label="Borneo Wild Capture home">
+<svg viewBox="0 0 64 50" aria-hidden="true"><path d="M7 39c6-1 8-6 10-12 2-6 7-11 14-11 6 0 9 4 11 9 2 5 6 7 12 7 4 0 6 2 6 5 0 4-4 6-10 6H20c-7 0-11-1-13-4zm20-25c-1-6 3-10 8-10 5 0 8 4 7 9-1 4-5 6-9 5-3-1-5-2-6-4zm-9 14c-3 1-5 4-6 8m27-9c2 5 5 7 10 7" /></svg>
+<span>BORNEO<br>WILD CAPTURE<small>WILDLIFE · RIVER · RAINFOREST</small></span>
+</a>
+<button class="journey-menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav class="journey-nav" aria-label="Main navigation">
+<a href="index.html">Home</a><a href="packages.html">Expedition</a><a class="active" href="how-to-get-here.html" aria-current="page">How to Get Here</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a class="book-link" href="https://wa.me/6285190836669" target="_blank" rel="noopener">Book a Trip →</a>
+</nav>
+</header>
+<main>
+<section class="journey-hero">
+<div class="journey-hero-inner">
+<div class="journey-kicker">02 / Journey</div>
+<h1>How to<br>Get Here</h1>
+<p>Plan your journey to Tanjung Puting<br>National Park with ease.</p>
+</div>
+</section>
+<section class="journey-intro">
+<h2>Flights, accommodation,<br>and directions.</h2>
+<p>Tanjung Puting National Park is located in Central Kalimantan (Borneo), Indonesia. The main gateway is Pangkalan Bun (PKN), with direct flights from Jakarta, comfortable hotel options, and onward transfers to the boat departure point in Kumai.</p>
+</section>
+<section class="journey-main">
+<div class="journey-columns">
+<div>
+<div class="journey-section-title"><span class="journey-icon"><svg viewBox="0 0 32 32"><path d="M3 18l10-3 5-10c.8-1.5 2.7-1.7 3.8-.4l.8 1-2.8 9.5 7.3 3.7c1.5.8 1.8 2.8.5 4l-.7.7-9.2-3-6.4 5.1-2.3-.7 3.2-6.3-7.7-1.8z"/></svg></span><h2>Flight Information</h2></div>
+<p class="journey-subtitle">Fly to Pangkalan Bun (PKN)<br>The nearest airport to Tanjung Puting National Park.</p>
+<div class="flight-list">
+<div class="flight-row"><div class="airline">Batik Air<small>DIRECT FLIGHT</small></div><div class="flight-route"><strong>Jakarta (CGK) → Pangkalan Bun (PKN)</strong><p>Approx. 1 hr 25 min · Flight times vary by date</p></div></div>
+<div class="flight-row"><div class="airline">NAM Air<small>DIRECT FLIGHT</small></div><div class="flight-route"><strong>Jakarta (CGK) → Pangkalan Bun (PKN)</strong><p>Approx. 1 hr 15 min · Flight times vary by date</p></div></div>
+</div>
+<p class="flight-note">Direct services are currently listed by Batik Air and NAM Air. Flight schedules and availability can change; confirm your travel date with the airline before booking.</p>
+</div>
+<div>
+<div class="journey-section-title"><span class="journey-icon"><svg viewBox="0 0 32 32"><path d="M4 13h24v13H4zM2 13l3-7h22l3 7M8 26v2m16-2v2M9 17h14"/></svg></span><h2>Hotel Recommendation</h2></div>
+<p class="journey-subtitle">Comfortable stays in Pangkalan Bun, close to the airport<br>and convenient for your transfer to Kumai.</p>
+<div class="hotel-list">
+<a class="hotel-card" href="https://www.swiss-belhotel.com/" target="_blank" rel="noopener"><img src="https://pix10.agoda.net/hotelImages/305/305100/305100_16101316300047726998.jpg?ca=6&ce=1&s=1024x768" alt="Swiss-Belinn Pangkalan Bun exterior"><span class="hotel-copy"><strong>Swiss-Belinn Pangkalan Bun</strong><span>City hotel · around 10–15 min from the airport</span></span><span class="hotel-arrow">›</span></a>
+<a class="hotel-card" href="https://www.arselahotels.com/" target="_blank" rel="noopener"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/19/85/77/deluxe-room.jpg?h=-1&s=1&w=700" alt="Arsela Hotel guest room"><span class="hotel-copy"><strong>Arsela Hotel Pangkalan Bun</strong><span>Relaxed tropical feel · around 8 min from the airport</span></span><span class="hotel-arrow">›</span></a>
+<a class="hotel-card" href="https://www.grandkecubunghotel.com/" target="_blank" rel="noopener"><img src="https://s3-cdn.hotellinksolutions.com/hbe/data/38962870-d9a1-1521424424-4abc-94e3-5ffa7729e37f/gallery/room/rt_grand-kecubung-deluxe-room-compressor_1531114350.jpg" alt="Grand Kecubung Hotel deluxe room"><span class="hotel-copy"><strong>Grand Kecubung Hotel</strong><span>Pool and garden setting · around 15 min from the airport</span></span><span class="hotel-arrow">›</span></a>
+</div>
+<p class="hotel-disclaimer">Hotel transfer times are approximate and depend on traffic and the exact pick-up point. Contact each hotel for current room rates and availability.</p>
+</div>
+</div>
+</section>
+<section class="location-section">
+<div class="route-map" role="img" aria-label="Schematic route from Pangkalan Bun through Kumai to Tanjung Puting National Park">
+<svg viewBox="0 0 600 300" preserveAspectRatio="none" aria-hidden="true">
+<path d="M55 235 C115 200 125 180 178 188 S265 160 310 130 S390 96 475 64" fill="none" stroke="#d9c39a" stroke-width="3" stroke-dasharray="8 8"/>
+<path d="M40 270 C95 233 108 235 163 222 S252 217 300 174 S400 138 550 115" fill="none" stroke="#87b6a0" stroke-width="13" opacity=".22"/>
+<circle cx="60" cy="234" r="9" fill="#f0e2c9" stroke="#122f35" stroke-width="3"/><circle cx="207" cy="181" r="9" fill="#d7b477" stroke="#122f35" stroke-width="3"/><circle cx="475" cy="64" r="11" fill="#dd8351" stroke="#f6ead7" stroke-width="3"/>
+<path d="M470 75l5 13 5-13" fill="#dd8351"/>
+</svg>
+<span class="route-map-label map-pkn">Pangkalan Bun<br>(PKN)</span><span class="route-map-label map-kumai">Kumai Port</span><span class="route-map-label map-park">Tanjung Puting<br>National Park</span><span class="map-caption">ROUTE OVERVIEW · SCHEMATIC NOT TO SCALE</span>
+</div>
+<div class="location-copy">
+<div class="journey-section-title"><span class="journey-icon"><svg viewBox="0 0 32 32"><path d="M16 29s10-10.5 10-17a10 10 0 0 0-20 0c0 6.5 10 17 10 17z"/><circle cx="16" cy="12" r="3.5"/></svg></span><h2>Hotel Location</h2></div>
+<p class="location-intro">Hotels are generally located in Pangkalan Bun city, a short drive from Iskandar Airport and the road transfer to Kumai.</p>
+<div class="location-fact"><svg viewBox="0 0 32 32"><path d="M2 19l11-3 5-10c1-2 3-2 4 0l-3 10 9 4c2 1 2 3 0 4l-11-2-6 5-2-1 3-6-10-1z"/></svg><span><strong>Iskandar Airport (PKN)</strong>Approx. 8–15 minutes from the listed hotels</span></div>
+<div class="location-fact"><svg viewBox="0 0 32 32"><path d="M3 20h26l-3 5H7zM8 20l2-10h12l3 10M12 10l4-5 4 5"/></svg><span><strong>Kumai Port / Boat Meeting Point</strong>Usually around 20–40 minutes by road from Pangkalan Bun</span></div>
+<div class="location-fact"><svg viewBox="0 0 32 32"><path d="M16 3l3 8h7l-6 5 2 9-6-5-6 5 2-9-6-5h7z"/></svg><span><strong>Tanjung Puting · Camp Leakey</strong>Allow around 4–5 hours total by klotok from Kumai, with stops along the river</span></div>
+</div>
+<img class="location-photo" src="https://s3-cdn.hotellinksolutions.com/hbe/data/38962870-d9a1-1521424424-4abc-94e3-5ffa7729e37f/gallery/room/rt_grand-kecubung-deluxe-room-compressor_1531114350.jpg" alt="Comfortable hotel room in Pangkalan Bun">
+</section>
+<p class="route-note">Travel times are indicative and vary with traffic, river conditions, boat speed and itinerary. Klotok journeys are commonly spread across a multi-day expedition. <a href="https://www.google.com/maps/dir/Pangkalan+Bun/Port+Kumai,+Kumai/" target="_blank" rel="noopener" style="color:#d5b477">Open Pangkalan Bun–Kumai road directions ↗</a></p>
+</main>
+<footer class="journey-footer"><div><strong>Borneo Wild Capture</strong><br><small>WILDLIFE · RIVER · RAINFOREST</small></div><div><a href="https://wa.me/6285190836669" target="_blank" rel="noopener">Plan your journey on WhatsApp ↗</a><br><small>orangutantrip6@gmail.com</small></div><small>© 2026 Borneo Wild Capture · Explore responsibly</small></footer>
+<script>
+const journeyMenu=document.querySelector('.journey-menu');
+const journeyNav=document.querySelector('.journey-nav');
+if(journeyMenu&&journeyNav){journeyMenu.addEventListener('click',()=>{const open=journeyNav.classList.toggle('open');journeyMenu.setAttribute('aria-expanded',String(open));});}
+</script>
+</body>
+</html>
