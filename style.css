@@ -310,3 +310,50 @@ body:has(.home-hero) .header{display:none}
     letter-spacing:.20em!important;
   }
 }
+
+/* FINAL MOBILE HERO CTA — one label, flex-centred in the entire outlined button */
+.home-hero > .button-light{
+  position:absolute!important;
+  left:3%!important;
+  right:auto!important;
+  bottom:4.5%!important;
+  width:94%!important;
+  height:42px!important;
+  min-height:42px!important;
+  box-sizing:border-box!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:0 12px!important;
+  gap:0!important;
+  text-align:center!important;
+  font-size:10px!important;
+  font-weight:500!important;
+  letter-spacing:.14em!important;
+  line-height:1.2!important;
+}
+.home-hero > .button-light .button-label{
+  position:static!important;
+  inset:auto!important;
+  display:block!important;
+  width:auto!important;
+  max-width:100%!important;
+  margin:0!important;
+  padding:0!important;
+  transform:none!important;
+  text-align:center!important;
+  text-indent:0!important;
+  white-space:nowrap!important;
+  font-size:10px!important;
+  font-weight:500!important;
+  letter-spacing:.14em!important;
+  line-height:1.2!important;
+  color:rgba(255,255,255,.80)!important;
+}
+@media(max-width:380px){
+  .home-hero > .button-light,
+  .home-hero > .button-light .button-label{
+    font-size:9px!important;
+    letter-spacing:.12em!important;
+  }
+}
