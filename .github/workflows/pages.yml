@@ -25,14 +25,9 @@ jobs:
         uses: actions/checkout@v4
       - name: Prepare site files
         run: |
-          mkdir -p site
-          if [ -f "Borneo_Wild_Capture_Itinerary_Page02_v7.zip" ]; then
-            unzip -oq "Borneo_Wild_Capture_Itinerary_Page02_v7.zip" -d site
-            echo "Publishing itinerary v7 package"
-          else
-            rsync -a --exclude=".git" --exclude=".github" --exclude="site" --exclude="*.zip" ./ site/
-            echo "No v7 package found; publishing current site"
-          fi
+          mkdir -p site/assets
+          cp index.html itinerary.html how-to-get-here.html site/
+          cp -R assets/. site/assets/
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site

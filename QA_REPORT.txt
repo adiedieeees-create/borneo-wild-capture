@@ -1,0 +1,24 @@
+BORNEO WILD CAPTURE — ITINERARY PAGE QA
+Generated: 2026-11-21
+
+Agreed page order:
+01 Home (index.html)
+02 Itinerary (itinerary.html)
+03 How to Get Here (how-to-get-here.html)
+
+Verified:
+- Dedicated standalone Itinerary page is present.
+- Exact headline: “Your time in Borneo, your kind of adventure.”
+- Eyebrow: “Choose your journey”.
+- User-selected orangutan photograph is included unchanged as assets/itinerary-orangutan.jpg.
+- Inner-page palette uses deep slate/teal, champagne gold and ivory.
+- Home navigation order is Home, Expeditions, Itinerary, How to Get Here.
+- Itinerary and How to Get Here navigation links point to their correct pages.
+- How to Get Here is marked 03 / Journey.
+- All local image and script references exist.
+- All internal HTML page links resolve within the package.
+- Existing 3D2N day outline is retained; 4D3N and 5D4N overview sections are present.
+- Responsive layout stacks on mobile.
+
+Note:
+This QA checks package structure, navigation references and local assets. A live-browser visual review and successful GitHub Pages deployment are still required before the website can be called published.
