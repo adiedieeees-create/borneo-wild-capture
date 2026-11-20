@@ -19,3 +19,31 @@
 .button-dark{border-color:#879b8d}
 .button-dark:hover{border-color:#b7c5bb}
 .hero-bg{filter:saturate(.78) hue-rotate(9deg)}
+
+/* Multi-page layout and home inquiry form */
+.nav a[aria-current="page"]{color:#9a8057}
+.home-hero{height:min(780px,88vh);min-height:640px}
+.home-hero .hero-bg{background-image:linear-gradient(90deg,rgba(7,22,16,.72),rgba(7,22,16,.24) 62%,rgba(7,22,16,.08)),url("images/orangutan-portrait.webp");background-position:center 42%;filter:none}
+.home-hero h1{font-size:clamp(54px,8vw,104px);letter-spacing:1px}
+.home-intro{background:#f7f5ef}
+.inquiry{display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:start;background:#e9e6dc}
+.inquiry-form{display:grid;gap:18px}
+.inquiry-form label{display:grid;gap:8px;font-size:11px;font-weight:700;letter-spacing:.5px}
+.inquiry-form input,.inquiry-form textarea{width:100%;border:1px solid #c9cec5;background:#f8f8f3;padding:14px 15px;border-radius:2px;font:13px "DM Sans",sans-serif;color:#17231d;resize:vertical}
+.inquiry-form input:focus,.inquiry-form textarea:focus{outline:2px solid #91a99a;outline-offset:1px}
+.form-note{font-size:10px;color:#737a70;line-height:1.6;margin:0}
+.page-hero{min-height:390px;padding:100px 11%;display:flex;flex-direction:column;justify-content:center;color:#fff;background:linear-gradient(90deg,rgba(7,22,16,.85),rgba(7,22,16,.45)),url("images/orangutan-in-rainforest.webp") center/cover}
+.page-hero h1{font:500 clamp(48px,7vw,82px)/1.08 "Playfair Display",serif;margin:20px 0;letter-spacing:-1px}
+.page-hero h1 em{color:var(--sand);font-weight:500}
+.page-hero>p:last-child{max-width:540px;font-size:14px;line-height:1.8;color:#e1e5df}
+.page-content{background:#f7f5ef}
+.feature-strip{background:#e9e6dc}
+.feature-strip h2{font:500 38px "Playfair Display",serif;margin:0 0 35px}
+.full-gallery{grid-template-columns:repeat(3,1fr);gap:14px}
+.full-gallery img{height:300px}
+.wildlife-cards{grid-template-columns:repeat(3,1fr)}
+.wildlife-cards .card{height:340px}
+.contact-actions{display:flex;flex-direction:column;align-items:flex-start;gap:18px}
+.contact-actions>a:last-child{font-size:12px;color:#526458}
+@media(max-width:800px){.inquiry{grid-template-columns:1fr;gap:32px}.page-hero{padding:80px 7%;min-height:340px}.full-gallery{grid-template-columns:repeat(2,1fr)}.full-gallery img{height:210px}.wildlife-cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.home-hero{min-height:620px}.home-hero h1{font-size:52px}.full-gallery img{height:175px}.wildlife-cards{grid-template-columns:1fr}.wildlife-cards .card{height:300px}}
