@@ -216,3 +216,25 @@ body:has(.home-hero) .header{display:none}
     top:29.5%!important;
   }
 }
+
+/* Final CTA alignment: center label in the full outline, keep arrow pinned right */
+.home-hero > .button-light{
+  position:absolute!important;
+  padding:0 12px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+  line-height:1!important;
+}
+.home-hero > .button-light span{
+  position:absolute!important;
+  top:50%!important;
+  right:16px!important;
+  transform:translateY(-50%)!important;
+  margin:0!important;
+  line-height:1!important;
+}
+.home-hero > .button-light:hover span{
+  transform:translate(3px,calc(-50% - 2px))!important;
+}
