@@ -485,3 +485,11 @@ img.brand-logo{
   .topbar img.brand-logo,.header img.brand-logo{width:112px!important;max-height:56px!important}
   .footer img.brand-logo{width:108px!important;max-height:54px!important}
 }
+
+
+/* Gallery page colour refinement: brighter rainforest image and clearer champagne identity */
+.page-hero.gallery-hero {
+  background-image:
+    linear-gradient(90deg, rgba(20,39,46,.78), rgba(20,39,46,.38)),
+    url("images/orangutan-in-rainforest.webp");
+}
