@@ -23,12 +23,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Prepare site files
+        run: |
+          mkdir -p site
+          if [ -f "Borneo_Wild_Capture_Itinerary_Page02_v7.zip" ]; then
+            unzip -oq "Borneo_Wild_Capture_Itinerary_Page02_v7.zip" -d site
+            echo "Publishing itinerary v7 package"
+          else
+            rsync -a --exclude=".git" --exclude=".github" --exclude="site" --exclude="*.zip" ./ site/
+            echo "No v7 package found; publishing current site"
+          fi
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: ./site
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
