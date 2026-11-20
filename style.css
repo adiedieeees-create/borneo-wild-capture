@@ -162,24 +162,3 @@ body:has(.home-hero) .header .menu{color:#fff}
   .home-hero h1{font-size:46px}
   .home-hero .eyebrow{font-size:8px;letter-spacing:.25em}
 }
-
-/* Functional scroll cue for the immersive home hero */
-.home-hero .hero-scroll{
-  position:absolute;z-index:2;bottom:26px;left:50%;transform:translateX(-50%);
-  display:flex;flex-direction:column;align-items:center;gap:8px;
-  color:rgba(255,255,255,.88);font-size:9px;letter-spacing:.38em;
-  text-decoration:none;white-space:nowrap;
-}
-.home-hero .scroll-icon{
-  width:23px;height:39px;border:1px solid rgba(255,255,255,.8);
-  border-radius:14px;position:relative;
-}
-.home-hero .scroll-icon:after{
-  content:"";position:absolute;top:7px;left:50%;width:3px;height:5px;
-  border-radius:4px;background:#fff;transform:translateX(-50%);
-  animation:scroll-dot 1.5s ease-in-out infinite;
-}
-.home-hero .scroll-arrow{font-size:23px;line-height:.7;font-family:Arial,sans-serif}
-@keyframes scroll-dot{0%,100%{transform:translate(-50%,0);opacity:1}70%{transform:translate(-50%,10px);opacity:.2}}
-@media(max-width:800px){.home-hero .hero-scroll{bottom:15px;font-size:8px;gap:6px}.home-hero .scroll-icon{width:20px;height:34px}}
-@media(prefers-reduced-motion:reduce){.home-hero .scroll-icon:after{animation:none}}
