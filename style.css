@@ -259,3 +259,54 @@ body:has(.home-hero) .header{display:none}
   white-space:nowrap!important;
   line-height:1!important;
 }
+
+/* Premium mobile CTA: smaller type, balanced tracking, exact centre */
+.home-hero > .button-light{
+  left:3%!important;
+  right:auto!important;
+  bottom:4.5%!important;
+  width:94%!important;
+  min-height:42px!important;
+  height:42px!important;
+  padding:0!important;
+  display:block!important;
+  box-sizing:border-box!important;
+  text-align:center!important;
+  font-size:11px!important;
+  font-weight:500!important;
+  letter-spacing:.20em!important;
+  line-height:1!important;
+}
+.home-hero > .button-light .button-label{
+  position:absolute!important;
+  left:50%!important;
+  top:50%!important;
+  width:max-content!important;
+  max-width:calc(100% - 28px)!important;
+  margin:0!important;
+  padding:0!important;
+  transform:translate(-50%,-50%)!important;
+  display:block!important;
+  text-align:center!important;
+  text-indent:0!important;
+  white-space:nowrap!important;
+  font-size:11px!important;
+  font-weight:500!important;
+  letter-spacing:.20em!important;
+  line-height:1!important;
+  color:rgba(255,255,255,.80)!important;
+}
+@media(max-width:800px){
+  .home-hero > .button-light{
+    left:3%!important;
+    width:94%!important;
+    min-height:42px!important;
+    height:42px!important;
+    font-size:10px!important;
+    letter-spacing:.20em!important;
+  }
+  .home-hero > .button-light .button-label{
+    font-size:10px!important;
+    letter-spacing:.20em!important;
+  }
+}
