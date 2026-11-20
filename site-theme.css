@@ -383,3 +383,86 @@ body { background: var(--bwc-ivory); color: var(--bwc-ink); }
   .brand-logo,.header .brand-logo,.topbar .brand-logo,.home-header .brand-logo{width:112px!important;max-height:56px!important}
   .footer .brand-logo{width:108px!important;max-height:54px!important}
 }
+
+/* Mobile header visibility/layout repair — the approved mark is inline SVG */
+.topbar .nav{
+  min-height:84px;
+  padding:8px 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-direction:row;
+}
+.topbar .brand{
+  display:flex;
+  align-items:center;
+  flex:0 0 auto;
+  min-width:0;
+  width:auto;
+  visibility:visible;
+  opacity:1;
+}
+.topbar .brand-logo{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  width:128px!important;
+  height:64px!important;
+  max-width:128px!important;
+  max-height:64px!important;
+  object-fit:contain!important;
+  overflow:visible;
+}
+.topbar .menu-toggle{flex:0 0 44px;margin-left:auto}
+.footer .brand-logo{
+  display:block!important;
+  width:128px!important;
+  height:64px!important;
+  max-width:128px!important;
+  max-height:64px!important;
+}
+@media(max-width:760px){
+  .topbar .nav{
+    min-height:76px;
+    height:76px;
+    padding:6px 0;
+    align-items:center;
+    flex-direction:row;
+    gap:12px;
+  }
+  .topbar .brand{
+    display:flex!important;
+    align-items:center;
+    width:auto;
+    max-width:calc(100% - 60px);
+    min-width:0;
+    flex:0 1 auto;
+    visibility:visible!important;
+    opacity:1!important;
+  }
+  .topbar .brand-logo{
+    display:block!important;
+    width:116px!important;
+    height:58px!important;
+    max-width:116px!important;
+    max-height:58px!important;
+    visibility:visible!important;
+    opacity:1!important;
+  }
+  .topbar .menu-toggle{
+    display:block;
+    width:44px;
+    height:44px;
+    margin-left:auto;
+    flex:0 0 44px;
+  }
+  .footer .brand-logo{
+    width:112px!important;
+    height:56px!important;
+    max-width:112px!important;
+    max-height:56px!important;
+  }
+}
+@media(max-width:390px){
+  .topbar .brand-logo{width:104px!important;height:52px!important;max-width:104px!important;max-height:52px!important}
+}
