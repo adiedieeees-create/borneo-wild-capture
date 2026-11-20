@@ -425,3 +425,42 @@ body:has(.home-hero) .header{display:none}
     letter-spacing:.12em!important;
   }
 }
+
+
+/* BWC master palette — shared across homepage and legacy pages */
+:root{--forest:#1a3038;--forest2:#294750;--cream:#f5f1e8;--sand:#c9b184;--ink:#1b2b31;--muted:#687775}
+body{background:#f5f1e8;color:#1b2b31}
+.header{background:#f5f1e8;color:#1a3038;border-bottom:1px solid rgba(26,48,56,.10)}
+.header .brand{color:#1a3038}.header .brand small{color:#687775}
+.nav a{color:#1a3038}
+.nav a[aria-current="page"],.nav a.active,.nav a:not(.nav-cta):hover,.footer a:hover{color:#92764a}
+.menu{color:#1a3038}
+.nav-cta{background:#e5d6b8;color:#1a3038;border:1px solid #c9b184}
+.nav-cta:hover{background:#f1e8d5;color:#1a3038}
+.eyebrow{color:#c9b184}.eyebrow.dark{color:#92764a}
+.button-light{background:linear-gradient(135deg,#e5d6b8,#c9b184);color:#1a3038;border-color:#c9b184}
+.button-light:hover{background:#f1e8d5}
+.button-dark{background:#1a3038;color:#f5f1e8;border-color:#c9b184}
+.button-dark:hover{background:#294750;border-color:#e5d6b8}
+.section h2 em,.hero h1 em,.closing h2 em{color:#c9b184}
+.lead{color:#33464b}.muted,.section-heading>p{color:#687775}
+.experience,.feature-strip,.inquiry{background:#eee8dc;color:#1b2b31}
+.journey,.home-intro,.page-content{background:#f5f1e8;color:#1b2b31}
+.gallery,.closing{background:#1a3038;color:#f5f1e8}
+.gallery .section-heading>p,.gallery-note{color:#d0d8d5}
+.footer{background:#10242b;color:#d4dcd8}
+.footer-brand{color:#e5d6b8}.footer-brand small,.footer>p{color:#b7c1be}
+.page-hero{background-color:#1a3038;background-image:linear-gradient(90deg,rgba(26,48,56,.78),rgba(26,48,56,.38)),url("images/orangutan-in-rainforest.webp");color:#f5f1e8}
+.page-hero h1,.page-hero h1 em{color:#f5f1e8}.page-hero h1 em{color:#e5d6b8}
+.page-hero>p:last-child{color:#e5e8e5}
+.inquiry-form input,.inquiry-form textarea{background:#fbf9f4;color:#1b2b31;border-color:#d4cbb9}
+.inquiry-form input:focus,.inquiry-form textarea:focus{outline-color:#c9b184}
+.monogram{border-color:#c9b184;color:#1a3038}.monogram span{color:#92764a}
+.journey-copy li:before{color:#c9b184}.contact-actions>a:last-child{color:#52676c}
+.home-hero .hero-bg{
+ background-image:linear-gradient(90deg,rgba(26,48,56,.46) 0%,rgba(26,48,56,.22) 62%,rgba(26,48,56,.10) 100%),linear-gradient(0deg,rgba(16,36,43,.42) 0%,transparent 40%,rgba(26,48,56,.16) 100%),url("images/DSCF7031.jpg");
+ background-size:cover;background-position:center 58%;filter:none
+}
+.home-hero>.button-light{background:rgba(26,48,56,.56)!important;border-color:rgba(229,214,184,.56)!important;color:rgba(255,255,255,.92)!important}
+.home-hero>.button-light .button-label{color:rgba(255,255,255,.92)!important}
+.home-hero>.button-light:hover{background:rgba(26,48,56,.66)!important}

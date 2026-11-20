@@ -493,3 +493,35 @@ img.brand-logo{
     linear-gradient(90deg, rgba(20,39,46,.78), rgba(20,39,46,.38)),
     url("images/orangutan-in-rainforest.webp");
 }
+
+
+/* BWC master palette — editorial pages */
+:root{
+ --forest:#1a3038;--forest-dark:#10242b;--cream:#f5f1e8;--sand:#c9b184;--muted:#687775;
+ --bwc-slate:#1a3038;--bwc-slate-900:#1a3038;--bwc-slate-800:#294750;
+ --bwc-champagne:#c9b184;--bwc-champagne-light:#e5d6b8;--bwc-ivory:#f5f1e8;--bwc-paper:#fbf9f4;--bwc-ink:#1b2b31
+}
+body{background:#f5f1e8;color:#1b2b31}
+.header{background:#f5f1e8;color:#1a3038;border-bottom:1px solid rgba(26,48,56,.10)}
+.header .brand,.header .menu{color:#1a3038}
+.header .nav a{color:#1a3038}
+.header .nav a:hover,.header .nav a[aria-current="page"]{color:#92764a}
+.header .nav-cta{background:#e5d6b8;color:#1a3038;border-color:#c9b184}
+.header .nav-cta:hover{background:#f1e8d5}
+.page-hero{background-color:#1a3038;background-image:linear-gradient(90deg,rgba(26,48,56,.78),rgba(26,48,56,.38)),url("images/orangutan-in-rainforest.webp");color:#f5f1e8}
+.page-hero h1,.page-hero h1 em{color:#f5f1e8}
+.page-hero h1 em,.page-hero .eyebrow{color:#e5d6b8}
+.page-content,.journey,.details{background:#f5f1e8;color:#1b2b31}
+.experience,.feature-strip,.inquiry{background:#eee8dc;color:#1b2b31}
+.section h2{color:#1a3038}.section h2 em,.eyebrow.dark{color:#92764a}
+.itinerary-hero{background-color:#1a3038;background-image:linear-gradient(90deg,rgba(26,48,56,.78) 0%,rgba(26,48,56,.48) 46%,rgba(26,48,56,.18) 100%),linear-gradient(0deg,rgba(16,36,43,.38),transparent 56%),url("assets/itinerary-orangutan.jpg")}
+.itinerary-overview,.next-chapter{background:#1a3038;color:#f5f1e8}
+.trip-card{background:#223b43;border-color:rgba(229,214,184,.30)}
+.trip-card-meta,.itinerary-hero .eyebrow,.overview-head .eyebrow{color:#e5d6b8}
+.next-page-cta{background:#1a3038!important;color:#f5f1e8!important}
+.footer{background:#10242b;color:#d4dcd8}
+.button-light{background:linear-gradient(135deg,#e5d6b8,#c9b184);color:#1a3038;border-color:#c9b184}
+.button-dark{background:#1a3038;color:#f5f1e8;border-color:#c9b184}
+.button-dark:hover{background:#294750;border-color:#e5d6b8}
+.topbar .brand-name span,.header .brand-name span{color:#92764a}
+.page-hero.gallery-hero{background-image:linear-gradient(90deg,rgba(26,48,56,.78),rgba(26,48,56,.38)),url("images/orangutan-in-rainforest.webp")}
