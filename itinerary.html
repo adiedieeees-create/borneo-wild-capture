@@ -28,27 +28,59 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 @media(max-width:760px){.topbar{background:rgba(17,36,43,.94);backdrop-filter:blur(12px)}.nav{min-height:76px;padding:14px 0;gap:12px}.brand-name{font-size:12px}.brand-mark{width:34px;height:34px}.menu-toggle{display:block;margin-left:auto;flex:0 0 auto}.nav-cta{display:none}.navlinks{display:none;position:absolute;top:calc(100% + 1px);left:0;right:0;width:100%;padding:14px 20px 18px;background:rgba(17,36,43,.98);border:1px solid rgba(229,214,184,.2);box-shadow:0 18px 35px #0004;flex-direction:column;align-items:stretch;gap:0;z-index:30;font-size:11px}.navlinks.is-open{display:flex;max-height:calc(100svh - 92px);overflow-y:auto}.navlinks a{padding:12px 3px;border-bottom:1px solid #ffffff1a}.nav-book{display:block;color:#ead8b5}.menu-toggle[aria-expanded=true] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.menu-toggle[aria-expanded=true] span:nth-child(2){opacity:0}.menu-toggle[aria-expanded=true] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}.itinerary-page{padding:125px 0 55px}.index-layout{grid-template-columns:1fr;gap:34px}h1{font-size:clamp(44px,12vw,62px);margin:25px 0 17px}.intro{font-size:13px;margin-bottom:27px}.photo-wrap{height:clamp(390px,112vw,560px);max-width:none}.index-right{padding-top:0}.index-section{padding-bottom:20px;margin-bottom:20px}.index-section h2{font-size:27px}.index-row{font-size:12px}.details{padding:60px 0}.day-grid{grid-template-columns:1fr;gap:12px}.day-card{padding:21px}.cta-inner{align-items:flex-start;flex-direction:column}.footer-row{align-items:flex-start;flex-direction:column}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style>
+<link rel="stylesheet" href="site-theme.css">
 </head>
 <body>
 <header class="topbar"><div class="wrap nav">
 <a class="brand" href="index.html#home" aria-label="Borneo Wild Capture home"><svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true"><path fill="currentColor" d="M8 34c1.1-3.5 1.6-7.4 2.7-11.2.9-3 3.2-5.2 6.4-5.5-.4-4.8 2.3-8.4 6.4-8.4 2.9 0 5.5 1.9 6.1 4.7 3.5-.1 6.3 2.1 6.3 5.4 0 2.1-1.1 3.9-2.9 5.2l3.4 9.8h-7.1l-2.4-6.2-4.4 6.2h-6.2l-2.1-6.1-2.3 6.1H8Z"/></svg><span class="brand-name">BORNEO WILD CAPTURE<span>WILDLIFE · RIVER · RAINFOREST</span></span></a>
 <nav id="primary-navigation" class="navlinks" data-mobile-menu aria-label="Main navigation">
-<a href="index.html#home">Home</a><a href="index.html#expeditions">Expeditions</a><a class="active" aria-current="page" href="itinerary.html">Itinerary</a><a href="how-to-get-here.html">How to Get Here</a><a href="index.html#orangutans">About</a><a href="index.html#gallery">Gallery</a><a href="index.html#prepare">What to Bring</a><a href="index.html#contact">Contact</a><a class="nav-book" href="https://wa.me/6285190836669?text=Hello%20Borneo%20Wild%20Capture%2C%20I%27d%20like%20to%20book%20a%20trip." target="_blank" rel="noopener noreferrer">Book a Trip ↗</a>
+<a href="index.html">Home</a>
+<a href="how-to-get-here.html">How to Get Here</a>
+<a href="itinerary.html" class="active" aria-current="page">Itinerary</a>
+<a href="gallery.html">Gallery</a>
+<a href="about.html">Our Story</a>
+<a href="contact.html">Contact</a>
+<a class="nav-book" href="https://wa.me/6285190836669?text=Hello%20Borneo%20Wild%20Capture%2C%20I%27d%20like%20to%20book%20a%20trip." target="_blank" rel="noopener noreferrer">Book a Trip ↗</a>
 </nav>
 <a class="nav-cta" href="https://wa.me/6285190836669?text=Hello%20Borneo%20Wild%20Capture%2C%20I%27d%20like%20to%20book%20a%20trip." target="_blank" rel="noopener noreferrer">Book a Trip ↗</a>
 <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle><span></span><span></span><span></span></button>
 </div></header>
 <main>
-<section class="itinerary-page" aria-labelledby="page-title"><div class="wrap index-layout">
-<div class="index-left">
-<div class="eyebrow">Choose your journey</div>
-<h1 id="page-title">Your time in Borneo, <em>your kind of adventure.</em></h1>
-<p class="intro">From a first taste of the rainforest to a slower, deeper expedition, find the journey that fits your plans.</p>
-<figure class="photo-wrap"><img src="assets/itinerary-orangutan.jpg" alt="Bornean orangutan with its mouth open among rainforest foliage" fetchpriority="high"><figcaption class="photo-caption">Tanjung Puting · Central Kalimantan · Indonesia</figcaption></figure>
-</div>
-<div class="index-right" aria-label="Expedition itinerary overview">
-<p class="index-label">Expedition guide · 02</p>
-<section class="index-section" aria-labelledby="section-one"><div class="section-heading"><span class="section-chip">Section 01</span><span class="section-duration">3 days · 2 nights</span></div><h2 id="section-one">Essential Escape</h2><div class="index-row"><span>Day 1 · Arrival &amp; river journey</span><span>01</span></div><div class="index-row"><span>Day 2 · Orangutan habitat &amp; forest</span><span>02</span></div><div class="index-row"><span>Day 3 · Morning river &amp; departure</span><span>03</span></div></section>
+<section class="itinerary-hero" aria-labelledby="page-title">
+    <div class="wrap">
+      <div class="eyebrow">03&nbsp; / &nbsp;Itinerary</div>
+      <h1 id="page-title">Your time in Borneo,<br><em>your kind of adventure.</em></h1>
+      <p class="intro">From a first taste of the rainforest to a slower, deeper expedition, find the journey that fits your plans.</p>
+      <div class="hero-bottom"><span class="line"></span><span>Tanjung Puting · Central Kalimantan · Indonesia</span></div>
+    </div>
+  </section>
+  <section class="itinerary-overview" aria-labelledby="overview-title">
+    <div class="wrap">
+      <div class="overview-head">
+        <div class="eyebrow">Expedition guide</div>
+        <h2 id="overview-title">Choose your journey.</h2>
+        <p>Three ways to experience the river, rainforest and wildlife of Tanjung Puting.</p>
+      </div>
+      <div class="trip-grid">
+        <article class="trip-card">
+          <div class="trip-card-meta"><span>Section 01</span><span>3 days · 2 nights</span></div>
+          <h3>Essential Escape</h3>
+          <p>Arrival and river journey, orangutan habitat and forest, then a quiet morning on the river before departure.</p>
+        </article>
+        <article class="trip-card">
+          <div class="trip-card-meta"><span>Section 02</span><span>4 days · 3 nights</span></div>
+          <h3>Wildlife Experience</h3>
+          <p>More time immersed in the rainforest, slower wildlife observation and deeper exploration.</p>
+        </article>
+        <article class="trip-card">
+          <div class="trip-card-meta"><span>Section 03</span><span>5 days · 4 nights</span></div>
+          <h3>Wildlife Moments</h3>
+          <p>Unhurried days along the river, patient wildlife watching and small moments in the forest.</p>
+        </article>
+      </div>
+      <p class="overview-note">Routes, stops and wildlife sightings depend on park regulations, weather, river conditions and wildlife welfare. Final details are confirmed with your trip plan.</p>
+    </div>
+  </section>
 <section class="index-section" aria-labelledby="section-two"><div class="section-heading"><span class="section-chip">Section 02</span><span class="section-duration">4 days · 3 nights</span></div><h2 id="section-two">Wildlife Experience</h2><div class="index-row"><span>More time immersed in the rainforest</span><span>04</span></div><div class="index-row"><span>Slower wildlife observation</span><span>05</span></div><div class="index-row"><span>Deeper exploration</span><span>06</span></div></section>
 <section class="index-section" aria-labelledby="section-three"><div class="section-heading"><span class="section-chip">Section 03</span><span class="section-duration">5 days · 4 nights</span></div><h2 id="section-three">Wildlife Moments</h2><div class="index-row"><span>Unhurried days along the river</span><span>07</span></div><div class="index-row"><span>Patient wildlife watching</span><span>08</span></div><div class="index-row"><span>Small moments in the forest</span><span>09</span></div></section>
 <p class="index-note">Routes, stops and wildlife sightings depend on park regulations, weather, river conditions and wildlife welfare. Final details are confirmed with your trip plan.</p>
@@ -61,8 +93,20 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 <article class="day-card"><div class="day-no">Day 03 · Departure</div><h3>Morning on the river</h3><p>Enjoy the quiet atmosphere of the river before returning to the harbour for your onward transfer.</p></article>
 </div><p class="note">Wildlife sightings are never guaranteed. All visits follow park regulations and guidance from local guides and park staff.</p>
 </div></section>
-<section class="final-cta"><div class="wrap cta-inner"><div><div class="eyebrow">Your Borneo story starts here</div><h2>Let’s plan your journey.</h2><p>Tell us your preferred dates, group size and expedition length.</p></div><a class="cta-button" href="https://wa.me/6285190836669?text=Hello%20Borneo%20Wild%20Capture%2C%20I%27d%20like%20to%20plan%20a%20Tanjung%20Puting%20expedition." target="_blank" rel="noopener noreferrer">Plan Your Trip ↗</a></div></section>
+<section class="final-cta next-page-cta">
+    <div class="wrap cta-inner">
+      <div>
+        <div class="eyebrow">NEXT · FIELD NOTES</div>
+        <h2>The journey continues.</h2>
+        <p>See the wildlife, river and rainforest through our lens.</p>
+      </div>
+      <div class="next-page-actions">
+        <a class="cta-button" href="gallery.html">Discover the Gallery <span aria-hidden="true">↗</span></a>
+        <a class="cta-secondary" href="https://wa.me/6285190836669?text=Hello%20Borneo%20Wild%20Capture%2C%20I%27d%20like%20to%20plan%20a%20Tanjung%20Puting%20expedition." target="_blank" rel="noopener noreferrer">Plan your trip on WhatsApp ↗</a>
+      </div>
+    </div>
+  </section>
 </main>
-<footer class="footer"><div class="wrap footer-row"><a class="footer-brand" href="index.html">BORNEO WILD CAPTURE</a><div class="footer-links"><a href="index.html">Home</a><a href="how-to-get-here.html">How to Get Here</a><a href="index.html#gallery">Gallery</a><a href="https://instagram.com/borneowildcapture" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="mailto:orangutantrip6@gmail.com">Email</a></div><span>© 2026 Borneo Wild Capture · Tanjung Puting National Park</span></div></footer>
+<footer class="footer"><div class="wrap footer-row"><a class="footer-brand" href="index.html">BORNEO WILD CAPTURE</a><div class="footer-links"><a href="index.html">Home</a><a href="how-to-get-here.html">How to Get Here</a><a href="gallery.html">Gallery</a><a href="https://instagram.com/borneowildcapture" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="mailto:orangutantrip6@gmail.com">Email</a></div><span>© 2026 Borneo Wild Capture · Tanjung Puting National Park</span></div></footer>
 <script src="assets/site.js" defer></script>
 </body></html>
