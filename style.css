@@ -464,3 +464,11 @@ body{background:#f5f1e8;color:#1b2b31}
 .home-hero>.button-light{background:rgba(26,48,56,.56)!important;border-color:rgba(229,214,184,.56)!important;color:rgba(255,255,255,.92)!important}
 .home-hero>.button-light .button-label{color:rgba(255,255,255,.92)!important}
 .home-hero>.button-light:hover{background:rgba(26,48,56,.66)!important}
+
+/* Homepage hero typography — soft ivory to match the CTA, without changing layout */
+.home-hero .hero-location,
+.home-hero h1,
+.home-hero h1 em,
+.home-hero .hero-text {
+  color: rgba(245,241,232,.82) !important;
+}
