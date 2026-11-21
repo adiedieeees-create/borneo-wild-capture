@@ -68,8 +68,10 @@ h1 span{display:block;color:var(--champagne-light);font-style:italic}
 .flight-list{border:1px solid #e5e0d5;background:#fff;border-radius:4px;overflow:hidden}
 .flight-row{display:grid;grid-template-columns:125px 1fr;gap:17px;padding:20px 17px;align-items:center}
 .flight-row+.flight-row{border-top:1px solid #e9e4da}
-.airline{display:flex;align-items:center;gap:9px;color:var(--slate-900);font-weight:700;font-size:12px}
-.airline-mark{width:33px;height:33px;display:grid;place-items:center;border:1px solid #ddd3be;border-radius:50%;color:#806b45;font:700 12px var(--serif)}
+.airline{display:flex;align-items:center;justify-content:flex-start;min-width:0}
+.airline-logo{display:block;width:118px;max-width:100%;height:auto;max-height:40px;object-fit:contain;object-position:left center}
+.batik-air-logo{width:118px}
+.nam-air-logo{width:118px;max-height:28px}
 .route{padding-left:17px;border-left:1px solid #e4dece}
 .route strong{display:block;color:var(--slate-950);font-size:12px;font-weight:700}
 .route span{display:block;margin-top:4px;color:var(--muted);font-size:10px}
@@ -220,11 +222,11 @@ h1 span{display:block;color:var(--champagne-light);font-style:italic}
           <div class="airport-note">Direct route from Jakarta · CGK → PKN</div>
           <div class="flight-list">
             <div class="flight-row">
-              <div class="airline"><span class="airline-mark">B</span><span>Batik Air</span></div>
+              <div class="airline"><img class="airline-logo batik-air-logo" src="https://i.logos-download.com/8345/1906-s640-9a5d3c6a0f156abc10446c8a6da45873.png/Batik_Air_Logo_2017-s640.png?dl=" alt="Batik Air official logo" width="118" height="32" loading="lazy" decoding="async"></div>
               <div class="route"><strong>Jakarta (CGK) → Pangkalan Bun (PKN)</strong><span>Non-stop · approx. 1 hr 25 min</span></div>
             </div>
             <div class="flight-row">
-              <div class="airline"><span class="airline-mark">N</span><span>NAM Air</span></div>
+              <div class="airline"><img class="airline-logo nam-air-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/LOGO_NAM_HORIZONTAL.png" alt="NAM Air logo — Sriwijaya Air Group" width="118" height="24" loading="lazy" decoding="async" title="NAM Air logo, sourced from Sriwijaya Air Group via Wikimedia Commons, CC BY-SA 4.0"></div>
               <div class="route"><strong>Jakarta (CGK) → Pangkalan Bun (PKN)</strong><span>Non-stop · approx. 1 hr 15 min</span></div>
             </div>
           </div>
