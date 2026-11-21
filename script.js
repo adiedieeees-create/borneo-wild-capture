@@ -20,7 +20,7 @@ const titles={
 };
 const originalTitle=document.title;
 function applyLanguage(code){
- const selected=languages.some(x=>x[0]===code)?code:'id', index=selected==='en'?-1:languages.findIndex(x=>x[0]===selected)-1;
+ const selected=languages.some(x=>x[0]===code)?code:'id', index=selected==='en'?-1:(selected==='id'?0:languages.findIndex(x=>x[0]===selected)-1);
  document.documentElement.lang=selected;
  const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let node;
  while((node=walker.nextNode())){
