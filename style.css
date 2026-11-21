@@ -458,7 +458,7 @@ body{background:#f5f1e8;color:#1b2b31}
 .monogram{border-color:#c9b184;color:#1a3038}.monogram span{color:#92764a}
 .journey-copy li:before{color:#c9b184}.contact-actions>a:last-child{color:#52676c}
 .home-hero .hero-bg{
- background-image:linear-gradient(90deg,rgba(26,48,56,.46) 0%,rgba(26,48,56,.22) 62%,rgba(26,48,56,.10) 100%),linear-gradient(0deg,rgba(16,36,43,.42) 0%,transparent 40%,rgba(26,48,56,.16) 100%),url("images/DSCF7031.jpg");
+ background-image:url("images/DSCF7031.jpg");
  background-size:cover;background-position:center 58%;filter:none
 }
 .home-hero>.button-light{background:rgba(26,48,56,.56)!important;border-color:rgba(229,214,184,.56)!important;color:rgba(255,255,255,.92)!important}
