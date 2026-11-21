@@ -525,3 +525,46 @@ body{background:#f5f1e8;color:#1b2b31}
 .button-dark:hover{background:#294750;border-color:#e5d6b8}
 .topbar .brand-name span,.header .brand-name span{color:#92764a}
 .page-hero.gallery-hero{background-image:linear-gradient(90deg,rgba(26,48,56,.78),rgba(26,48,56,.38)),url("images/orangutan-in-rainforest.webp")}
+
+
+/* Gallery — photographer banner, full bleed from the top edge */
+.gallery-page .header{
+  position:absolute;top:0;left:0;right:0;z-index:30;
+  background:linear-gradient(180deg,rgba(15,34,39,.96) 0%,rgba(15,34,39,.58) 72%,rgba(15,34,39,0) 100%);
+  border-bottom:1px solid rgba(229,214,184,.18);
+}
+.gallery-page .header .nav a:not(.nav-cta),
+.gallery-page .header .menu{color:#f5f1e8}
+.gallery-page .header .nav a[aria-current="page"]{color:#e5d6b8}
+.gallery-page .header .brand-logo{filter:drop-shadow(0 2px 5px rgba(0,0,0,.25))}
+.gallery-page .gallery-hero{
+  position:relative;isolation:isolate;
+  min-height:760px;min-height:min(860px,92svh);
+  padding:190px 11% 115px;
+  background-color:#14272e;
+  background-image:
+    linear-gradient(90deg,rgba(14,32,37,.76) 0%,rgba(14,32,37,.48) 46%,rgba(14,32,37,.12) 100%),
+    linear-gradient(0deg,rgba(14,32,37,.30),transparent 58%),
+    url("assets/gallery-photographer.webp");
+  background-size:cover;
+  background-position:center 53%;
+}
+.gallery-page .gallery-hero .eyebrow{color:#e5d6b8}
+.gallery-page .gallery-hero h1{max-width:760px}
+@media(max-width:800px){
+  .gallery-page .header{height:74px;padding:0 6%}
+  .gallery-page .header .nav{background:rgba(20,39,46,.98)}
+  .gallery-page .header .nav.open a{color:#f5f1e8}
+  .gallery-page .header .nav.open .nav-cta{background:#e5d6b8;color:#1a3038}
+  .gallery-page .gallery-hero{
+    min-height:720px;min-height:min(790px,92svh);
+    padding:150px 7% 85px;
+    background-position:center 51%;
+  }
+  .gallery-page .gallery-hero h1{font-size:clamp(46px,10.5vw,70px);line-height:1.04}
+  .gallery-page .gallery-hero>p:last-child{max-width:500px;font-size:13px}
+}
+@media(max-width:480px){
+  .gallery-page .gallery-hero{padding-top:143px;background-position:center 51%}
+  .gallery-page .gallery-hero h1{font-size:clamp(43px,10.2vw,58px)}
+}
