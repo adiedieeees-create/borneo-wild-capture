@@ -69,11 +69,18 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 @media(max-width:800px){.trip-grid{grid-template-columns:1fr;gap:13px}.trip-card{min-height:auto;padding:25px}.trip-card h3{margin-top:17px}.trip-card-action{padding-top:20px}.package-day-grid{grid-template-columns:1fr;gap:11px}.package-day{min-height:auto;padding:22px}.package-itinerary{padding:58px 0 62px}.package-heading h2{font-size:clamp(35px,9vw,48px)}.bring-list{column-gap:16px;row-gap:12px}}
 @media(prefers-reduced-motion:reduce){.trip-card,.trip-card-action span{transition:none!important}}
 </style>
+<link rel="stylesheet" href="assets/interior-header.css">
 </head>
 <body>
-<header class="topbar"><div class="wrap nav">
-<a class="brand" href="index.html#home" aria-label="Borneo Wild Capture home"><img class="brand-logo" src="assets/borneo-wild-capture-logo.svg" alt="Borneo Wild Capture — official hornbill logo" width="160" height="81" loading="eager" decoding="async"></a>
-<nav id="primary-navigation" class="navlinks" data-mobile-menu aria-label="Main navigation">
+<header class="bwc-header" role="banner">
+  <div class="bwc-header-inner">
+    <button class="bwc-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="bwc-site-menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a class="bwc-brand" href="index.html#home" aria-label="Borneo Wild Capture home">
+      <img class="bwc-brand-logo" src="assets/borneo-wild-capture-logo.svg" alt="Borneo Wild Capture — official hornbill logo" width="190" height="96" loading="eager" decoding="async">
+    </a>
+    <nav id="bwc-site-menu" class="bwc-menu" aria-label="Main navigation">
 <a href="index.html">Home</a>
 <a href="how-to-get-here.html">How to Get Here</a>
 <a href="itinerary.html" class="active" aria-current="page">Itinerary</a>
@@ -81,10 +88,9 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 <a href="about.html">Our Story</a>
 <a href="contact.html">Contact</a>
 <a class="nav-book" href="https://wa.me/6285190836669?text=Hello%20Borneo%20Wild%20Capture%2C%20I%27d%20like%20to%20book%20a%20trip." target="_blank" rel="noopener noreferrer">Book a Trip ↗</a>
-</nav>
-<a class="nav-cta" href="https://wa.me/6285190836669?text=Hello%20Borneo%20Wild%20Capture%2C%20I%27d%20like%20to%20book%20a%20trip." target="_blank" rel="noopener noreferrer">Book a Trip ↗</a>
-<button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle><span></span><span></span><span></span></button>
-</div></header>
+    </nav>
+  </div>
+</header>
 <main>
 <section class="itinerary-hero" aria-labelledby="page-title"><div class="wrap">
 <div class="eyebrow">03&nbsp; / &nbsp;Itinerary</div>
@@ -113,4 +119,5 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 </main>
 <footer class="footer"><div class="wrap footer-row"><a class="brand footer-brand" href="index.html" aria-label="Borneo Wild Capture home"><img class="brand-logo" src="assets/borneo-wild-capture-logo.svg" alt="Borneo Wild Capture — official hornbill logo" width="160" height="81" loading="eager" decoding="async"></a><div class="footer-links"><a href="index.html">Home</a><a href="how-to-get-here.html">How to Get Here</a><a href="gallery.html">Gallery</a><a href="https://instagram.com/borneowildcapture" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="mailto:orangutantrip6@gmail.com">Email</a></div><span>© 2026 Borneo Wild Capture · Tanjung Puting National Park</span></div></footer>
 <script src="assets/site.js" defer></script>
+<script src="assets/interior-header.js"></script>
 </body></html>
