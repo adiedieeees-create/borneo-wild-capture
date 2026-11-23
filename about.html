@@ -62,6 +62,34 @@
       .about-footer-links{gap:15px}
     }
     @media(prefers-reduced-motion:reduce){.about-photo img{transition:none}}
+  
+    /* People & Culture — Lopus Village */
+    .culture-section{margin-top:clamp(58px,7vw,92px);padding-top:clamp(42px,5vw,68px);border-top:1px solid rgba(16,54,61,.18)}
+    .culture-eyebrow{margin:0 0 14px;color:var(--about-teal);font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+    .culture-heading{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:end}
+    .culture-heading h2{margin:0;color:var(--about-teal-deep);font:500 clamp(42px,5.3vw,66px)/1.04 "Playfair Display",Georgia,serif;letter-spacing:-.035em}
+    .culture-subtitle{margin:12px 0 0;color:var(--about-teal);font:italic 500 clamp(17px,1.9vw,22px)/1.45 "Playfair Display",Georgia,serif}
+    .culture-deck{margin:0 0 4px;color:var(--about-teal-deep);font:italic 500 clamp(22px,2.8vw,30px)/1.38 "Playfair Display",Georgia,serif}
+    .culture-copy{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,52px);margin-top:30px}
+    .culture-copy p{margin:0 0 15px;color:#26383d;font-size:14px;line-height:1.9}
+    .culture-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:clamp(14px,2vw,22px);margin-top:clamp(34px,4vw,50px)}
+    .culture-photo{min-width:0;margin:0;background:#e9e2d4}
+    .culture-photo img{display:block;width:100%;height:auto}
+    .culture-photo figcaption{margin:0;padding:12px 2px 0;color:var(--about-teal-deep);font-size:9px;font-weight:700;letter-spacing:.16em;line-height:1.55;text-transform:uppercase}
+    .culture-close{max-width:800px;margin:clamp(34px,4vw,52px) auto 14px;color:#26383d;text-align:center;font-size:14px;line-height:1.95}
+    .culture-signature{margin:0;color:var(--about-teal);text-align:center;font:italic 500 15px/1.7 "Playfair Display",Georgia,serif}
+    @media(max-width:760px){
+      .culture-section{margin-top:50px;padding-top:38px}
+      .culture-heading,.culture-copy{grid-template-columns:1fr;gap:16px}
+      .culture-heading h2{font-size:42px}
+      .culture-deck{font-size:23px}
+      .culture-copy{margin-top:23px}
+      .culture-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 12px;margin-top:29px}
+      .culture-photo figcaption{padding-top:9px;font-size:8px;letter-spacing:.12em}
+      .culture-close{margin-top:30px;text-align:left;font-size:13px}
+      .culture-signature{text-align:left;font-size:14px}
+    }
+
   </style>
 </head>
 <body class="about-page">
@@ -107,6 +135,63 @@
         <img src="assets/about-klotok.webp" alt="A klotok carrying guests through a quiet rainforest river" width="380" height="262" loading="lazy" decoding="async">
         <figcaption>Journeys shaped by local knowledge</figcaption>
       </figure>
+    </section>
+
+    <section class="culture-section" id="people-and-culture" aria-labelledby="culture-title">
+      <p class="culture-eyebrow">People &amp; Culture</p>
+      <div class="culture-heading">
+        <div>
+          <h2 id="culture-title">Lopus Village</h2>
+          <p class="culture-subtitle">Discover the Living Heritage of the Dayak Tomun People</p>
+        </div>
+        <p class="culture-deck">Beyond the rainforest, there is a culture waiting to be discovered.</p>
+      </div>
+      <div class="culture-copy">
+        <div>
+          <p>Hidden within the landscapes of Central Borneo, Lopus Village is home to the Dayak Tomun people, a community whose identity is deeply connected to ancestral heritage, nature, and the traditions of everyday life.</p>
+          <p>Here, culture is more than a collection of old stories. It lives through community gatherings, local knowledge, traditional hospitality, and relationships passed down through generations.</p>
+        </div>
+        <div>
+          <p>Cultural expressions such as Bagondang, Garung Pantan, and Ikat Tongang offer glimpses into the heritage and social traditions of the community. They are best understood in their own context, through the voices and knowledge of local people.</p>
+          <p>Time with local families, including a homestay when arranged with local hosts, can offer a closer connection with everyday village life — sharing meals, listening to stories, and learning from the people who call this place home.</p>
+        </div>
+      </div>
+      <div class="culture-gallery" aria-label="Scenes of life and culture in Lopus Village">
+        <figure class="culture-photo">
+          <img src="assets/people-culture-weaving.webp" alt="A woman weaving long strips of natural material by hand" loading="lazy" decoding="async">
+          <figcaption>Traditional handcraft</figcaption>
+        </figure>
+        <figure class="culture-photo">
+          <img src="assets/people-culture-gathering-01.webp" alt="A man during a moment of community gathering" loading="lazy" decoding="async">
+          <figcaption>A moment of shared community life</figcaption>
+        </figure>
+        <figure class="culture-photo">
+          <img src="assets/people-culture-movement.webp" alt="A man wearing patterned traditional clothing and a light sash" loading="lazy" decoding="async">
+          <figcaption>Cultural expressions and movement</figcaption>
+        </figure>
+        <figure class="culture-photo">
+          <img src="assets/people-culture-instruments.webp" alt="A seated man beside a traditional percussion instrument" loading="lazy" decoding="async">
+          <figcaption>Traditional instruments</figcaption>
+        </figure>
+        <figure class="culture-photo">
+          <img src="assets/people-culture-music-gathering.webp" alt="Community members gathered around a traditional musical instrument" loading="lazy" decoding="async">
+          <figcaption>Music brings people together</figcaption>
+        </figure>
+        <figure class="culture-photo">
+          <img src="assets/people-culture-elder-portrait.webp" alt="An elder seated at the doorway of a wooden home" loading="lazy" decoding="async">
+          <figcaption>The people of Lopus</figcaption>
+        </figure>
+        <figure class="culture-photo">
+          <img src="assets/people-culture-forest-stream.webp" alt="A stream winding through lush forest" loading="lazy" decoding="async">
+          <figcaption>Waterways around the village</figcaption>
+        </figure>
+        <figure class="culture-photo">
+          <img src="assets/people-culture-riverside-shelter.webp" alt="A small wooden shelter beside a clear forest stream" loading="lazy" decoding="async">
+          <figcaption>A quiet shelter by the stream</figcaption>
+        </figure>
+      </div>
+      <p class="culture-close">Borneo is often celebrated for its ancient rainforests, extraordinary wildlife, and magnificent rivers. But the story of Borneo would be incomplete without the people who have lived alongside these landscapes for generations. A visit to Lopus is an invitation to slow down, listen, learn, and connect. Discover the traditions. Share everyday moments. Meet the people behind the landscape. Because the true spirit of Borneo lives not only in its wilderness, but also in its people.</p>
+      <p class="culture-signature">Borneo Wild Capture — Beyond Wildlife, Discover the People of Borneo.</p>
     </section>
   </div>
 </main>
