@@ -171,6 +171,82 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
   }
 }
 </style>
+
+<style id="people-culture-card-elegant-final">
+/* Refined finish for the People & Culture card only. Keep the existing artwork. */
+.culture-cta-card,
+.culture-cta-card:hover,
+.culture-cta-card:focus,
+.culture-cta-card:focus-visible,
+.culture-cta-card:active {
+  background-position: center 46% !important;
+  background-size: 100% 144% !important;
+  border: 1px solid rgba(229,214,184,.78) !important;
+  border-radius: 4px;
+  box-shadow:
+    0 16px 36px rgba(0,0,0,.22),
+    inset 0 0 0 1px rgba(229,214,184,.10);
+}
+.culture-cta-card:after {
+  background:
+    linear-gradient(90deg,
+      rgba(8,8,8,.40) 0%,
+      rgba(8,8,8,.27) 44%,
+      rgba(8,8,8,.12) 100%),
+    linear-gradient(180deg,
+      rgba(8,8,8,.17) 0%,
+      rgba(8,8,8,.025) 43%,
+      rgba(8,8,8,.18) 100%);
+}
+.culture-cta-meta {
+  text-shadow: 0 1px 4px rgba(0,0,0,.88);
+}
+.culture-cta-copy {
+  max-width: min(650px, 76%);
+  text-shadow: 0 1px 4px rgba(0,0,0,.72);
+}
+.culture-cta-card h3 {
+  color: #f7f2e8;
+  text-shadow: 0 2px 8px rgba(0,0,0,.78);
+}
+.culture-cta-card p {
+  color: rgba(255,255,255,.94);
+  text-shadow: 0 1px 5px rgba(0,0,0,.82);
+}
+.culture-cta-card .trip-card-action {
+  color: #f0dfbd;
+  text-shadow: 0 1px 5px rgba(0,0,0,.88);
+}
+@media (max-width:760px) {
+  .culture-cta-card,
+  .culture-cta-card:hover,
+  .culture-cta-card:focus,
+  .culture-cta-card:focus-visible,
+  .culture-cta-card:active {
+    background-image: url("assets/dayak-tomun-card-banner-mid.svg?v=20261124-elegant") !important;
+    background-position: center 46% !important;
+    background-size: 100% 144% !important;
+  }
+  .culture-cta-copy {
+    max-width: 88%;
+  }
+}
+@media (max-width:460px) {
+  .culture-cta-card,
+  .culture-cta-card:hover,
+  .culture-cta-card:focus,
+  .culture-cta-card:focus-visible,
+  .culture-cta-card:active {
+    background-image: url("assets/dayak-tomun-art-panel.svg?v=20261124-elegant") !important;
+    background-position: center 46% !important;
+    background-size: 100% 144% !important;
+  }
+  .culture-cta-copy {
+    max-width: 91%;
+  }
+}
+</style>
+
 </head>
 <body>
 <header class="bwc-header" role="banner">
