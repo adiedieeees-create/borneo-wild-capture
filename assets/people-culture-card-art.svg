@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 620" role="img" aria-label="Dayak-inspired ornamental masks and woven motifs">
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#061412"/><stop offset=".55" stop-color="#10251e"/><stop offset="1" stop-color="#07100f"/></linearGradient>
+ <linearGradient id="gold" x2="0" y2="1"><stop stop-color="#fff0b7"/><stop offset=".48" stop-color="#d9a53f"/><stop offset="1" stop-color="#8d531b"/></linearGradient>
+ <linearGradient id="red" x2="0" y2="1"><stop stop-color="#ff5145"/><stop offset="1" stop-color="#98131b"/></linearGradient>
+ <linearGradient id="green" x2="0" y2="1"><stop stop-color="#35ad72"/><stop offset="1" stop-color="#064c3c"/></linearGradient>
+ <pattern id="weave" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M14 1 27 14 14 27 1 14Z" fill="none" stroke="#e7b84e" stroke-width="2" opacity=".38"/><path d="M14 6 22 14 14 22 6 14Z" fill="none" stroke="#df3a32" stroke-width="2" opacity=".5"/></pattern>
+ <radialGradient id="shade"><stop stop-color="#142b20" stop-opacity="0"/><stop offset="1" stop-color="#020908" stop-opacity=".8"/></radialGradient>
+</defs>
+<rect width="1400" height="620" fill="url(#bg)"/>
+<rect width="1400" height="620" fill="url(#shade)"/>
+<!-- flowing ornamental vines -->
+<g fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".95">
+ <path d="M380 30C260 2 230 135 325 135c78 0 70-92 12-79-41 9-36 57-6 50" stroke="#d52b2d" stroke-width="13"/>
+ <path d="M470 18C365 10 375 150 470 142c70-6 65-78 14-79-31 0-42 31-21 44" stroke="#dca63e" stroke-width="12"/>
+ <path d="M545 0C440 50 500 160 565 121c48-29 30-81-8-65-27 12-20 39 1 40" stroke="#16875e" stroke-width="13"/>
+ <path d="M720 0c-56 60-34 140 32 127 51-10 45-75 3-72-28 2-35 32-14 43" stroke="#e83b30" stroke-width="12"/>
+ <path d="M930 8c85-38 140 69 74 111-53 34-93-23-57-51 25-20 53 3 39 23" stroke="#d9a43b" stroke-width="13"/>
+ <path d="M1100 6c100 7 100 128 16 135-61 5-73-65-26-78 32-9 51 21 29 42" stroke="#16865c" stroke-width="13"/>
+ <path d="M1230 25c110-48 177 88 87 132-64 32-105-39-56-69 34-20 62 15 36 39" stroke="#e22f32" stroke-width="13"/>
+ <path d="M420 594c-96-20-110-117-32-127 57-8 79 57 35 75-30 12-53-17-34-38" stroke="#dba23b" stroke-width="13"/>
+ <path d="M630 618c-83-52-48-139 22-119 50 15 44 72 5 72-28 0-37-28-16-42" stroke="#16865c" stroke-width="13"/>
+ <path d="M900 618c-74-58-35-144 34-118 49 19 38 76-2 73-28-2-34-31-12-43" stroke="#e5332e" stroke-width="13"/>
+ <path d="M1140 606c-12-91 90-125 116-59 19 49-32 80-59 47-19-23-1-49 21-39" stroke="#e0aa3d" stroke-width="13"/>
+</g>
+<!-- ornamental sparks -->
+<g fill="#e3b34b"><path d="m590 174 17-29 17 29-17 29z"/><path d="m1035 174 13-24 13 24-13 24z"/><circle cx="490" cy="215" r="6"/><circle cx="1270" cy="230" r="6"/><circle cx="850" cy="90" r="5"/></g>
+<!-- first performer -->
+<g transform="translate(570 160)">
+ <path d="M-160 450Q-155 305-86 259L-42 231 30 232 92 263Q148 308 166 450Z" fill="#101b19" stroke="#e8d6aa" stroke-width="8"/>
+ <path d="M-126 450Q-92 334-31 281L16 450Z" fill="url(#red)" stroke="#e4ad42" stroke-width="6"/>
+ <path d="M25 450Q44 336 100 292L146 450Z" fill="url(#green)" stroke="#e4ad42" stroke-width="6"/>
+ <path d="M-112 350 124 350M-133 388 145 388M-146 424 155 424" stroke="#f2d68b" stroke-width="9"/>
+ <path d="m-90 354 23 23-23 23-23-23zm190 0 23 23-23 23-23-23z" fill="url(#weave)"/>
+ <path d="M-94 246Q-140 198-117 143L-72 80-10 48 62 70 112 139Q124 201 75 246Z" fill="url(#gold)" stroke="#160f0a" stroke-width="11"/>
+ <path d="M-105 139 0 14 105 139 62 116 0 88-62 116Z" fill="url(#red)" stroke="#e8b34d" stroke-width="9"/>
+ <path d="M-80 158Q-43 111 0 127Q43 111 80 158L62 219Q0 255-62 219Z" fill="#f4e5bd" stroke="#1a1510" stroke-width="9"/>
+ <path d="M-69 171Q-40 145-18 170Q-40 198-69 171M18 170Q40 145 69 171Q40 198 18 170" fill="#0b221e" stroke="#d52b2d" stroke-width="8"/>
+ <circle cx="-42" cy="171" r="9" fill="#f3c54e"/><circle cx="42" cy="171" r="9" fill="#f3c54e"/>
+ <path d="m0 179-19 39 19 14 19-14z" fill="url(#green)" stroke="#16100b" stroke-width="5"/>
+ <path d="M-42 231Q0 249 42 231L30 250Q0 270-30 250Z" fill="url(#red)" stroke="#17100c" stroke-width="6"/>
+ <path d="M-111 144Q-150 119-154 69M111 144Q150 119 154 69" stroke="url(#gold)" stroke-width="12" fill="none"/>
+ <circle cx="-128" cy="174" r="18" fill="url(#red)" stroke="#e6bd63" stroke-width="6"/><circle cx="128" cy="174" r="18" fill="url(#green)" stroke="#e6bd63" stroke-width="6"/>
+</g>
+<!-- central figure -->
+<g transform="translate(900 140)">
+ <path d="M-170 480Q-150 306-90 274L-40 236 45 236 108 275Q160 322 176 480Z" fill="#ede0c2" stroke="#18130d" stroke-width="12"/>
+ <path d="M-130 480Q-90 350-50 294L0 480Z" fill="url(#red)" stroke="#e8b94e" stroke-width="7"/>
+ <path d="M20 480Q64 337 132 294L155 480Z" fill="#17251f" stroke="#e8b94e" stroke-width="7"/>
+ <path d="M-90 323Q0 370 90 323" fill="none" stroke="#d6a13b" stroke-width="12"/>
+ <path d="M-112 224Q-169 155-125 71L-62 4 0 26 62 4 126 71Q169 155 112 224L65 249 0 228-65 249Z" fill="url(#gold)" stroke="#150f0c" stroke-width="12"/>
+ <path d="M-152 111Q-170 11-68 19Q0-24 68 19Q170 11 152 111L113 82Q65 47 0 75Q-65 47-113 82Z" fill="url(#green)" stroke="#e7b74d" stroke-width="9"/>
+ <path d="M-112 130Q-56 69 0 112Q56 69 112 130L89 215Q0 269-89 215Z" fill="#f7e9c8" stroke="#1a1510" stroke-width="10"/>
+ <path d="M-91 145Q-57 112-25 147Q-56 180-91 145M25 147Q57 112 91 145Q56 180 25 147" fill="#121d18" stroke="#d62e30" stroke-width="9"/>
+ <circle cx="-58" cy="147" r="11" fill="#e9b84d"/><circle cx="58" cy="147" r="11" fill="#e9b84d"/>
+ <path d="M0 158  -25 207 0 228 25 207Z" fill="url(#red)" stroke="#15100c" stroke-width="6"/>
+ <path d="M-48 231Q0 256 48 231L36 250Q0 274-36 250Z" fill="#18241e" stroke="#d9a13b" stroke-width="7"/>
+ <path d="M-143 115  -188 45M143 115 188 45" stroke="url(#gold)" stroke-width="15" stroke-linecap="round"/>
+ <path d="M0 -23V-105M-56 -8l-40-69M56 -8l40-69" stroke="#e8b34a" stroke-width="12" stroke-linecap="round"/>
+ <path d="M-18 -100 0-142 18-100" fill="none" stroke="#df3430" stroke-width="12"/>
+</g>
+<!-- right guardian mask and feather mantle -->
+<g transform="translate(1210 340)">
+ <path d="M-170 260Q-192 80-96 34L-40 6 30 7 102 38Q181 91 166 260Z" fill="#171d1b" stroke="#e2b04a" stroke-width="8"/>
+ <path d="M-130 230Q-155 130-92 76M-90 250Q-110 128-42 56M-30 250Q-54 128 0 54M30 250Q9 122 72 60M90 244Q82 127 132 90" stroke="#77746a" stroke-width="22" stroke-linecap="round"/>
+ <path d="M-105 30Q-145-42-90-108L-24-132 37-111 104-53 92 32Q0 79-105 30Z" fill="url(#red)" stroke="#17110d" stroke-width="11"/>
+ <path d="M-92-46Q-52-100-6-71Q42-102 92-46L67 33Q0 72-67 33Z" fill="#f2dfb8" stroke="#17110d" stroke-width="8"/>
+ <path d="M-82-25Q-49-58-19-24Q-49 8-82-25M19-24Q49-58 82-25Q49 8 19-24" fill="#111c18" stroke="#d6a33f" stroke-width="8"/>
+ <circle cx="-51" cy="-25" r="12" fill="#e8b548"/><circle cx="51" cy="-25" r="12" fill="#e8b548"/>
+ <path d="M0-6-25 35 0 52 25 35Z" fill="url(#green)" stroke="#17110d" stroke-width="6"/>
+ <path d="M-43 53Q0 77 43 53L30 72Q0 91-30 72Z" fill="#171d19" stroke="#e1b34d" stroke-width="7"/>
+ <path d="M-105-100Q-123-183-57-169Q0-210 57-169Q123-183 105-100" fill="url(#gold)" stroke="#16100b" stroke-width="9"/>
+ <path d="M-86-129 0-197 86-129 45-147 0-157-45-147Z" fill="url(#green)" stroke="#e0aa42" stroke-width="7"/>
+</g>
+<!-- gold woven line and small diamonds -->
+<g fill="none" stroke="#d6a33f" stroke-width="4" opacity=".85"><path d="M390 570H1370M440 42H1370"/><path d="m450 570 14-14 14 14-14 14zm220 0 14-14 14 14-14 14zm250 0 14-14 14 14-14 14zm250 0 14-14 14 14-14 14z"/></g>
+<path d="M0 0H1400V620H0Z" fill="none" stroke="#d6a33f" stroke-opacity=".22" stroke-width="3"/>
+</svg>
