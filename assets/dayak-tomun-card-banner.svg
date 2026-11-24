@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="525" viewBox="0 0 900 525">
 <title>Dayak Tomun cultural artwork banner</title>
 <rect width="900" height="525" fill="#10242b"/>
-<svg x="0" y="0" width="450" height="525" viewBox="0 0 210 245" preserveAspectRatio="none">
+<svg x="0" y="0" width="450" height="525" viewBox="0 0 185 245" preserveAspectRatio="none">
   <image x="0" y="0" width="420" height="245" href="dayak-tomun-art-panel.svg" xlink:href="dayak-tomun-art-panel.svg"/>
 </svg>
-<svg x="450" y="0" width="450" height="525" viewBox="210 0 210 245" preserveAspectRatio="none">
+<svg x="450" y="0" width="450" height="525" viewBox="235 0 185 245" preserveAspectRatio="none">
   <image x="0" y="0" width="420" height="245" href="dayak-tomun-art-panel.svg" xlink:href="dayak-tomun-art-panel.svg"/>
 </svg>
 <rect x="442" y="0" width="16" height="525" fill="#10242b" opacity=".08"/>
