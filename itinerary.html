@@ -78,27 +78,25 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 .culture-cta-card{
   display:block;position:relative;isolation:isolate;overflow:hidden;
   width:100%;min-height:226px;margin:0;padding:60px 34px 25px;
-  color:var(--bwc-ivory);text-decoration:none;background:#10242b;
-  border:1px solid rgba(229,214,184,.42);
+  color:var(--bwc-ivory);text-decoration:none;
+  background-color:#080808;
+  background-image:url("assets/dayak-tomun-card-banner.webp?v=20261124-bgfix2");
+  background-repeat:no-repeat;background-size:cover;background-position:center center;
+  border:1px solid rgba(229,214,184,.65);
   box-shadow:0 14px 34px rgba(0,0,0,.15);
   transition:border-color .25s ease,transform .25s ease;
 }
 .culture-cta-card:after{
   content:"";position:absolute;z-index:1;inset:0;pointer-events:none;
-  background:linear-gradient(90deg,rgba(16,36,43,.72) 0%,rgba(16,36,43,.52) 39%,rgba(16,36,43,.24) 100%),
-             linear-gradient(180deg,rgba(16,36,43,.04),rgba(16,36,43,.12));
+  background:linear-gradient(90deg,rgba(8,8,8,.48) 0%,rgba(8,8,8,.22) 38%,rgba(8,8,8,.02) 100%),
+             linear-gradient(180deg,rgba(8,8,8,.03),rgba(8,8,8,.10));
 }
 .culture-cta-card:hover,.culture-cta-card:focus-visible{
   border-color:rgba(229,214,184,.86);transform:translateY(-3px)
 }
 .culture-cta-card:focus-visible{outline:2px solid var(--bwc-champagne-light);outline-offset:4px}
-.culture-cta-background{
-  position:absolute;z-index:0;inset:0;display:block;
-  width:100%;height:100%;max-width:none;object-fit:cover;
-  object-position:center 50%;pointer-events:none;
-  transition:transform .65s ease;
-}
-.culture-cta-card:hover .culture-cta-background{transform:scale(1.025)}
+.culture-cta-background{display:none}
+.culture-cta-card:hover{background-position:center center}
 .culture-cta-meta{
   position:absolute;z-index:2;top:21px;left:34px;right:34px;
   display:flex;align-items:center;justify-content:space-between;gap:16px;
@@ -120,7 +118,7 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 @media(max-width:760px){
  .culture-cta-heading{margin-bottom:22px}
  .culture-cta-card{min-height:230px;padding:62px 21px 22px}
- .culture-cta-background{object-position:90% center}
+ .culture-cta-card{background-position:center center}
  .culture-cta-meta{top:20px;left:21px;right:21px;gap:10px;font-size:8px;letter-spacing:.10em}
  .culture-cta-copy{min-height:138px;max-width:84%}
  .culture-cta-card h3{margin:0 0 8px}
@@ -177,7 +175,7 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 <section class="final-cta next-page-cta"><div class="wrap">
 <div class="culture-cta-heading"><div class="eyebrow">NEXT · FIELD NOTES</div><h2>The journey continues.</h2><p>See the wildlife, river and rainforest through our lens.</p></div>
 <a class="trip-card culture-cta-card" href="people-and-culture.html" aria-label="Explore People and Culture — Lopus Village">
-<img class="culture-cta-background" src="assets/dayak-tomun-card-banner.webp?v=20261124-artwork" alt="" aria-hidden="true" width="2000" height="375" loading="lazy" decoding="async">
+
 <div class="culture-cta-meta"><span>DAYAK TOMUN · LOPUS VILLAGE</span><span class="culture-cta-meta-right">PEOPLE &amp; CULTURE</span></div>
 <div class="culture-cta-copy">
 <h3>People &amp; Culture</h3>
