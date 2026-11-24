@@ -72,7 +72,7 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 <link rel="stylesheet" href="assets/interior-header.css?v=compact-20261121">
 
 <style id="people-culture-card-inspired-redesign">
-/* One continuous artwork background — no sliced background layers or opaque text bands. */
+/* Single original Dayak artwork image as the full card background. */
 .culture-cta-heading{margin-bottom:28px}
 .culture-cta-heading h2{margin:11px 0 6px;font:clamp(31px,3.5vw,45px)/1.05 var(--serif);font-weight:400;color:var(--bwc-ivory)}
 .culture-cta-heading p{margin:0;color:#d1d9d6;font-size:12px}
@@ -81,7 +81,7 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
   width:100%;aspect-ratio:16/9;min-height:0;margin:0;padding:58px 34px 24px;
   flex-direction:column;align-items:flex-start;justify-content:flex-end;
   color:var(--bwc-ivory);text-decoration:none;
-  background:#071512 url("assets/people-culture-artwork-complete.svg?v=20261124-seamless") center/cover no-repeat;
+  background:#071512 url("assets/dayak-tomun-user-artwork.jpg?v=20261124-original") center/cover no-repeat;
   border:1px solid rgba(229,214,184,.82);border-radius:5px;
   box-shadow:0 16px 38px rgba(0,0,0,.24),inset 0 0 0 1px rgba(229,214,184,.10);
   transition:border-color .25s ease,transform .25s ease,box-shadow .25s ease;
@@ -92,7 +92,7 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 }
 .culture-cta-card:after{
   content:"";position:absolute;z-index:1;inset:0;pointer-events:none;
-  background:linear-gradient(90deg,rgba(4,15,13,.74) 0%,rgba(4,15,13,.52) 34%,rgba(4,15,13,.12) 72%,rgba(4,15,13,.02) 100%);
+  background:linear-gradient(0deg,rgba(4,15,13,.76) 0%,rgba(4,15,13,.34) 43%,rgba(4,15,13,.08) 100%);
 }
 .culture-cta-card:hover,.culture-cta-card:focus-visible{
   border-color:#f0dfbd;transform:translateY(-3px);
@@ -104,20 +104,20 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
   display:flex;align-items:center;justify-content:space-between;gap:16px;
   color:var(--bwc-champagne-light);font-size:9px;font-weight:700;
   letter-spacing:.14em;line-height:1.4;text-transform:uppercase;
-  text-shadow:0 1px 5px rgba(0,0,0,.95);pointer-events:none;
+  text-shadow:0 1px 6px rgba(0,0,0,.95);pointer-events:none;
 }
 .culture-cta-meta-right{text-align:right;margin-left:auto;white-space:nowrap}
 .culture-cta-copy{
   position:relative;z-index:2;display:flex;flex-direction:column;
-  align-items:flex-start;justify-content:center;flex:1;
-  width:100%;max-width:min(610px,76%);min-height:0;padding:0;
-  background:transparent!important;text-shadow:0 1px 5px rgba(0,0,0,.92);
+  align-items:flex-start;justify-content:flex-end;flex:1;
+  width:100%;max-width:min(610px,78%);min-height:0;padding:0;
+  background:transparent!important;text-shadow:0 1px 6px rgba(0,0,0,.95);
 }
 .culture-cta-card h3{
   display:block;width:auto;max-width:100%;margin:0 0 9px;padding:0;
   color:#fff;background:transparent!important;
   font:500 clamp(27px,3vw,36px)/1.12 var(--serif);letter-spacing:-.02em;
-  text-shadow:0 2px 9px rgba(0,0,0,.9)
+  text-shadow:0 2px 9px rgba(0,0,0,.95)
 }
 .culture-cta-card p{
   display:block;max-width:490px;margin:0;padding:0;color:#f2efe7;
@@ -133,18 +133,18 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 .culture-cta-links{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:22px}
 @media(max-width:760px){
  .culture-cta-heading{margin-bottom:22px}
- .culture-cta-card{aspect-ratio:16/9;padding:54px 22px 20px}
- .culture-cta-meta{top:18px;left:22px;right:22px;gap:10px;font-size:8px;letter-spacing:.10em}
- .culture-cta-copy{max-width:80%}
+ .culture-cta-card{aspect-ratio:1.47/1;padding:58px 22px 22px}
+ .culture-cta-meta{top:19px;left:22px;right:22px;gap:10px;font-size:8px;letter-spacing:.10em}
+ .culture-cta-copy{max-width:84%}
  .culture-cta-card h3{font-size:clamp(25px,6.6vw,33px);margin-bottom:7px}
  .culture-cta-card p{font-size:12px;line-height:1.62}
  .culture-cta-card .trip-card-action{padding-top:13px}
  .culture-cta-links{gap:18px;margin-top:20px}
 }
 @media(max-width:380px){
- .culture-cta-card{aspect-ratio:1.55;padding-inline:18px}
+ .culture-cta-card{aspect-ratio:1.38/1;padding-inline:18px}
  .culture-cta-meta{left:18px;right:18px;font-size:7px;letter-spacing:.08em}
- .culture-cta-copy{max-width:84%}
+ .culture-cta-copy{max-width:88%}
 }
 @media(prefers-reduced-motion:reduce){
  .culture-cta-card,.culture-cta-card .trip-card-action span{transition:none!important}
