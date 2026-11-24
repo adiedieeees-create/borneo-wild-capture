@@ -247,6 +247,64 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 }
 </style>
 
+
+<style id="people-culture-horizontal-artwork">
+/* Horizontal Dayak artwork — scoped only to the People & Culture card. */
+.culture-cta-card,
+.culture-cta-card:hover,
+.culture-cta-card:focus,
+.culture-cta-card:focus-visible,
+.culture-cta-card:active {
+  background-image: url("assets/dayak-tomun-horizontal-background.svg?v=20261124-horizontal") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+.culture-cta-card:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg,
+      rgba(5, 12, 13, .64) 0%,
+      rgba(5, 12, 13, .47) 38%,
+      rgba(5, 12, 13, .22) 72%,
+      rgba(5, 12, 13, .12) 100%),
+    linear-gradient(180deg,
+      rgba(5, 12, 13, .18) 0%,
+      rgba(5, 12, 13, .04) 50%,
+      rgba(5, 12, 13, .24) 100%);
+}
+.culture-cta-meta,
+.culture-cta-copy {
+  text-shadow: 0 1px 5px rgba(0, 0, 0, .94);
+}
+.culture-cta-card h3 {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .96);
+}
+.culture-cta-card p {
+  color: rgba(255, 255, 255, .98) !important;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, .96);
+}
+.culture-cta-card .trip-card-action {
+  color: #f0dfbd !important;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, .96);
+}
+@media (max-width: 760px) {
+  .culture-cta-card,
+  .culture-cta-card:hover,
+  .culture-cta-card:focus,
+  .culture-cta-card:focus-visible,
+  .culture-cta-card:active {
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <header class="bwc-header" role="banner">
