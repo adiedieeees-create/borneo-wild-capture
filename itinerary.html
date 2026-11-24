@@ -132,16 +132,17 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 </style>
 
 <style id="people-culture-background-final-fix">
-/* Keep the two supplied Dayak Tomun artworks visible across all interaction states. */
+/* Crop the empty top/bottom margins inside the artwork so it reaches both
+   horizontal edges of the card's height on desktop, tablet and mobile. */
 .culture-cta-card,
 .culture-cta-card:hover,
 .culture-cta-card:focus,
 .culture-cta-card:focus-visible,
 .culture-cta-card:active {
   background-color: #080808 !important;
-  background-image: url("assets/dayak-tomun-card-banner-wide.svg?v=20261124-peopleculture") !important;
+  background-image: url("assets/dayak-tomun-card-banner-wide.svg?v=20261124-fullheight") !important;
   background-position: center center !important;
-  background-size: 100% 100% !important;
+  background-size: 100% 128% !important;
   background-repeat: no-repeat !important;
   border-color: rgba(229,214,184,.72);
 }
@@ -155,8 +156,8 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
   .culture-cta-card:focus,
   .culture-cta-card:focus-visible,
   .culture-cta-card:active {
-    background-image: url("assets/dayak-tomun-card-banner-mid.svg?v=20261124-peopleculture") !important;
-    background-size: 100% 100% !important;
+    background-image: url("assets/dayak-tomun-card-banner-mid.svg?v=20261124-fullheight") !important;
+    background-size: 100% 128% !important;
   }
 }
 @media (max-width:460px) {
@@ -165,8 +166,8 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
   .culture-cta-card:focus,
   .culture-cta-card:focus-visible,
   .culture-cta-card:active {
-    background-image: url("assets/dayak-tomun-art-panel.svg?v=20261124-peopleculture") !important;
-    background-size: 100% 100% !important;
+    background-image: url("assets/dayak-tomun-art-panel.svg?v=20261124-fullheight") !important;
+    background-size: 100% 128% !important;
   }
 }
 </style>
