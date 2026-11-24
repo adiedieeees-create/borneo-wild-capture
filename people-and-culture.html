@@ -15,23 +15,25 @@
   <link rel="stylesheet" href="assets/interior-header.css?v=compact-20261121">
   <style>
     :root{--culture-teal:#0d5660;--culture-deep:#10363d;--culture-gold:#c9b184;--culture-ivory:#f5f1e8}
-    body.culture-page{margin:0;background:var(--culture-ivory);color:#1b2b31}
-    .culture-main{background:var(--culture-ivory);padding:clamp(34px,5vw,60px) 0 clamp(58px,7vw,92px)}
+    body.culture-page{margin:0;background:#14272e;color:var(--culture-ivory)}
+    .culture-hero{position:relative;isolation:isolate;height:clamp(220px,35vw,310px);overflow:hidden;background:#1a3038;border-bottom:1px solid rgba(229,214,184,.22)}
+    .culture-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,32,38,.12),rgba(13,32,38,.38)),url("assets/people-culture-gathering-01.webp") center 43%/cover no-repeat}
+    .culture-main{background:#14272e;padding:clamp(34px,5vw,60px) 0 clamp(58px,7vw,92px)}
     .culture-container{width:min(1240px,88%);margin-inline:auto}
-    .culture-section{padding-top:clamp(34px,4vw,54px);border-top:1px solid rgba(16,54,61,.18)}
-    .culture-eyebrow{margin:0 0 14px;color:var(--culture-teal);font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+    .culture-section{padding-top:clamp(34px,4vw,54px);border-top:1px solid rgba(229,214,184,.22)}
+    .culture-eyebrow{margin:0 0 14px;color:var(--culture-gold);font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
     .culture-heading{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:end}
-    .culture-heading h1{margin:0;color:var(--culture-deep);font:500 clamp(42px,5.3vw,66px)/1.04 "Playfair Display",Georgia,serif;letter-spacing:-.035em}
-    .culture-subtitle{margin:12px 0 0;color:var(--culture-teal);font:italic 500 clamp(17px,1.9vw,22px)/1.45 "Playfair Display",Georgia,serif}
-    .culture-deck{margin:0 0 4px;color:var(--culture-deep);font:italic 500 clamp(22px,2.8vw,30px)/1.38 "Playfair Display",Georgia,serif}
+    .culture-heading h1{margin:0;color:var(--culture-ivory);font:500 clamp(42px,5.3vw,66px)/1.04 "Playfair Display",Georgia,serif;letter-spacing:-.035em}
+    .culture-subtitle{margin:12px 0 0;color:var(--culture-gold);font:italic 500 clamp(17px,1.9vw,22px)/1.45 "Playfair Display",Georgia,serif}
+    .culture-deck{margin:0 0 4px;color:var(--culture-ivory);font:italic 500 clamp(22px,2.8vw,30px)/1.38 "Playfair Display",Georgia,serif}
     .culture-copy{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,52px);margin-top:30px}
-    .culture-copy p{margin:0 0 15px;color:#26383d;font-size:14px;line-height:1.9}
+    .culture-copy p{margin:0 0 15px;color:#d1d9d6;font-size:14px;line-height:1.9}
     .culture-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:clamp(14px,2vw,22px);margin-top:clamp(34px,4vw,50px)}
-    .culture-photo{min-width:0;margin:0;background:#e9e2d4}
+    .culture-photo{min-width:0;margin:0;background:#1a3038}
     .culture-photo img{display:block;width:100%;height:auto}
-    .culture-photo figcaption{margin:0;padding:12px 2px 0;color:var(--culture-deep);font-size:9px;font-weight:700;letter-spacing:.16em;line-height:1.55;text-transform:uppercase}
-    .culture-close{max-width:800px;margin:clamp(34px,4vw,52px) auto 14px;color:#26383d;text-align:center;font-size:14px;line-height:1.95}
-    .culture-signature{margin:0;color:var(--culture-teal);text-align:center;font:italic 500 15px/1.7 "Playfair Display",Georgia,serif}
+    .culture-photo figcaption{margin:0;padding:12px 2px 0;color:var(--culture-gold);font-size:9px;font-weight:700;letter-spacing:.16em;line-height:1.55;text-transform:uppercase}
+    .culture-close{max-width:800px;margin:clamp(34px,4vw,52px) auto 14px;color:#d1d9d6;text-align:center;font-size:14px;line-height:1.95}
+    .culture-signature{margin:0;color:var(--culture-gold);text-align:center;font:italic 500 15px/1.7 "Playfair Display",Georgia,serif}
     .culture-footer{padding:27px 0;background:#10242b;color:#d4dcd8}
     .culture-footer-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;width:min(1240px,88%);margin-inline:auto}
     .culture-footer .brand-logo{width:126px!important;max-height:63px!important}
@@ -79,6 +81,7 @@
     </nav>
   </div>
 </header>
+<section class="culture-hero" aria-label="Dayak Tomun community life in Lopus Village"></section>
 <main class="culture-main">
   <div class="culture-container">
     <section class="culture-section" id="people-and-culture" aria-labelledby="culture-title">
