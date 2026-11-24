@@ -71,239 +71,86 @@ h1{max-width:680px;margin:35px 0 20px;font:clamp(48px,6.4vw,82px)/.99 var(--seri
 </style>
 <link rel="stylesheet" href="assets/interior-header.css?v=compact-20261121">
 
-<style id="people-culture-journey-card">
+<style id="people-culture-card-inspired-redesign">
+/* People & Culture card — original Dayak-inspired illustration, styled as a single editorial feature */
 .culture-cta-heading{margin-bottom:28px}
 .culture-cta-heading h2{margin:11px 0 6px;font:clamp(31px,3.5vw,45px)/1.05 var(--serif);font-weight:400;color:var(--bwc-ivory)}
 .culture-cta-heading p{margin:0;color:#d1d9d6;font-size:12px}
 .culture-cta-card{
   display:block;position:relative;isolation:isolate;overflow:hidden;
-  width:100%;min-height:226px;margin:0;padding:60px 34px 25px;
+  width:100%;min-height:252px;margin:0;padding:60px 34px 24px;
   color:var(--bwc-ivory);text-decoration:none;
-  background-color:#080808;
-  background-image:url("assets/dayak-tomun-card-banner.webp?v=20261124-bgfix2");
-  background-repeat:no-repeat;background-size:cover;background-position:center center;
-  border:1px solid rgba(229,214,184,.65);
-  box-shadow:0 14px 34px rgba(0,0,0,.15);
-  transition:border-color .25s ease,transform .25s ease;
+  background-color:#071512;
+  background-image:
+    linear-gradient(90deg,rgba(4,15,13,.97) 0%,rgba(4,15,13,.88) 34%,rgba(4,15,13,.58) 59%,rgba(4,15,13,.10) 100%),
+    linear-gradient(180deg,rgba(4,15,13,.25),rgba(4,15,13,.05) 48%,rgba(4,15,13,.27)),
+    url("assets/people-culture-card-art.svg?v=20261124-inspired");
+  background-repeat:no-repeat;
+  background-size:100% 100%,100% 100%,auto 100%;
+  background-position:center,center,right center;
+  border:1px solid rgba(229,214,184,.78);
+  border-radius:5px;
+  box-shadow:0 16px 38px rgba(0,0,0,.24),inset 0 0 0 1px rgba(229,214,184,.10);
+  transition:border-color .25s ease,transform .25s ease,box-shadow .25s ease;
+}
+.culture-cta-card:before{
+  content:"";position:absolute;z-index:1;inset:9px;
+  border:1px solid rgba(229,214,184,.26);border-radius:2px;
+  pointer-events:none;
 }
 .culture-cta-card:after{
   content:"";position:absolute;z-index:1;inset:0;pointer-events:none;
-  background:linear-gradient(90deg,rgba(8,8,8,.48) 0%,rgba(8,8,8,.22) 38%,rgba(8,8,8,.02) 100%),
-             linear-gradient(180deg,rgba(8,8,8,.03),rgba(8,8,8,.10));
+  background:linear-gradient(90deg,rgba(5,15,13,.08),transparent 70%);
 }
 .culture-cta-card:hover,.culture-cta-card:focus-visible{
-  border-color:rgba(229,214,184,.86);transform:translateY(-3px)
+  border-color:#f0dfbd;transform:translateY(-3px);
+  box-shadow:0 20px 42px rgba(0,0,0,.30),inset 0 0 0 1px rgba(229,214,184,.18);
 }
 .culture-cta-card:focus-visible{outline:2px solid var(--bwc-champagne-light);outline-offset:4px}
-.culture-cta-background{display:none}
-.culture-cta-card:hover{background-position:center center}
 .culture-cta-meta{
   position:absolute;z-index:2;top:21px;left:34px;right:34px;
   display:flex;align-items:center;justify-content:space-between;gap:16px;
   color:var(--bwc-champagne-light);font-size:9px;font-weight:700;
-  letter-spacing:.13em;line-height:1.4;text-transform:uppercase;
-  pointer-events:none
+  letter-spacing:.14em;line-height:1.4;text-transform:uppercase;
+  text-shadow:0 1px 5px rgba(0,0,0,.95);pointer-events:none;
 }
 .culture-cta-meta-right{text-align:right;margin-left:auto;white-space:nowrap}
 .culture-cta-copy{
   position:relative;z-index:2;display:flex;flex-direction:column;
-  align-items:flex-start;justify-content:center;min-height:125px;
-  max-width:min(650px,72%);padding:0
+  align-items:flex-start;justify-content:center;min-height:142px;
+  max-width:min(610px,76%);padding:0;
+  text-shadow:0 1px 5px rgba(0,0,0,.92);
 }
-.culture-cta-card h3{margin:0 0 9px;color:var(--bwc-ivory);font-size:clamp(26px,2.8vw,34px)}
-.culture-cta-card p{max-width:510px;margin:0;color:#e4e8e4;font-size:13px;line-height:1.8}
-.culture-cta-card .trip-card-action{padding-top:20px;color:var(--bwc-champagne-light)}
-.culture-cta-card .trip-card-action span{font-size:16px}
+.culture-cta-card h3{margin:0 0 9px;color:#fff;font:500 clamp(27px,3vw,36px)/1.12 var(--serif);letter-spacing:-.02em;text-shadow:0 2px 9px rgba(0,0,0,.9)}
+.culture-cta-card p{max-width:490px;margin:0;color:#f2efe7;font-size:13px;line-height:1.78}
+.culture-cta-card .trip-card-action{
+  display:inline-flex;align-items:center;gap:12px;margin-top:auto;
+  padding-top:20px;color:var(--bwc-champagne-light);
+  font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+}
+.culture-cta-card .trip-card-action span{font-size:16px;transition:transform .2s ease}
+.culture-cta-card:hover .trip-card-action span{transform:translate(3px,3px)}
 .culture-cta-links{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:22px}
 @media(max-width:760px){
  .culture-cta-heading{margin-bottom:22px}
- .culture-cta-card{min-height:230px;padding:62px 21px 22px}
- .culture-cta-card{background-size:auto 100%;background-position:74% center;background-repeat:no-repeat}
- .culture-cta-meta{top:20px;left:21px;right:21px;gap:10px;font-size:8px;letter-spacing:.10em}
- .culture-cta-copy{min-height:138px;max-width:84%}
- .culture-cta-card h3{margin:0 0 8px}
+ .culture-cta-card{min-height:238px;padding:59px 22px 22px;background-position:center,center, right center}
+ .culture-cta-meta{top:19px;left:22px;right:22px;gap:10px;font-size:8px;letter-spacing:.10em}
+ .culture-cta-copy{min-height:137px;max-width:80%}
+ .culture-cta-card h3{font-size:clamp(27px,7vw,33px);margin-bottom:8px}
+ .culture-cta-card p{font-size:12px;line-height:1.72}
  .culture-cta-card .trip-card-action{padding-top:16px}
  .culture-cta-links{gap:18px;margin-top:20px}
 }
 @media(max-width:380px){
- .culture-cta-meta{font-size:7px;letter-spacing:.08em}
- .culture-cta-copy{max-width:91%}
+ .culture-cta-card{min-height:245px;padding-inline:18px}
+ .culture-cta-meta{left:18px;right:18px;font-size:7px;letter-spacing:.08em}
+ .culture-cta-copy{max-width:84%}
+}
+@media(prefers-reduced-motion:reduce){
+ .culture-cta-card,.culture-cta-card .trip-card-action span{transition:none!important}
 }
 </style>
 
-<style id="people-culture-background-final-fix">
-/* Crop the empty top/bottom margins inside the artwork so it reaches both
-   horizontal edges of the card's height on desktop, tablet and mobile. */
-.culture-cta-card,
-.culture-cta-card:hover,
-.culture-cta-card:focus,
-.culture-cta-card:focus-visible,
-.culture-cta-card:active {
-  background-color: #080808 !important;
-  background-image: url("assets/dayak-tomun-card-banner-wide.svg?v=20261124-fullheight") !important;
-  background-position: center center !important;
-  background-size: 100% 128% !important;
-  background-repeat: no-repeat !important;
-  border-color: rgba(229,214,184,.72);
-}
-.culture-cta-card:after {
-  background: linear-gradient(90deg,rgba(8,8,8,.20) 0%,rgba(8,8,8,.08) 38%,rgba(8,8,8,.02) 100%),
-              linear-gradient(180deg,rgba(8,8,8,.02),rgba(8,8,8,.08));
-}
-@media (max-width:760px) {
-  .culture-cta-card,
-  .culture-cta-card:hover,
-  .culture-cta-card:focus,
-  .culture-cta-card:focus-visible,
-  .culture-cta-card:active {
-    background-image: url("assets/dayak-tomun-card-banner-mid.svg?v=20261124-fullheight") !important;
-    background-size: 100% 128% !important;
-  }
-}
-@media (max-width:460px) {
-  .culture-cta-card,
-  .culture-cta-card:hover,
-  .culture-cta-card:focus,
-  .culture-cta-card:focus-visible,
-  .culture-cta-card:active {
-    background-image: url("assets/dayak-tomun-art-panel.svg?v=20261124-fullheight") !important;
-    background-size: 100% 128% !important;
-  }
-}
-</style>
-
-<style id="people-culture-card-elegant-final">
-/* Refined finish for the People & Culture card only. Keep the existing artwork. */
-.culture-cta-card,
-.culture-cta-card:hover,
-.culture-cta-card:focus,
-.culture-cta-card:focus-visible,
-.culture-cta-card:active {
-  background-position: center 46% !important;
-  background-size: 100% 144% !important;
-  border: 1px solid rgba(229,214,184,.78) !important;
-  border-radius: 4px;
-  box-shadow:
-    0 16px 36px rgba(0,0,0,.22),
-    inset 0 0 0 1px rgba(229,214,184,.10);
-}
-.culture-cta-card:after {
-  background:
-    linear-gradient(90deg,
-      rgba(8,8,8,.40) 0%,
-      rgba(8,8,8,.27) 44%,
-      rgba(8,8,8,.12) 100%),
-    linear-gradient(180deg,
-      rgba(8,8,8,.17) 0%,
-      rgba(8,8,8,.025) 43%,
-      rgba(8,8,8,.18) 100%);
-}
-.culture-cta-meta {
-  text-shadow: 0 1px 4px rgba(0,0,0,.88);
-}
-.culture-cta-copy {
-  max-width: min(650px, 76%);
-  text-shadow: 0 1px 4px rgba(0,0,0,.72);
-}
-.culture-cta-card h3 {
-  color: #f7f2e8;
-  text-shadow: 0 2px 8px rgba(0,0,0,.78);
-}
-.culture-cta-card p {
-  color: rgba(255,255,255,.94);
-  text-shadow: 0 1px 5px rgba(0,0,0,.82);
-}
-.culture-cta-card .trip-card-action {
-  color: #f0dfbd;
-  text-shadow: 0 1px 5px rgba(0,0,0,.88);
-}
-@media (max-width:760px) {
-  .culture-cta-card,
-  .culture-cta-card:hover,
-  .culture-cta-card:focus,
-  .culture-cta-card:focus-visible,
-  .culture-cta-card:active {
-    background-image: url("assets/dayak-tomun-card-banner-mid.svg?v=20261124-elegant") !important;
-    background-position: center 46% !important;
-    background-size: 100% 144% !important;
-  }
-  .culture-cta-copy {
-    max-width: 88%;
-  }
-}
-@media (max-width:460px) {
-  .culture-cta-card,
-  .culture-cta-card:hover,
-  .culture-cta-card:focus,
-  .culture-cta-card:focus-visible,
-  .culture-cta-card:active {
-    background-image: url("assets/dayak-tomun-art-panel.svg?v=20261124-elegant") !important;
-    background-position: center 46% !important;
-    background-size: 100% 144% !important;
-  }
-  .culture-cta-copy {
-    max-width: 91%;
-  }
-}
-</style>
-
-
-<style id="people-culture-horizontal-artwork">
-/* Horizontal Dayak artwork — scoped only to the People & Culture card. */
-.culture-cta-card,
-.culture-cta-card:hover,
-.culture-cta-card:focus,
-.culture-cta-card:focus-visible,
-.culture-cta-card:active {
-  background-image: url("assets/dayak-tomun-user-artwork.jpg?v=20261124-exact-artwork") !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background-size: cover !important;
-}
-.culture-cta-card:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  inset: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(90deg,
-      rgba(5, 12, 13, .48) 0%,
-      rgba(5, 12, 13, .36) 38%,
-      rgba(5, 12, 13, .24) 72%,
-      rgba(5, 12, 13, .20) 100%),
-    linear-gradient(180deg,
-      rgba(5, 12, 13, .18) 0%,
-      rgba(5, 12, 13, .04) 50%,
-      rgba(5, 12, 13, .24) 100%);
-}
-.culture-cta-meta,
-.culture-cta-copy {
-  text-shadow: 0 1px 5px rgba(0, 0, 0, .94);
-}
-.culture-cta-card h3 {
-  color: #fff !important;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, .96);
-}
-.culture-cta-card p {
-  color: rgba(255, 255, 255, .98) !important;
-  text-shadow: 0 1px 5px rgba(0, 0, 0, .96);
-}
-.culture-cta-card .trip-card-action {
-  color: #f0dfbd !important;
-  text-shadow: 0 1px 5px rgba(0, 0, 0, .96);
-}
-@media (max-width: 760px) {
-  .culture-cta-card,
-  .culture-cta-card:hover,
-  .culture-cta-card:focus,
-  .culture-cta-card:focus-visible,
-  .culture-cta-card:active {
-    background-size: cover !important;
-    background-position: center center !important;
-  }
-}
-</style>
 
 </head>
 <body>
