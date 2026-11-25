@@ -34,7 +34,8 @@
     .culture-photo figcaption{margin:0;padding:12px 2px 0;color:var(--culture-gold);font-size:10px;font-weight:700;letter-spacing:.16em;line-height:1.55;text-transform:uppercase}
     .culture-close{max-width:800px;margin:clamp(34px,4vw,52px) auto 14px;color:#d1d9d6;text-align:center;font-size:15px;line-height:1.85}
     .culture-signature{margin:0;color:var(--culture-gold);text-align:center;font:italic 500 15px/1.7 "Playfair Display",Georgia,serif}
-    .culture-footer{padding:27px 0;background:#10242b;color:#d4dcd8}
+    .culture-footer{position:relative;isolation:isolate;padding:38px 0;background:#10242b;color:#d4dcd8;overflow:hidden}
+    .culture-footer:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(10,29,34,.94),rgba(10,29,34,.78)),url("assets/file_0000000082f08211aeed5934cb0f4884.png?v=20261125-culture-footer") center 56%/cover no-repeat}
     .culture-footer-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;width:min(1240px,88%);margin-inline:auto}
     .culture-footer .brand-logo{width:126px!important;max-height:63px!important}
     .culture-footer-tagline{margin:0;color:#e5d6b8;font:italic 15px/1.6 "Playfair Display",Georgia,serif}
