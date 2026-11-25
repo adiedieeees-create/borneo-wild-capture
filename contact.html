@@ -1,23 +1,498 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#10251e"><title>Contact — Borneo Wild Capture</title>
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="site-theme.css"><link rel="stylesheet" href="assets/interior-header.css?v=compact-20261121">
-</head><body><header class="bwc-header" role="banner">
-  <div class="bwc-header-inner">
-    <button class="bwc-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="bwc-site-menu">
-      <span></span><span></span><span></span>
-    </button>
-    <a class="bwc-brand" href="index.html#home" aria-label="Borneo Wild Capture home">
-      <img class="bwc-brand-logo" src="assets/borneo-wild-capture-logo.svg" alt="Borneo Wild Capture — official hornbill logo" width="190" height="96" loading="eager" decoding="async">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#14272e">
+  <meta name="description" content="Plan a wildlife and rainforest journey in Tanjung Puting National Park with Borneo Wild Capture. Send your trip inquiry directly to our team.">
+  <title>Booking & Contact — Borneo Wild Capture</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="site-theme.css">
+  <link rel="stylesheet" href="assets/interior-header.css?v=compact-20261121">
+  <style>
+    /* Booking & Contact — page-specific layout; retain the site's established palette. */
+    .contact-page { overflow-x: hidden; }
+    .contact-hero {
+      min-height: 380px;
+      padding: 106px 8% 82px;
+      background-position: center 43%;
+    }
+    .contact-hero h1 {
+      max-width: 770px;
+      margin: 18px 0 16px;
+      font-size: clamp(46px, 7vw, 76px);
+      line-height: 1.02;
+    }
+    .contact-hero > p:last-child { max-width: 510px; margin: 0; }
+
+    .contact-booking {
+      padding: clamp(58px, 7vw, 86px) 0;
+      background: #eee8dc;
+      color: var(--bwc-ink);
+    }
+    .contact-booking-inner {
+      width: min(1180px, 88%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, .88fr) minmax(420px, 1.12fr);
+      gap: clamp(34px, 6vw, 78px);
+      align-items: center;
+    }
+    .booking-intro { max-width: 470px; }
+    .booking-intro .eyebrow,
+    .contact-details .eyebrow { color: #92764a; }
+    .booking-intro h2,
+    .contact-details h2 {
+      margin: 14px 0 17px;
+      color: var(--bwc-slate);
+      font: 400 clamp(36px, 4.2vw, 54px)/1.08 "Playfair Display", Georgia, serif;
+      letter-spacing: -.035em;
+    }
+    .booking-intro h2 em,
+    .contact-details h2 em {
+      color: #92764a;
+      font-weight: 500;
+    }
+    .booking-intro > p:not(.eyebrow) {
+      max-width: 390px;
+      margin: 0;
+      color: #637176;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+    .booking-benefits {
+      display: grid;
+      gap: 22px;
+      margin: 34px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .booking-benefit {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+    .benefit-icon {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      color: #a18450;
+    }
+    .benefit-icon svg {
+      width: 30px;
+      height: 30px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.55;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .booking-benefit strong {
+      display: block;
+      margin: 1px 0 4px;
+      color: var(--bwc-slate);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .booking-benefit span:last-child {
+      display: block;
+      max-width: 310px;
+      color: #647276;
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
+    .booking-card {
+      padding: clamp(22px, 3vw, 34px);
+      background: var(--bwc-paper);
+      border: 1px solid rgba(20,39,46,.08);
+      border-radius: 9px;
+      box-shadow: 0 12px 34px rgba(20,39,46,.07);
+    }
+    .booking-card h3 {
+      margin: 0 0 20px;
+      color: var(--bwc-slate);
+      font: 400 clamp(26px, 3vw, 34px)/1.12 "Playfair Display", Georgia, serif;
+    }
+    .booking-form { display: grid; gap: 15px; }
+    .booking-form label {
+      display: grid;
+      gap: 7px;
+      color: #35464b;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .015em;
+    }
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea {
+      box-sizing: border-box;
+      width: 100%;
+      min-width: 0;
+      min-height: 43px;
+      padding: 10px 12px;
+      border: 1px solid #d4cbb9;
+      border-radius: 5px;
+      outline: none;
+      background: #fbf9f4;
+      color: var(--bwc-ink);
+      font: 12px "DM Sans", sans-serif;
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+    .booking-form input::placeholder,
+    .booking-form textarea::placeholder { color: #9a9e98; opacity: 1; }
+    .booking-form input:focus,
+    .booking-form select:focus,
+    .booking-form textarea:focus {
+      border-color: var(--bwc-champagne);
+      box-shadow: 0 0 0 3px rgba(201,177,132,.18);
+    }
+    .booking-form textarea { min-height: 92px; resize: vertical; line-height: 1.6; }
+    .booking-form .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .booking-form .form-row.phone-row { grid-template-columns: 1fr; }
+    .booking-submit {
+      width: 100%;
+      min-height: 48px;
+      border: 1px solid var(--bwc-champagne);
+      border-radius: 5px;
+      background: var(--bwc-slate-900);
+      color: var(--bwc-ivory);
+      font: 600 12px "DM Sans", sans-serif;
+      letter-spacing: .025em;
+      cursor: pointer;
+      transition: background .2s ease, transform .2s ease;
+    }
+    .booking-submit:hover { background: var(--bwc-slate-800); transform: translateY(-1px); }
+    .booking-submit:focus-visible { outline: 2px solid var(--bwc-champagne); outline-offset: 3px; }
+    .booking-submit span { margin-right: 8px; font-size: 16px; vertical-align: -1px; }
+    .booking-note {
+      margin: -2px 0 0;
+      color: #77817d;
+      text-align: center;
+      font-size: 10px;
+      line-height: 1.6;
+    }
+
+    .contact-details {
+      padding: clamp(58px, 7vw, 82px) 0;
+      background: var(--bwc-ivory);
+    }
+    .contact-details-inner {
+      width: min(1120px, 86%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: clamp(35px, 7vw, 90px);
+      align-items: center;
+    }
+    .contact-details-copy { max-width: 440px; }
+    .contact-details h2 { margin-bottom: 13px; }
+    .contact-details-copy > p:not(.eyebrow) {
+      max-width: 360px;
+      margin: 0;
+      color: #667579;
+      font-size: 13px;
+      line-height: 1.85;
+    }
+    .contact-list {
+      display: grid;
+      gap: 19px;
+      padding: 0 0 0 clamp(25px, 5vw, 62px);
+      border-left: 1px solid rgba(20,39,46,.24);
+    }
+    .contact-item {
+      display: grid;
+      grid-template-columns: 35px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+    .contact-item-icon {
+      color: #a18450;
+      line-height: 1;
+    }
+    .contact-item-icon svg {
+      width: 27px;
+      height: 27px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .contact-item strong {
+      display: block;
+      margin: 0 0 3px;
+      color: var(--bwc-slate);
+      font-size: 12px;
+    }
+    .contact-item a,
+    .contact-item span {
+      color: #5f6e72;
+      font-size: 12px;
+      line-height: 1.75;
+      overflow-wrap: anywhere;
+    }
+    .contact-item a:hover { color: #92764a; }
+
+    .contact-cta {
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 350px;
+      padding: 64px max(7%, calc((100% - 1120px)/2));
+      overflow: hidden;
+      isolation: isolate;
+      background: var(--bwc-slate);
+      color: var(--bwc-ivory);
+    }
+    .contact-cta::before {
+      content: "";
+      position: absolute;
+      z-index: -2;
+      inset: 0;
+      background: url("images/DSCF7031.jpg") center 54%/cover no-repeat;
+    }
+    .contact-cta::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(13,31,38,.82) 0%, rgba(13,31,38,.48) 52%, rgba(13,31,38,.16) 100%);
+    }
+    .contact-cta-inner { width: min(1120px, 100%); margin: 0 auto; }
+    .contact-cta h2 {
+      max-width: 580px;
+      margin: 0 0 22px;
+      color: var(--bwc-ivory);
+      font: 400 clamp(36px, 5vw, 57px)/1.08 "Playfair Display", Georgia, serif;
+      letter-spacing: -.025em;
+    }
+    .contact-cta h2 em { color: var(--bwc-champagne-light); }
+    .contact-cta .button { min-height: 48px; padding: 0 21px; }
+    .contact-cta .button span { margin-left: 5px; }
+
+    @media (max-width: 900px) {
+      .contact-booking-inner { grid-template-columns: 1fr; gap: 36px; width: min(680px, 88%); }
+      .booking-intro { max-width: none; }
+      .booking-intro > p:not(.eyebrow) { max-width: 520px; }
+      .booking-benefits { grid-template-columns: repeat(3, 1fr); gap: 15px; }
+      .booking-benefit { grid-template-columns: 1fr; gap: 8px; }
+      .booking-benefit span:last-child { max-width: none; }
+      .contact-details-inner { width: min(680px, 88%); }
+    }
+    @media (max-width: 620px) {
+      .contact-hero { min-height: 330px; padding: 82px 7% 62px; background-position: 58% center; }
+      .contact-hero h1 { font-size: clamp(40px, 10vw, 54px); line-height: 1.05; }
+      .contact-booking { padding: 54px 0 60px; }
+      .contact-booking-inner { width: 86%; gap: 30px; }
+      .booking-intro h2, .contact-details h2 { font-size: clamp(36px, 9vw, 45px); }
+      .booking-benefits { grid-template-columns: 1fr; gap: 17px; margin-top: 25px; }
+      .booking-benefit { grid-template-columns: 42px 1fr; gap: 14px; }
+      .booking-card { padding: 22px 18px; border-radius: 7px; }
+      .booking-card h3 { margin-bottom: 17px; }
+      .booking-form { gap: 13px; }
+      .booking-form .form-row { grid-template-columns: 1fr; gap: 13px; }
+      .booking-form input, .booking-form select { min-height: 45px; }
+      .contact-details { padding: 56px 0 60px; }
+      .contact-details-inner { width: 86%; grid-template-columns: 1fr; gap: 25px; }
+      .contact-list { padding: 22px 0 0; border-left: 0; border-top: 1px solid rgba(20,39,46,.22); }
+      .contact-cta { min-height: 310px; padding: 55px 7%; background-position: 58% center; }
+      .contact-cta::before { background-position: 58% center; }
+      .contact-cta::after { background: linear-gradient(90deg, rgba(13,31,38,.78), rgba(13,31,38,.40)); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .booking-form input, .booking-form select, .booking-form textarea,
+      .booking-submit { transition: none; }
+    }
+  </style>
+</head>
+<body class="contact-page">
+  <header class="bwc-header" role="banner">
+    <div class="bwc-header-inner">
+      <button class="bwc-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="bwc-site-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="bwc-brand" href="index.html#home" aria-label="Borneo Wild Capture home">
+        <img class="bwc-brand-logo" src="assets/borneo-wild-capture-logo.svg" alt="Borneo Wild Capture — official hornbill logo" width="190" height="96" loading="eager" decoding="async">
+      </a>
+      <nav id="bwc-site-menu" class="bwc-menu" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="how-to-get-here.html">How to Get Here</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">Our Story</a>
+        <a href="contact.html" class="active" aria-current="page">Contact</a>
+        <a class="nav-cta" href="https://wa.me/6285190836669?text=Hello%20Borneo%20Wild%20Capture%2C%20I%27d%20like%20to%20plan%20a%20trip." target="_blank" rel="noopener">Book a Trip ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero contact-hero">
+      <p class="eyebrow">BOOKING &amp; CONTACT</p>
+      <h1>Plan Your<br><em>Borneo Expedition.</em></h1>
+      <p>Let us help you design a meaningful journey into the wild heart of Borneo.</p>
+    </section>
+
+    <section class="section contact-booking" id="booking">
+      <div class="contact-booking-inner">
+        <div class="booking-intro">
+          <p class="eyebrow dark">BOOK A TRIP</p>
+          <h2>Ready for a<br><em>wild adventure?</em></h2>
+          <p>Tell us your travel plan and we’ll help you with the best itinerary, availability, and guidance.</p>
+          <ul class="booking-benefits">
+            <li class="booking-benefit">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M25.5 5.5C14 5.5 7 10.5 7 19c0 4 2.5 6.5 6 6.5 8.5 0 12.5-8 12.5-20Z"/><path d="M5 27c4-6 8.5-10 15-14"/></svg>
+              </span>
+              <span><strong>Custom Itinerary</strong><span>Flexible journeys shaped around your interests and travel dates.</span></span>
+            </li>
+            <li class="booking-benefit">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><circle cx="12" cy="10" r="4"/><path d="M4 26v-2c0-4 3-7 8-7s8 3 8 7v2"/><path d="M22 7a4 4 0 0 1 0 8M24 18c2.5 1 4 3 4 6v2"/></svg>
+              </span>
+              <span><strong>Local Expert</strong><span>Explore with experienced local guides who know the region.</span></span>
+            </li>
+            <li class="booking-benefit">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="m16 3 11 4v8c0 7-4.5 11.5-11 14-6.5-2.5-11-7-11-14V7l11-4Z"/><path d="m11 16 3.5 3.5L21 13"/></svg>
+              </span>
+              <span><strong>Responsible Travel</strong><span>Travel thoughtfully and support local communities and conservation.</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="booking-card">
+          <h3>Booking Inquiry</h3>
+          <form class="booking-form" id="booking-form">
+            <label for="booking-name">Full Name *
+              <input id="booking-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+            </label>
+            <label for="booking-email">Email *
+              <input id="booking-email" name="email" type="email" autocomplete="email" placeholder="your@email.com" required>
+            </label>
+            <label for="booking-phone">WhatsApp Number
+              <input id="booking-phone" name="phone" type="tel" autocomplete="tel" placeholder="e.g. +62 812 3456 7890">
+            </label>
+            <div class="form-row">
+              <label for="booking-trip">Preferred Trip *
+                <select id="booking-trip" name="trip" required>
+                  <option value="" selected disabled>Select an expedition</option>
+                  <option>Essential Escape — 3 days / 2 nights</option>
+                  <option>Wildlife Experience — 4 days / 3 nights</option>
+                  <option>Wildlife Moments — 5 days / 4 nights</option>
+                  <option>Custom itinerary — please advise</option>
+                  <option>Not sure yet — help me choose</option>
+                </select>
+              </label>
+              <label for="booking-date">Travel Date
+                <input id="booking-date" name="date" type="date">
+              </label>
+            </div>
+            <label for="booking-message">Message
+              <textarea id="booking-message" name="message" rows="3" placeholder="Tell us about your plan, number of travelers, or special requests..."></textarea>
+            </label>
+            <button class="booking-submit" type="submit"><span aria-hidden="true">↗</span> Send Inquiry</button>
+            <p class="booking-note">Your inquiry will open in WhatsApp with these details ready to send.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-details" id="contact">
+      <div class="contact-details-inner">
+        <div class="contact-details-copy">
+          <p class="eyebrow dark">GET IN TOUCH</p>
+          <h2>Contact Us</h2>
+          <p>Have questions, need a custom trip, or want to collaborate? We’d love to hear from you.</p>
+        </div>
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="contact-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M26.5 15.5a11 11 0 0 1-16.3 9.6L5 26l1-5.1a11 11 0 1 1 20.5-5.4Z"/><path d="M11 11.5c.8 4 3.2 6.4 7.2 7.3l1.7-1.7 3 1.4c-.2 1.9-1.8 3-3.4 3-5.4-.8-10.3-5.6-10.8-10.7 0-1.6 1-3.1 2.9-3.4l1.5 3-2.1 1.1Z"/></svg>
+            </span>
+            <div><strong>WhatsApp</strong><a href="https://wa.me/6285190836669" target="_blank" rel="noopener">+62 851-9083-6669</a></div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><rect x="4" y="7" width="24" height="18" rx="2"/><path d="m5 9 11 9 11-9"/></svg>
+            </span>
+            <div><strong>Email</strong><a href="mailto:orangutantrip6@gmail.com">orangutantrip6@gmail.com</a></div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M25 13c0 7-9 16-9 16S7 20 7 13a9 9 0 1 1 18 0Z"/><circle cx="16" cy="13" r="3"/></svg>
+            </span>
+            <div><strong>Location</strong><span>Tanjung Puting National Park,<br>Central Kalimantan, Indonesia</span></div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><rect x="5" y="5" width="22" height="22" rx="6"/><circle cx="16" cy="16" r="5"/><path d="M23 9h.01"/></svg>
+            </span>
+            <div><strong>Instagram</strong><a href="https://www.instagram.com/borneowildcapture/" target="_blank" rel="noopener">@borneowildcapture</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-cta">
+      <div class="contact-cta-inner">
+        <h2>Let’s Explore<br><em>Borneo Together.</em></h2>
+        <a class="button button-light" href="#booking">Book a Trip Now <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="index.html" aria-label="Borneo Wild Capture home">
+      <img class="brand-logo" src="assets/borneo-wild-capture-logo.svg" alt="Borneo Wild Capture — official hornbill logo" width="160" height="81" loading="eager" decoding="async">
     </a>
-    <nav id="bwc-site-menu" class="bwc-menu" aria-label="Main navigation">
-<a href="index.html">Home</a>
-<a href="how-to-get-here.html">How to Get Here</a>
-<a href="itinerary.html">Itinerary</a>
-<a href="gallery.html">Gallery</a>
-<a href="about.html">Our Story</a>
-<a href="contact.html" class="active" aria-current="page">Contact</a>
-<a class="nav-cta" href="https://wa.me/6285190836669" target="_blank" rel="noopener">Book a Trip ↗</a>
-    </nav>
-  </div>
-</header><main><section class="page-hero"><p class="eyebrow">LET'S PLAN YOUR JOURNEY</p><h1>Your Borneo story<br><em>starts here.</em></h1><p>Tell us when you hope to visit and what you would love to experience.</p></section><section class="section page-content inquiry"><div><p class="eyebrow dark">CONTACT OUR TEAM</p><h2>We’d love to<br><em>hear from you.</em></h2><p class="muted">Email: orangutantrip6@gmail.com<br>WhatsApp: +62 851-9083-6669<br>Instagram: @borneowildcapture</p></div><div class="contact-actions"><a class="button button-dark" href="https://wa.me/6285190836669?text=Hello%20Borneo%20Wild%20Capture%2C%20I%20would%20like%20to%20plan%20a%20trip.">Chat on WhatsApp ↗</a><a class="button button-light" href="mailto:orangutantrip6@gmail.com?subject=Borneo%20Wild%20Capture%20Tour%20Inquiry">Send an email ↗</a><a href="https://www.instagram.com/borneowildcapture/" target="_blank" rel="noopener">@borneowildcapture on Instagram</a></div></section></main><footer class="footer"><a class="brand footer-brand" href="index.html" aria-label="Borneo Wild Capture home"><img class="brand-logo" src="assets/borneo-wild-capture-logo.svg" alt="Borneo Wild Capture — official hornbill logo" width="160" height="81" loading="eager" decoding="async"></a><div class="footer-links"><a href="https://www.instagram.com/borneowildcapture/" target="_blank" rel="noopener">Instagram ↗</a><a href="mailto:orangutantrip6@gmail.com">Email ↗</a><a href="https://wa.me/6285190836669">WhatsApp ↗</a></div><p>© 2026 Borneo Wild Capture. Explore responsibly.</p></footer><script src="script.js"></script><script src="assets/interior-header.js"></script>
-</body></html>
+    <div class="footer-links">
+      <a href="how-to-get-here.html">How to Get Here</a>
+      <a href="itinerary.html">Itinerary</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="people-and-culture.html">People &amp; Culture</a>
+      <a href="about.html">Our Story</a>
+    </div>
+    <p>© 2026 Borneo Wild Capture. Explore responsibly.</p>
+  </footer>
+
+  <script>
+    (function () {
+      const form = document.getElementById("booking-form");
+      if (!form) return;
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (!form.reportValidity()) return;
+
+        const data = new FormData(form);
+        const lines = [
+          "Hello Borneo Wild Capture, I would like to plan a trip.",
+          "",
+          "Full name: " + data.get("name"),
+          "Email: " + data.get("email"),
+          "WhatsApp number: " + (data.get("phone") || "Not provided"),
+          "Preferred trip: " + data.get("trip"),
+          "Travel date: " + (data.get("date") || "Flexible / not decided"),
+          "Message: " + (data.get("message") || "I would like to know more about this trip.")
+        ];
+        const whatsappUrl = "https://wa.me/6285190836669?text=" + encodeURIComponent(lines.join("\n"));
+        window.location.href = whatsappUrl;
+      });
+    })();
+  </script>
+  <script src="script.js"></script>
+  <script src="assets/interior-header.js"></script>
+</body>
+</html>
